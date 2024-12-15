@@ -4,7 +4,7 @@ No_of_seqs    184 out of 12164
 Neff          7.68001
 Searched_HMMs 153500
 Date          Mon Nov 25 23:07:25 2024
-Command       hhsearch -b 50 -B 500 -z 50 -Z 500 -mact 0.05 -cpu 12 -maxmem 12 -aliw 100000 -e 100 -p 5.0 -d /Users/ivanchang/scalebio/RoseTTAFold/pdb100_2021Mar03/pdb100_2021Mar03 -i /Users/ivanchang/scalebio/RoseTTAFold/T1028_trial1/20241125225021/t000_.msa0.ss2.a3m -o /Users/ivanchang/scalebio/RoseTTAFold/T1028_trial1/20241125225021/t000_.hhr -atab /Users/ivanchang/scalebio/RoseTTAFold/T1028_trial1/20241125225021/t000_.atab -v 0 
+Command       hhsearch -b 50 -B 500 -z 50 -Z 500 -mact 0.05 -cpu 12 -maxmem 12 -aliw 100000 -e 100 -p 5.0 -d ~/RoseTTAFold/pdb100_2021Mar03/pdb100_2021Mar03 -i ~/RoseTTAFold/T1028_trial1/20241125225021/t000_.msa0.ss2.a3m -o ~/RoseTTAFold/T1028_trial1/20241125225021/t000_.hhr -atab ~/RoseTTAFold/T1028_trial1/20241125225021/t000_.atab -v 0 
 
  No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
   1 6vqp_A 1-292                   100.0 1.2E-65   8E-71  481.1  27.7  287   16-307     1-292 (292)

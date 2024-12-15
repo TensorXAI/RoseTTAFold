@@ -1,7 +1,7 @@
 DATA_PREP:
   JOB_ID: 20241126082406
-  INPUT_FILE: /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/input.fa
-  WDIR: /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406
+  INPUT_FILE: ~/RoseTTAFold/T1036s1_trials/input.fa
+  WDIR: ~/RoseTTAFold/T1036s1_trials/20241126082406
   CPU: 12
   MEM: 12
   LENGTH:      622

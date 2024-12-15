@@ -1,7 +1,7 @@
 DATA_PREP:
   JOB_ID: 20241212004257
-  INPUT_FILE: /Users/ivanchang/scalebio/RoseTTAFold/Mystery_trials/input.fa
-  WDIR: /Users/ivanchang/scalebio/RoseTTAFold/Mystery_trials/20241212004257
+  INPUT_FILE: ~/RoseTTAFold/Mystery_trials/input.fa
+  WDIR: ~/RoseTTAFold/Mystery_trials/20241212004257
   CPU: 12
   MEM: 12
   LENGTH:       43
