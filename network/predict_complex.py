@@ -96,6 +96,8 @@ class Predictor():
         self.model_name = "RoseTTAFold"
         if torch.cuda.is_available() and (not use_cpu):
             self.device = torch.device("cuda")
+        elif torch.backends.mps.is_available() and (not use_cpu):
+            self.device = torch.device("mps")
         else:
             self.device = torch.device("cpu")
         self.active_fn = nn.Softmax(dim=1)
@@ -183,8 +185,11 @@ class Predictor():
                         input_t2d = t2d[:,:,sel][:,:,:,sel].to(self.device)
                         #
                         print ("running crop: %d-%d/%d-%d"%(start_1, end_1, start_2, end_2), input_msa.shape)
-                        with torch.cuda.amp.autocast():
-                            logit_s, node, init_crds, pred_lddt = self.model(input_msa, input_seq, input_idx, t1d=input_t1d, t2d=input_t2d, return_raw=True)
+                        if torch.cuda.is_available():
+                            with torch.cuda.amp.autocast():
+                                logit_s, node, init_crds, pred_lddt = self.model(input_msa, input_seq, input_idx, t1d=input_t1d, t2d=input_t2d, return_raw=True)
+                        else:
+                            logit_s, node, init_crds, pred_lddt = self.model(input_msa, input_seq, input_idx, t1d=input_t1d, t2d=input_t2d, return_raw=True)                           
                         #
                         # Not sure How can we merge init_crds.....
                         pred_lddt = torch.clamp(pred_lddt, 0.0, 1.0)
@@ -208,7 +213,10 @@ class Predictor():
                 seq = msa[:,0].to(self.device)
                 idx_pdb = idx_pdb.to(self.device)
                 prob_in = torch.tensor(prob_in).to(self.device).unsqueeze(0)
-                with torch.cuda.amp.autocast():
+                if torch.cuda.is_available():
+                    with torch.cuda.amp.autocast():
+                        xyz, lddt = self.model(node_s, seq, idx_pdb, prob_s=prob_in, refine_only=True)
+                else:
                     xyz, lddt = self.model(node_s, seq, idx_pdb, prob_s=prob_in, refine_only=True)
                 print (lddt.mean())
             else:
@@ -217,7 +225,10 @@ class Predictor():
                 idx_pdb = idx_pdb.to(self.device)
                 t1d = t1d[:,:10].to(self.device)
                 t2d = t2d[:,:10].to(self.device)
-                with torch.cuda.amp.autocast():
+                if torch.cuda.is_available():
+                    with torch.cuda.amp.autocast():
+                        logit_s, _, xyz, lddt = self.model(msa, seq, idx_pdb, t1d=t1d, t2d=t2d)
+                else:
                     logit_s, _, xyz, lddt = self.model(msa, seq, idx_pdb, t1d=t1d, t2d=t2d)
                 print (lddt.mean())
                 prob_s = list()

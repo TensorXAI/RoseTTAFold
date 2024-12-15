@@ -8,6 +8,7 @@ from resnet import ResidualNetwork
 from SE3_network import SE3Transformer
 from InitStrGenerator import InitStr_Network
 import dgl
+from utils.utils_mps_fallback import fallback_to_cpu_if_mps
 # Attention module based on AlphaFold2's idea written by Minkyung Baek
 #  - Iterative MSA feature extraction
 #    - 1) MSA2Pair: extract pairwise feature from MSA --> added to previous residue-pair features
@@ -28,6 +29,7 @@ def make_graph(xyz, pair, idx, top_k=64, kmin=9):
 
     B, L = xyz.shape[:2]
     device = xyz.device
+    fallback = fallback_to_cpu_if_mps(device)
     
     # distance map from current CA coordinates
     D = torch.cdist(xyz[:,:,1,:], xyz[:,:,1,:]) + torch.eye(L, device=device).unsqueeze(0)*999.9  # (B, L, L)
@@ -48,9 +50,9 @@ def make_graph(xyz, pair, idx, top_k=64, kmin=9):
    
     src = b*L+i
     tgt = b*L+j
-    G = dgl.graph((src, tgt), num_nodes=B*L).to(device)
-    G.edata['d'] = (xyz[b,j,1,:] - xyz[b,i,1,:]).detach() # no gradient through basis function
-    G.edata['w'] = pair[b,i,j]
+    G = dgl.graph((src.to(fallback), tgt.to(fallback)), num_nodes=B*L)
+    G.edata['d'] = (xyz[b,j,1,:] - xyz[b,i,1,:]).to(fallback).detach() # no gradient through basis function
+    G.edata['w'] = pair[b,i,j].to(fallback)
 
     return G 
 
@@ -218,8 +220,12 @@ class Str2Str(nn.Module):
         
         self.se3 = SE3Transformer(**SE3_param)
     
-    @torch.cuda.amp.autocast(enabled=False)
+    # @torch.cuda.amp.autocast(enabled=False)
+    from utils.utils_decorators import cuda_amp_autocast
+    @cuda_amp_autocast(enabled=False)
     def forward(self, msa, pair, xyz, seq1hot, idx, top_k=64):
+        device = xyz.device
+        fallback = fallback_to_cpu_if_mps(device)
         # process msa & pair features
         B, N, L = msa.shape[:3]
         msa = self.norm_msa(msa)
@@ -238,11 +244,12 @@ class Str2Str(nn.Module):
         l1_feats = l1_feats.reshape(B*L, -1, 3)
         
         # apply SE(3) Transformer & update coordinates
-        shift = self.se3(G, msa.reshape(B*L, -1, 1), l1_feats)
+        # shift = self.se3(G, msa.reshape(B*L, -1, 1), l1_feats)
+        shift = self.se3.to(fallback)(G, msa.reshape(B*L, -1, 1).to(fallback), l1_feats.to(fallback))
 
-        state = shift['0'].reshape(B, L, -1) # (B, L, C)
+        state = shift['0'].reshape(B, L, -1).to(device) # (B, L, C)
         
-        offset = shift['1'].reshape(B, L, -1, 3) # (B, L, 3, 3)
+        offset = shift['1'].reshape(B, L, -1, 3).to(device) # (B, L, 3, 3)
         CA_new = xyz[:,:,1] + offset[:,:,1]
         N_new = CA_new + offset[:,:,0]
         C_new = CA_new + offset[:,:,2]

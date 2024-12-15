@@ -210,8 +210,23 @@ class SphericalHarmonics(object):
 
 if __name__ == "__main__":
     from lie_learn.representations.SO3.spherical_harmonics import sh
-    device = 'cuda'
-    dtype = torch.float64
+    # Check for CUDA availability
+    if torch.cuda.is_available():
+        device = torch.device("cuda")
+        dtype = torch.float64
+        print("CUDA is available. Using GPU:", torch.cuda.get_device_name(device))
+    # Check for MPS availability (for Apple Silicon)
+    elif torch.backends.mps.is_available():
+        device = torch.device("mps")
+        dtype = torch.float32
+        print("MPS is available. Using Apple GPU.")
+    # Fallback to CPU if neither are available
+    else:
+        device = torch.device("cpu")
+        dtype = torch.float64
+        print("No compatible GPU found. Using CPU.")
+    # device = 'cuda'
+    # dtype = torch.float64
     bs = 32
     theta = 0.1*torch.randn(bs,1024,10, dtype=dtype)
     phi = 0.1*torch.randn(bs,1024,10, dtype=dtype)

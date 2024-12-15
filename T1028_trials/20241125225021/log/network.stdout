@@ -1,0 +1,89 @@
+Device type: mps
+Model size: 136819383
+ngrid:      9
+grids:      [  0  35  70 105 140 175 210 245 280]
+windows:    65
+running crop: 0-65/0-65 torch.Size([1, 1000, 65])
+running crop: 0-65/35-100 torch.Size([1, 1000, 100])
+running crop: 0-65/70-135 torch.Size([1, 1000, 130])
+running crop: 0-65/105-170 torch.Size([1, 1000, 130])
+running crop: 0-65/140-205 torch.Size([1, 1000, 130])
+running crop: 0-65/175-240 torch.Size([1, 1000, 130])
+running crop: 0-65/210-275 torch.Size([1, 1000, 130])
+running crop: 0-65/245-310 torch.Size([1, 1000, 130])
+running crop: 0-65/280-316 torch.Size([1, 1000, 101])
+running crop: 35-100/35-100 torch.Size([1, 1000, 65])
+running crop: 35-100/70-135 torch.Size([1, 1000, 100])
+running crop: 35-100/105-170 torch.Size([1, 1000, 130])
+running crop: 35-100/140-205 torch.Size([1, 1000, 130])
+running crop: 35-100/175-240 torch.Size([1, 1000, 130])
+running crop: 35-100/210-275 torch.Size([1, 1000, 130])
+running crop: 35-100/245-310 torch.Size([1, 1000, 130])
+running crop: 35-100/280-316 torch.Size([1, 1000, 101])
+running crop: 70-135/70-135 torch.Size([1, 1000, 65])
+running crop: 70-135/105-170 torch.Size([1, 1000, 100])
+running crop: 70-135/140-205 torch.Size([1, 1000, 130])
+running crop: 70-135/175-240 torch.Size([1, 1000, 130])
+running crop: 70-135/210-275 torch.Size([1, 1000, 130])
+running crop: 70-135/245-310 torch.Size([1, 1000, 130])
+running crop: 70-135/280-316 torch.Size([1, 1000, 101])
+running crop: 105-170/105-170 torch.Size([1, 1000, 65])
+running crop: 105-170/140-205 torch.Size([1, 1000, 100])
+running crop: 105-170/175-240 torch.Size([1, 1000, 130])
+running crop: 105-170/210-275 torch.Size([1, 1000, 130])
+running crop: 105-170/245-310 torch.Size([1, 1000, 130])
+running crop: 105-170/280-316 torch.Size([1, 1000, 101])
+running crop: 140-205/140-205 torch.Size([1, 1000, 65])
+running crop: 140-205/175-240 torch.Size([1, 1000, 100])
+running crop: 140-205/210-275 torch.Size([1, 1000, 130])
+running crop: 140-205/245-310 torch.Size([1, 1000, 130])
+running crop: 140-205/280-316 torch.Size([1, 1000, 101])
+running crop: 175-240/175-240 torch.Size([1, 1000, 65])
+running crop: 175-240/210-275 torch.Size([1, 1000, 100])
+running crop: 175-240/245-310 torch.Size([1, 1000, 130])
+running crop: 175-240/280-316 torch.Size([1, 1000, 101])
+running crop: 210-275/210-275 torch.Size([1, 1000, 65])
+running crop: 210-275/245-310 torch.Size([1, 1000, 100])
+running crop: 210-275/280-316 torch.Size([1, 1000, 101])
+running crop: 245-310/245-310 torch.Size([1, 1000, 65])
+running crop: 245-310/280-316 torch.Size([1, 1000, 71])
+running crop: 280-316/280-316 torch.Size([1, 1000, 36])
+SE(3) iteration 0 [0.50458324 0.5032017 ]
+SE(3) iteration 1 [0.5668315  0.59378767]
+SE(3) iteration 2 [0.5814245  0.60396165]
+SE(3) iteration 3 [0.58761233 0.6085974 ]
+SE(3) iteration 4 [0.5891494  0.61109823]
+SE(3) iteration 5 [0.5895064  0.61395156]
+SE(3) iteration 6 [0.5956147  0.62092507]
+SE(3) iteration 7 [0.5969861 0.6206166]
+SE(3) iteration 8 [0.59393895 0.6217628 ]
+SE(3) iteration 9 [0.59696335 0.62388515]
+SE(3) iteration 10 [0.59929556 0.6237634 ]
+SE(3) iteration 11 [0.6001136 0.6259965]
+SE(3) iteration 12 [0.59955794 0.6263668 ]
+SE(3) iteration 13 [0.5992027 0.6265876]
+SE(3) iteration 14 [0.6004731 0.6269463]
+SE(3) iteration 15 [0.5989319 0.6305551]
+SE(3) iteration 16 [0.59778893 0.63263965]
+SE(3) iteration 17 [0.59802717 0.63279945]
+SE(3) iteration 18 [0.596691  0.6321517]
+SE(3) iteration 19 [0.59769285 0.63149554]
+SE(3) iteration 20 [0.6001708  0.63117737]
+SE(3) iteration 21 [0.6013633 0.6311952]
+SE(3) iteration 22 [0.60322165 0.63021594]
+SE(3) iteration 23 [0.60179496 0.630727  ]
+SE(3) iteration 24 [0.60320526 0.63114977]
+SE(3) iteration 25 [0.60280716 0.63112587]
+SE(3) iteration 26 [0.6026524  0.63115376]
+SE(3) iteration 27 [0.60312647 0.63172275]
+SE(3) iteration 28 [0.602487   0.63221055]
+SE(3) iteration 29 [0.60276276 0.6324239 ]
+SE(3) iteration 30 [0.60195005 0.6327144 ]
+SE(3) iteration 31 [0.6021742 0.6327201]
+SE(3) iteration 32 [0.6019552  0.63250196]
+SE(3) iteration 33 [0.6026736  0.63238394]
+SE(3) iteration 34 [0.60266095 0.63246787]
+SE(3) iteration 35 [0.6023005 0.6324559]
+SE(3) iteration 36 [0.60208124 0.6326107 ]
+SE(3) iteration 37 [0.6022335  0.63260055]
+SE(3) iteration 38 [0.6016629  0.63261974]

@@ -1,0 +1,13 @@
+Reading CRF from K4000.crf ...
+Adding cs-pseudocounts ...
+Effective number of sequences exp(entropy) = 11.33
+Wrote profile with 138 columns as checkpoint file to /Users/ivanchang/scalebio/RoseTTAFold/T1078_trials/20241125230941/t000_.msa0.tmp.chk
+Initializing Conda...
+Activating biox environment...
+Environment activated: biox                  *  /opt/conda/envs/biox
+CONDA_PREFIX=/opt/conda/envs/biox
+BLASTMAT is set to: /opt/conda/envs/biox/share/blast-2.2.26/data
+Symlink created: /opt/conda/envs/biox/data -> /opt/conda/envs/biox/share/blast-2.2.26/data
+/opt/conda/envs/biox
+/opt/conda/envs/biox/data
+/opt/conda/envs/biox/share/psipred_4.01/data

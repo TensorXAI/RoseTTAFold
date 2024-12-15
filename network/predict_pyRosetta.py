@@ -59,6 +59,8 @@ class Predictor():
         self.model_name = "RoseTTAFold"
         if torch.cuda.is_available() and (not use_cpu):
             self.device = torch.device("cuda")
+        elif torch.backends.mps.is_available() and (not use_cpu):
+            self.device = torch.device("mps")
         else:
             self.device = torch.device("cpu")
         self.active_fn = nn.Softmax(dim=1)
@@ -134,7 +136,10 @@ class Predictor():
                         input_t2d = t2d[:,:,sel][:,:,:,sel].to(self.device)
                         #
                         print ("running crop: %d-%d/%d-%d"%(start_1, end_1, start_2, end_2), input_msa.shape)
-                        with torch.cuda.amp.autocast():
+                        if torch.cuda.is_available():
+                            with torch.cuda.amp.autocast():
+                                logit_s, init_crds, pred_lddt = self.model(input_msa, input_seq, input_idx, t1d=input_t1d, t2d=input_t2d)
+                        else:
                             logit_s, init_crds, pred_lddt = self.model(input_msa, input_seq, input_idx, t1d=input_t1d, t2d=input_t2d)
                         #
                         pred_lddt = torch.clamp(pred_lddt, 0.0, 1.0)

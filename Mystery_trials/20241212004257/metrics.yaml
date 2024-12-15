@@ -1,0 +1,14 @@
+DATA_PREP:
+  JOB_ID: 20241212004257
+  INPUT_FILE: /Users/ivanchang/scalebio/RoseTTAFold/Mystery_trials/input.fa
+  WDIR: /Users/ivanchang/scalebio/RoseTTAFold/Mystery_trials/20241212004257
+  CPU: 12
+  MEM: 12
+  LENGTH:       43
+  MSA_COUNT: 12890
+  TEMPLATE_COUNT: 500
+  START_TIME: 1733982177
+  MSA_DURATION: 697
+  SS_DURATION: 13
+  TEMPLATE_DURATION: 177
+  TOTAL_DATA_PREP_DURATION: 887

@@ -1,0 +1,6 @@
+- 00:54:28.179 INFO: Input file = /Users/ivanchang/scalebio/RoseTTAFold/Mystery_trials/20241212004257/hhblits/t000_.db0.1e-30.a3m
+
+- 00:54:28.180 INFO: Output file = /Users/ivanchang/scalebio/RoseTTAFold/Mystery_trials/20241212004257/hhblits/t000_.db0.1e-30.id90cov75.a3m
+
+- 00:54:28.236 WARNING: Maximum number 65535 of sequences exceeded in file /Users/ivanchang/scalebio/RoseTTAFold/Mystery_trials/20241212004257/hhblits/t000_.db0.1e-30.a3m
+
