@@ -10,6 +10,7 @@ from typing import Dict
 from equivariant_attention.from_se3cnn import utils_steerable
 from equivariant_attention.fibers import Fiber, fiber2head
 from utils.utils_logging import log_gradient_norm
+from utils.utils_mps_fallback import fallback_to_cpu_if_mps
 
 import dgl
 import dgl.function as fn
@@ -298,9 +299,10 @@ class PairwiseConv(nn.Module):
         self.rp = RadialFunc(self.num_freq, nc_in, nc_out, self.edge_dim)
 
     def forward(self, feat, basis):
-        # Get radial weights
-        R = self.rp(feat)
-        kernel = torch.sum(R * basis[f'{self.degree_in},{self.degree_out}'], -1)
+        device = feat.device
+        R = self.rp.to(device)(feat)
+        # torch.sum memory spike issue on MPS, fallback to CPU
+        kernel = torch.sum(R * basis[f'{self.degree_in},{self.degree_out}'].to(device), -1)
         return kernel.view(kernel.shape[0], self.d_out*self.nc_out, -1)
 
 
@@ -627,7 +629,12 @@ class GConvSE3Partial(nn.Module):
         with G.local_scope():
             # Add node features to local graph scope
             for k, v in h.items():
-                G.ndata[k] = v
+                fallback = fallback_to_cpu_if_mps(v.device)
+                G.ndata[k] = v.to(fallback)
+                # if v.device.type == 'mps':
+                #    G.ndata[k] = v.cpu()
+                # else:
+                #    G.ndata[k] = v
 
             # Add edge features
             if 'w' in G.edata.keys():

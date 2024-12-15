@@ -17,7 +17,8 @@ endif()
 # Find PyTorch cmake files and PyTorch versions with the python interpreter
 # $PYTHON_INTERP ("python3" or "python" if empty)
 if(NOT PYTHON_INTERP)
-  find_program(PYTHON_INTERP NAMES python3 python)
+  # find_program(PYTHON_INTERP NAMES python3 python)
+  find_program(PYTHON_INTERP NAMES python)
 endif()
 
 message(STATUS "Using Python interpreter: ${PYTHON_INTERP}")
@@ -71,16 +72,25 @@ if(USE_CUDA)
     set(CMAKE_CUDA_ARCHITECTURES_FILTERED "70")
   endif()
   set(LIB_GRAPHBOLT_CUDA_NAME "${LIB_GRAPHBOLT_NAME}_cuda")
+
+  # Include CUDA-related directories
+  include_directories(BEFORE ${BOLT_DIR}
+                             ${BOLT_HEADERS}
+                             # For CXX20 features:
+                             # `std::atomic_ref`, `std::counting_semaphore`
+                             "../third_party/cccl/libcudacxx/include"
+                             "../third_party/pcg/include"
+                             "../third_party/tsl_robin_map/include")
+else()
+  message(STATUS "CUDA support is disabled. Skipping CUDA includes.")                           
+  # Include only non-CUDA related directories
+  include_directories(BEFORE ${BOLT_DIR}
+                             ${BOLT_HEADERS}
+                             "../third_party/pcg/include"
+                             "../third_party/tsl_robin_map/include")
 endif()
 
 add_library(${LIB_GRAPHBOLT_NAME} SHARED ${BOLT_SRC} ${BOLT_HEADERS})
-include_directories(BEFORE ${BOLT_DIR}
-                           ${BOLT_HEADERS}
-                           # For CXX20 features:
-                           # `std::atomic_ref`, `std::counting_semaphore`
-                           "../third_party/cccl/libcudacxx/include"
-                           "../third_party/pcg/include"
-                           "../third_party/tsl_robin_map/include")
 target_link_libraries(${LIB_GRAPHBOLT_NAME} "${TORCH_LIBRARIES}")
 if(BUILD_WITH_TASKFLOW)
   target_include_directories(${LIB_GRAPHBOLT_NAME} PRIVATE "../third_party/taskflow")

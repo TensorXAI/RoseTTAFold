@@ -1,7 +1,7 @@
 
 import numpy as np
 
-import spaces.Rn as Rn
+import spaces.rn as Rn
 
 parameterizations = ('rotation-translation', '2x3 matrix', '3x3 matrix')
 

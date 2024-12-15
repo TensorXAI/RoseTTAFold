@@ -8,6 +8,7 @@ from Attention_module_w_str import make_graph as make_graph_topk
 from Attention_module_w_str import get_bonded_neigh, rbf
 from SE3_network import SE3Transformer
 from Transformer import _get_clones, create_custom_forward
+from utils.utils_mps_fallback import fallback_to_cpu_if_mps
 # Re-generate initial coordinates based on 1) final pair features 2) predicted distogram
 # Then, refine it through multiple SE3 transformer block
 
@@ -40,6 +41,8 @@ class Regen_Network(nn.Module):
         self.get_state = nn.Linear(node_dim_hidden, state_dim)
     
     def forward(self, seq1hot, idx, node, edge):
+        device = next(self.parameters()).device
+        fallback = fallback_to_cpu_if_mps(device)
         B, L = node.shape[:2]
         node = self.norm_node(node)
         edge = self.norm_edge(edge)
@@ -53,10 +56,10 @@ class Regen_Network(nn.Module):
         edge = self.embed_e(edge)
         
         G = make_graph(node, idx, edge)
-        Gout = self.transformer(G)
+        Gout = self.transformer.to(fallback)(G)
         
-        xyz = self.get_xyz(Gout.x)
-        state = self.get_state(self.norm_state(Gout.x))
+        xyz = self.get_xyz(Gout.x.to(device))
+        state = self.get_state(self.norm_state(Gout.x.to(device)))
         return xyz.reshape(B, L, 3, 3) , state.reshape(B, L, -1)
 
 class Refine_Network(nn.Module):
@@ -77,8 +80,12 @@ class Refine_Network(nn.Module):
         
         self.se3 = SE3Transformer(**SE3_param)
 
-    @torch.cuda.amp.autocast(enabled=False)
+    # @torch.cuda.amp.autocast(enabled=False)
+    from utils.utils_decorators import cuda_amp_autocast
+    @cuda_amp_autocast(enabled=False)
     def forward(self, msa, pair, xyz, state, seq1hot, idx, top_k=64):
+        device = next(self.parameters()).device
+        fallback = fallback_to_cpu_if_mps(device)
         # process node & pair features
         B, L = msa.shape[:2]
         node = self.norm_msa(msa)
@@ -100,11 +107,12 @@ class Refine_Network(nn.Module):
         l1_feats = l1_feats.reshape(B*L, -1, 3)
         
         # apply SE(3) Transformer & update coordinates
-        shift = self.se3(G, node.reshape(B*L, -1, 1), l1_feats)
+        # shift = self.se3(G, node.reshape(B*L, -1, 1), l1_feats)
+        shift = self.se3.to(fallback)(G, node.reshape(B*L, -1, 1).to(fallback), l1_feats.to(fallback))
 
-        state = shift['0'].reshape(B, L, -1) # (B, L, C)
+        state = shift['0'].reshape(B, L, -1).to(device) # (B, L, C)
         
-        offset = shift['1'].reshape(B, L, -1, 3) # (B, L, 3, 3)
+        offset = shift['1'].reshape(B, L, -1, 3).to(device) # (B, L, 3, 3)
         CA_new = xyz[:,:,1] + offset[:,:,1]
         N_new = CA_new + offset[:,:,0]
         C_new = CA_new + offset[:,:,2]
@@ -156,7 +164,7 @@ class Refine_module(nn.Module):
             #
             lddt = self.pred_lddt(self.norm_state(state)) 
             lddt = torch.clamp(lddt, 0.0, 1.0)[...,0]
-            print (f"SE(3) iteration {i_iter} {lddt.mean(-1).cpu().numpy()}")
+            print (f"SE(3) iteration {i_iter} {lddt.mean(-1).cpu().numpy()}", flush=True)
             if lddt.mean(-1).max() <= prev_lddt+eps:
                 no_impr += 1
             else:

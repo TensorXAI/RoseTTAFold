@@ -19,7 +19,7 @@
 import os
 import sys
 import subprocess
-
+import shutil
 
 # Define global path variables
 setup_dir = dir = os.path.dirname(os.path.abspath(__file__))
@@ -32,10 +32,10 @@ def get_common_extension_args():
     import numpy
     common_extension_args = dict(
         libraries=['nfft3_threads', 'nfft3', 'fftw3_threads', 'fftw3', 'm'],
-        library_dirs=[],
-        include_dirs=[numpy.get_include()],
-        extra_compile_args='-O3 -fomit-frame-pointer -malign-double '
-        '-fstrict-aliasing -ffast-math'.split(),
+        library_dirs=['/opt/homebrew/opt/fftw/lib', '/usr/local/lib'],
+        include_dirs=[numpy.get_include(), '/opt/homebrew/opt/fftw/include', '/usr/local/include'],
+        extra_compile_args='-O3 -mmacosx-version-min=11.0 -fomit-frame-pointer -malign-double '
+        '-fstrict-aliasing -ffast-math -DNPY_NO_DEPRECATED_API=NPY_1_7_API_VERSION'.split(),
         )
     return common_extension_args
 

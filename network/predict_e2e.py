@@ -11,6 +11,12 @@ from collections import namedtuple
 from ffindex import *
 from kinematics import xyz_to_c6d, c6d_to_bins2, xyz_to_t2d
 from trFold import TRFold
+import gc
+
+# import debugpy
+# debugpy.listen(("0.0.0.0", 5678))  # Bind to all interfaces, port 5678
+# print("Waiting for debugger to attach...")
+# debugpy.wait_for_client()  # Pause execution until the debugger attaches
 
 script_dir = '/'.join(os.path.dirname(os.path.realpath(__file__)).split('/')[:-1])
 
@@ -97,8 +103,11 @@ class Predictor():
         self.model_name = "RoseTTAFold"
         if torch.cuda.is_available() and (not use_cpu):
             self.device = torch.device("cuda")
+        elif torch.backends.mps.is_available() and (not use_cpu):
+            self.device = torch.device("mps")
         else:
             self.device = torch.device("cpu")
+        print(f"Device type: {self.device.type}", flush=True)
         self.active_fn = nn.Softmax(dim=1)
 
         # define model & load model
@@ -137,6 +146,7 @@ class Predictor():
         if not could_load:
             print ("ERROR: failed to load model")
             sys.exit()
+        print(f"Model size: {count_parameters(self.model)}", flush=True)
         self.model.eval()
         with torch.no_grad():
             # do cropped prediction if protein is too big
@@ -148,9 +158,9 @@ class Predictor():
                 #
                 grids = np.arange(0, L-window+shift, shift)
                 ngrids = grids.shape[0]
-                print("ngrid:     ", ngrids)
-                print("grids:     ", grids)
-                print("windows:   ", window)
+                print("ngrid:     ", ngrids, flush=True)
+                print("grids:     ", grids, flush=True)
+                print("windows:   ", window, flush=True)
 
                 for i in range(ngrids):
                     for j in range(i, ngrids):
@@ -173,9 +183,12 @@ class Predictor():
                         input_t1d = t1d[:,:,sel].to(self.device) # (B, T, L, 3)
                         input_t2d = t2d[:,:,sel][:,:,:,sel].to(self.device)
                         #
-                        print ("running crop: %d-%d/%d-%d"%(start_1, end_1, start_2, end_2), input_msa.shape)
-                        with torch.cuda.amp.autocast():
-                            logit_s, node, init_crds, pred_lddt = self.model(input_msa, input_seq, input_idx, t1d=input_t1d, t2d=input_t2d, return_raw=True)
+                        print ("running crop: %d-%d/%d-%d"%(start_1, end_1, start_2, end_2), input_msa.shape, flush=True)
+                        if torch.cuda.is_available():
+                            with torch.cuda.amp.autocast():
+                                logit_s, node, init_crds, pred_lddt = self.model(input_msa, input_seq, input_idx, t1d=input_t1d, t2d=input_t2d, return_raw=True)
+                        else:
+                            logit_s, node, init_crds, pred_lddt = self.model(input_msa, input_seq, input_idx, t1d=input_t1d, t2d=input_t2d, return_raw=True)   
                         #
                         # Not sure How can we merge init_crds.....
                         sub_idx = input_idx[0].cpu()
@@ -188,6 +201,11 @@ class Predictor():
                             prob = prob.squeeze(0).permute(1,2,0).cpu().numpy()
                             prob_s[i_logit][sub_idx_2d] += prob
                         del logit_s, node
+                        if torch.cuda.is_available():
+                            torch.cuda.empty_cache()
+                        elif torch.backends.mps.is_available():
+                            gc.collect()
+                            torch.mps.empty_cache()
                 #
                 # combine all crops
                 for i in range(4):
@@ -197,13 +215,20 @@ class Predictor():
                 #
                 # Do iterative refinement using SE(3)-Transformers
                 # clear cache memory
-                torch.cuda.empty_cache()
+                if torch.cuda.is_available():
+                    torch.cuda.empty_cache()
+                elif torch.backends.mps.is_available():
+                    gc.collect()
+                    torch.mps.empty_cache()
                 #
                 node_s = torch.tensor(node_s).to(self.device).unsqueeze(0)
                 seq = msa[:,0].to(self.device)
                 idx_pdb = idx_pdb.to(self.device)
                 prob_in = torch.tensor(prob_in).to(self.device).unsqueeze(0)
-                with torch.cuda.amp.autocast():
+                if torch.cuda.is_available():
+                    with torch.cuda.amp.autocast():
+                        xyz, lddt = self.model(node_s, seq, idx_pdb, prob_s=prob_in, refine_only=True)
+                else:
                     xyz, lddt = self.model(node_s, seq, idx_pdb, prob_s=prob_in, refine_only=True)
             else:
                 msa = msa[:,:1000].to(self.device)
@@ -211,7 +236,11 @@ class Predictor():
                 idx_pdb = idx_pdb.to(self.device)
                 t1d = t1d[:,:10].to(self.device)
                 t2d = t2d[:,:10].to(self.device)
-                with torch.cuda.amp.autocast():
+
+                if torch.cuda.is_available():
+                    with torch.cuda.amp.autocast():
+                        logit_s, _, xyz, lddt = self.model(msa, seq, idx_pdb, t1d=t1d, t2d=t2d)
+                else:
                     logit_s, _, xyz, lddt = self.model(msa, seq, idx_pdb, t1d=t1d, t2d=t2d)
                 prob_s = list()
                 for logit in logit_s:
@@ -228,12 +257,16 @@ class Predictor():
         
         # run TRFold
         prob_trF = list()
+        if self.device.type == 'mps':
+            device = torch.device('cpu')
+        else:
+            device = self.device
         for prob in prob_s:
-            prob = torch.tensor(prob).permute(2,0,1).to(self.device)
+            prob = torch.tensor(prob).permute(2,0,1).to(device)
             prob += 1e-8
             prob = prob / torch.sum(prob, dim=0)[None]
             prob_trF.append(prob)
-        xyz = xyz[0, :, 1]
+        xyz = xyz[0, :, 1].to(device)
         TRF = TRFold(prob_trF, fold_params)
         xyz = TRF.fold(xyz, batch=15, lr=0.1, nsteps=200)
         xyz = xyz.detach().cpu().numpy()
@@ -289,8 +322,33 @@ class Predictor():
                                 "ATOM", ctr, atm_j, util.num2aa[s], 
                                 "A", idx[i]+1, atoms[i,j,0], atoms[i,j,1], atoms[i,j,2],
                                 1.0, Bfacts[i] ) )
-                        ctr += 1                
+                        ctr += 1                   
+
+# Recursive function to print details of the model
+def print_model_details(module, parent_name="", indent=0):
+    for name, child in module.named_children():
+        layer_name = f"{parent_name}.{name}" if parent_name else name
+        if list(child.parameters()):  # Check if layer has parameters
+            total_params = sum(p.numel() for p in child.parameters())
+            device = next(child.parameters()).device.type
+        else:
+            total_params = 0
+            device = "N/A"
         
+        print(f"{' ' * indent}{device:<10} {layer_name:<30} {child.__class__.__name__:<20} {total_params:<15}", flush=True)
+        
+        # Recursively print child layers
+        print_model_details(child, layer_name, indent + 2)
+
+# Function to recursively calculate the total number of parameters
+def count_parameters(model):
+    total_params = 0
+    for child in model.children():
+        # Recursively count parameters in child models
+        total_params += count_parameters(child)
+    # Add parameters for the current model
+    total_params += sum(p.numel() for p in model.parameters(recurse=False))
+    return total_params
 
 def get_args():
     import argparse
@@ -321,4 +379,5 @@ if __name__ == "__main__":
 
     if not os.path.exists("%s.npz"%args.out_prefix):
         pred = Predictor(model_dir=args.model_dir, use_cpu=args.use_cpu)
-        pred.predict(args.a3m_fn, args.out_prefix, args.hhr, args.atab)
+        pred.predict(args.a3m_fn, args.out_prefix, args.hhr, args.atab, window=65, shift=35)
+        # pred.predict(args.a3m_fn, args.out_prefix, args.hhr, args.atab)

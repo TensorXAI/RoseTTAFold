@@ -1,0 +1,64 @@
+- 08:36:53.554 INFO: Input file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db0.1e-30.a3m
+
+- 08:36:53.554 INFO: Output file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db0.1e-30.id90cov75.a3m
+
+- 08:36:53.578 INFO: Input file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db0.1e-30.a3m
+
+- 08:36:53.578 INFO: Output file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db0.1e-30.id90cov50.a3m
+
+- 08:45:47.972 INFO: Input file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db0.1e-10.a3m
+
+- 08:45:47.972 INFO: Output file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db0.1e-10.id90cov75.a3m
+
+- 08:45:47.998 INFO: Input file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db0.1e-10.a3m
+
+- 08:45:47.998 INFO: Output file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db0.1e-10.id90cov50.a3m
+
+- 08:53:43.151 INFO: Input file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db0.1e-6.a3m
+
+- 08:53:43.151 INFO: Output file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db0.1e-6.id90cov75.a3m
+
+- 08:53:43.176 INFO: Input file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db0.1e-6.a3m
+
+- 08:53:43.176 INFO: Output file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db0.1e-6.id90cov50.a3m
+
+- 09:01:30.485 INFO: Input file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db0.1e-3.a3m
+
+- 09:01:30.485 INFO: Output file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db0.1e-3.id90cov75.a3m
+
+- 09:01:30.505 INFO: Input file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db0.1e-3.a3m
+
+- 09:01:30.505 INFO: Output file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db0.1e-3.id90cov50.a3m
+
+- 09:12:24.503 INFO: Input file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db1.1e-30.a3m
+
+- 09:12:24.504 INFO: Output file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db1.1e-30.id90cov75.a3m
+
+- 09:12:24.528 INFO: Input file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db1.1e-30.a3m
+
+- 09:12:24.528 INFO: Output file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db1.1e-30.id90cov50.a3m
+
+- 10:26:22.544 INFO: Input file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db1.1e-10.a3m
+
+- 10:26:22.544 INFO: Output file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db1.1e-10.id90cov75.a3m
+
+- 10:26:22.569 INFO: Input file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db1.1e-10.a3m
+
+- 10:26:22.569 INFO: Output file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db1.1e-10.id90cov50.a3m
+
+- 11:09:06.064 INFO: Input file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db1.1e-6.a3m
+
+- 11:09:06.064 INFO: Output file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db1.1e-6.id90cov75.a3m
+
+- 11:09:06.097 INFO: Input file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db1.1e-6.a3m
+
+- 11:09:06.097 INFO: Output file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db1.1e-6.id90cov50.a3m
+
+- 11:28:57.881 INFO: Input file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db1.1e-3.a3m
+
+- 11:28:57.881 INFO: Output file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db1.1e-3.id90cov75.a3m
+
+- 11:28:57.925 INFO: Input file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db1.1e-3.a3m
+
+- 11:28:57.925 INFO: Output file = /Users/ivanchang/scalebio/RoseTTAFold/T1036s1_trials/20241126082406/hhblits/t000_.db1.1e-3.id90cov50.a3m
+

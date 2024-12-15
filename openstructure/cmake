@@ -1,0 +1,27 @@
+cmake . \
+    -DOPTIMIZE=ON \
+    -DCMAKE_INSTALL_PREFIX=/Users/ivanchang/scalebio \
+    -DBoost_DIR=$CONDA_PREFIX/lib/cmake/Boost-1.85.0 \
+    -DPython_EXECUTABLE=$CONDA_PREFIX/bin/python3 \
+    -DPython_INCLUDE_DIRS=$CONDA_PREFIX/include/python3.10 \
+    -DPython_LIBRARIES=$CONDA_PREFIX/lib/libpython3.10.dylib \
+    -DPython_ROOT_DIR=$CONDA_PREFIX/lib/python3.10 \
+    -DCOMPOUND_LIB=../wwpdb/compounds.chemlib \
+    -DENABLE_INFO=OFF \
+    -DEIGEN3_INCLUDE_DIR=$HOMEBREW_PREFIX/opt/eigen/include/eigen3 \
+    -DFFTW_INCLUDE_DIR=$HOMEBREW_PREFIX/opt/fftw/include \
+    -DFFTW_LIBRARY=$HOMEBREW_PREFIX/opt/fftw/lib/libfftw3f.dylib \
+    -DENABLE_PARASAIL=ON \
+    -DPARASAIL_INCLUDE_DIR=$CONDA_PREFIX/lib/python3.10/site-packages/parasail/include \
+    -DPARASAIL_LIBRARY=$CONDA_PREFIX/lib/python3.10/site-packages/parasail/libparasail.dylib \
+    -DPNG_PNG_INCLUDE_DIR=$HOMEBREW_PREFIX/opt/libpng/include \
+    -DPNG_LIBRARY=$HOMEBREW_PREFIX/opt/libpng/lib/libpng.dylib \
+    -DSQLITE3_INCLUDE_DIR=$HOMEBREW_PREFIX/opt/sqlite/include  \
+    -DSQLITE3_LIBRARY=$HOMEBREW_PREFIX/opt/sqlite/lib/libsqlite3.dylib \
+    -DTIFF_INCLUDE_DIR=$HOMEBREW_PREFIX/opt/libtiff/include \
+    -DTIFF_LIBRARY=$HOMEBREW_PREFIX/opt/libtiff/lib/libtiff.dylib \
+    -DZLIB_INCLUDE_DIR=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include \
+    -DZLIB_LIBRARY=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libz.tbd \
+    -DCMAKE_CXX_FLAGS="-DBOOST_CORE_USE_GENERIC_CMATH -I$CONDA_PREFIX/include -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -std=c++14" \
+    -DCMAKE_EXE_LINKER_FLAGS="-L$CONDA_PREFIX/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lc++ -lc++abi" \
+    -DCMAKE_INSTALL_RPATH="$HOMEBREW_PREFIX/opt/fftw/lib:$HOMEBREW_PREFIX/opt/libpng/lib:$HOMEBREW_PREFIX/opt/sqlite/lib:$HOMEBREW_PREFIX/opt/libtiff/lib:$CONDA_PREFIX/lib/python3.10/site-packages/parasail:$CONDA_PREFIX/lib:$HOMEBREW_PREFIX/lib:$CONDA_PREFIX/lib:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib"

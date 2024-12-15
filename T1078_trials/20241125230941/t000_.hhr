@@ -1,0 +1,1607 @@
+Query         T1078 Tsp1, Trichoderma virens, 138 residues|
+Match_columns 138
+No_of_seqs    106 out of 428
+Neff          6.4369
+Searched_HMMs 153500
+Date          Tue Nov 26 00:01:00 2024
+Command       hhsearch -b 50 -B 500 -z 50 -Z 500 -mact 0.05 -cpu 12 -maxmem 12 -aliw 100000 -e 100 -p 5.0 -d /Users/ivanchang/scalebio/RoseTTAFold/pdb100_2021Mar03/pdb100_2021Mar03 -i /Users/ivanchang/scalebio/RoseTTAFold/T1078_trials/20241125230941/t000_.msa0.ss2.a3m -o /Users/ivanchang/scalebio/RoseTTAFold/T1078_trials/20241125230941/t000_.hhr -atab /Users/ivanchang/scalebio/RoseTTAFold/T1078_trials/20241125230941/t000_.atab -v 0 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 3v0r_A                          32.6   4E+02  0.0026   22.0   4.8  107    3-125     1-114 (130)
+  2 2d7n_A                          30.6 5.3E+02  0.0035   19.3   7.8   87   13-106     6-93  (93)
+  3 6g8y_A 1-92                     27.7 1.6E+02  0.0011   22.4   2.0   34   81-114     8-45  (92)
+  4 4aud_A                          20.4 7.2E+02  0.0047   20.4   4.2  102   12-124     1-107 (123)
+  5 2uzj_A                          19.6 2.8E+02  0.0018   24.9   2.1   80   22-113   146-243 (249)
+  6 4d8b_A                          19.5 2.9E+02  0.0019   24.9   2.2   63   40-112   174-246 (254)
+  7 2jtc_A                          19.3 2.9E+02  0.0019   24.8   2.2   63   39-111   173-245 (253)
+  8 3bba_A                          16.7 3.8E+02  0.0025   24.0   2.3   82   21-111   140-238 (246)
+  9 5myx_E mol:protein length:16    14.8 3.4E+02  0.0022   13.3   0.9   11   82-92      1-11  (12)
+ 10 5xmz_A mol:protein length:155   14.4 1.5E+03  0.0098   18.6   4.7  101   11-122     1-107 (122)
+ 11 1dki_C                          14.3 4.6E+02   0.003   24.8   2.2   77   21-107   239-335 (337)
+ 12 2dlg_A                          14.1 1.3E+03  0.0086   17.6   6.4   85    9-101    12-96  (102)
+ 13 2dmc_A                          13.7 1.4E+03  0.0092   17.7   6.4   88    3-99      6-108 (116)
+ 14 1pvj_A                          13.7 4.8E+02  0.0032   24.7   2.2   77   21-107   241-337 (339)
+ 15 3bb7_A                          13.0 5.7E+02  0.0037   23.9   2.4   80   20-121   212-313 (314)
+ 16 5ivx_P mol:protein length:10    12.6 3.5E+02  0.0023   12.6   0.6   10   83-92      1-10  (10)
+ 17 6b9k_A mol:protein length:10    12.6 3.5E+02  0.0023   12.6   0.6   10   83-92      1-10  (10)
+ 18 5ek5_A 1-118                    12.3 6.9E+02  0.0045   20.5   2.4   99   16-125     2-113 (118)
+ 19 5myo_E mol:protein length:10    12.2 2.5E+02  0.0016   13.1   0.1   10   82-91      1-10  (10)
+ 20 5wmm_B mol:protein length:87    10.7   8E+02  0.0052   18.0   2.1   40   81-122     3-43  (64)
+ 21 6ixx_I 1-97                     10.6 1.7E+03   0.011   16.9   6.0   84    1-119     2-93  (97)
+ 22 5u89_B mol:protein length:83    10.6 8.1E+02  0.0052   18.0   2.0   39   82-122     3-42  (64)
+ 23 5jx4_A mol:protein length:66    10.4 1.4E+03  0.0089   15.6   3.4   45   74-126     6-54  (65)
+ 24 2eeb_A                          10.2 1.8E+03   0.012   16.8   6.5   90    3-100     2-105 (106)
+ 25 2dmb_A                          10.1   2E+03   0.013   17.3   6.5   97    2-107     2-114 (124)
+ 26 4il7_A                          10.0 1.3E+03  0.0085   17.5   2.9   49   72-120     2-61  (85)
+ 27 2e9i_A                           9.9 1.9E+03   0.013   16.9   7.1   85   10-100     5-105 (106)
+ 28 5ja1_B mol:protein length:74     9.6 9.1E+02  0.0059   17.9   2.0   41   80-122     2-43  (66)
+ 29 2dj4_A                           9.5 1.9E+03   0.012   16.6   6.7   90    3-99      2-106 (108)
+ 30 6yw5_KK 1-124                    9.3 2.1E+03   0.014   17.7   4.1   46   72-127     5-87  (124)
+ 31 5myx_F mol:protein length:16     8.8 6.9E+02  0.0045   13.3   0.9   11   82-92      1-11  (16)
+ 32 3cnk_A                           8.8 1.9E+03   0.012   15.9   6.2   77   11-94     13-89  (89)
+ 33 7jil_p 1-117                     8.7 2.4E+03   0.016   17.3   4.2   47   66-120     3-49  (117)
+ 34 6o7k_q 1-117                     8.7 2.2E+03   0.014   17.6   3.9   40   67-114     3-47  (117)
+ 35 6v39_k 1-117                     8.7 2.3E+03   0.015   17.4   4.0   39   67-113     3-46  (117)
+ 36 6s13_k 1-114                     8.4 2.3E+03   0.015   17.3   3.9   50   68-128     2-51  (114)
+ 37 5jx4_B mol:protein length:66     8.4 1.7E+03   0.011   15.2   3.3   46   74-126     6-55  (66)
+ 38 5c0c_C mol:protein length:10     8.4 5.7E+02  0.0037   12.0   0.4   10   81-92      1-10  (10)
+ 39 5c0c_H mol:protein length:10     8.4 5.7E+02  0.0037   12.0   0.4   10   81-92      1-10  (10)
+ 40 5c0j_C mol:protein length:10     8.4 5.7E+02  0.0037   12.0   0.4    9   81-91      1-9   (10)
+ 41 3rgh_A                           8.3 2.1E+03   0.013   16.1   6.2   79   13-97      4-98  (98)
+ 42 2e9j_A                           8.2 2.3E+03   0.015   16.5   6.5   92    3-99      4-117 (119)
+ 43 7kwg_k 1-118                     8.2 2.3E+03   0.015   17.5   3.9   40   66-113     5-49  (118)
+ 44 6w6p_k 1-117                     8.1 2.4E+03   0.015   17.3   3.9   39   67-113     3-46  (117)
+ 45 2pst_X                           8.0   8E+02  0.0052   17.8   1.2   34   88-122     2-36  (61)
+ 46 6spc_k 1-115                     8.0 2.4E+03   0.016   17.2   3.9   45   68-120     3-47  (115)
+ 47 6xyw_Bj 1-123                    7.7 2.5E+03   0.016   17.3   3.9   45   71-123     4-83  (123)
+ 48 2d7p_A                           7.6 2.4E+03   0.016   16.4   7.2   91    3-101     2-106 (112)
+ 49 6uqd_A 1-247                     7.5 1.1E+03  0.0069   21.7   2.1   77   22-113   146-241 (247)
+ 50 5ddh_C mol:protein length:12     7.5 6.9E+02  0.0045   12.3   0.5   11   11-21      2-12  (12)
+ 51 3c6a_A                           7.4 2.3E+03   0.015   18.2   3.8   50   63-113    24-74  (198)
+ 52 2ee9_A                           7.3 2.5E+03   0.016   16.2   6.5   81   11-100    14-94  (95)
+ 53 5c0b_C mol:protein length:10     7.3 6.7E+02  0.0044   11.7   0.4   10   81-92      1-10  (10)
+ 54 5c0b_H mol:protein length:10     7.3 6.7E+02  0.0044   11.7   0.4   10   81-92      1-10  (10)
+ 55 5c0i_C mol:protein length:10     7.3 6.7E+02  0.0044   11.7   0.4   10   81-92      1-10  (10)
+ 56 6ea3_A 1-70                      7.3 1.3E+03  0.0082   17.3   2.0   39   82-122     3-41  (70)
+ 57 1dki_A                           7.0 8.7E+02  0.0057   22.7   1.4   74   21-108   211-302 (303)
+ 58 2myy_A                           7.0 1.4E+03  0.0088   17.7   2.1   40   81-122    11-51  (80)
+ 59 3k41_A                           6.9 1.4E+03  0.0092   18.1   2.3   24   22-45    120-143 (145)
+ 60 3v8o_A                           6.8 3.3E+03   0.022   17.2   6.2   80   12-95     97-193 (193)
+ 61 5c07_C mol:protein length:10     6.8 7.4E+02  0.0048   11.6   0.4    9   81-91      1-9   (10)
+ 62 5c07_H mol:protein length:10     6.8 7.4E+02  0.0048   11.6   0.4    9   81-91      1-9   (10)
+ 63 5c0e_C mol:protein length:10     6.8 7.4E+02  0.0048   11.6   0.4    9   81-91      1-9   (10)
+ 64 1keo_A                           6.8 1.4E+03  0.0093   18.6   2.3   27   19-45    109-150 (152)
+ 65 2n1h_A                           6.7 1.4E+03  0.0091   17.3   2.1   29   19-51     58-94  (94)
+ 66 1zps_A                           6.6 2.4E+03   0.016   18.0   3.4   45   76-125     8-57  (124)
+ 67 2lvx_A                           6.6 1.4E+03  0.0094   17.3   2.1   29   19-51     58-94  (94)
+ 68 2v5n_A                           6.5 1.7E+03   0.011   19.8   2.8   86   21-111    93-223 (271)
+ 69 2khr_A                           6.4 1.5E+03    0.01   17.1   2.1   41   81-123     7-48  (74)
+ 70 3hlu_A                           6.2 1.6E+03   0.011   16.0   2.1   33   64-100    22-54  (73)
+ 71 3aih_A                           6.1 1.5E+03  0.0099   17.5   2.0   27   21-51     71-110 (110)
+ 72 6svk_B 1-136                     6.1 3.8E+03   0.025   17.2   9.6   86   31-129    12-114 (136)
+ 73 6svk_A 1-135                     6.0 3.9E+03   0.025   17.2   9.6   84   33-129     2-113 (135)
+ 74 4mgx_A                           6.0 3.6E+03   0.023   16.7   5.1   76   12-91     89-181 (181)
+ 75 2lpd_A                           5.9 1.6E+03   0.011   18.0   2.1   40   81-122    18-58  (95)
+ 76 2n6g_A                           5.9 1.7E+03   0.011   17.2   2.1   40   81-122     8-48  (80)
+ 77 2dib_A                           5.9 3.2E+03   0.021   16.0   8.3   90    3-97      4-118 (128)
+ 78 6jsx_A 1-73                      5.8 2.8E+03   0.018   15.3   4.6   32   71-106    21-54  (73)
+ 79 5lxh_E mol:protein length:10     5.8 1.2E+03  0.0077   11.0   0.9   10   85-94      1-10  (10)
+ 80 5lxh_F mol:protein length:10     5.8 1.2E+03  0.0077   11.0   0.9   10   85-94      1-10  (10)
+ 81 5lxh_G mol:protein length:10     5.8 1.2E+03  0.0077   11.0   0.9   10   85-94      1-10  (10)
+ 82 5lxi_C mol:protein length:10     5.8 1.2E+03  0.0077   11.0   0.9   10   85-94      1-10  (10)
+ 83 6rw4_I 1-137                     5.7 3.5E+03   0.023   17.0   3.9   48   57-113    11-66  (137)
+ 84 2rl8_A 1-148                     5.6 1.8E+03   0.012   18.2   2.2   26   20-45    106-146 (148)
+ 85 2i5m_X                           5.5 2.6E+03   0.017   14.6   3.4   44   74-125     5-54  (66)
+ 86 2d7m_A                           5.4 3.3E+03   0.021   15.7   8.1   85   10-99      6-107 (115)
+ 87 1hza_A                           5.4 2.7E+03   0.017   14.6   3.5   44   74-125     5-54  (67)
+ 88 1hzc_A                           5.4 2.7E+03   0.017   14.6   3.5   44   74-125     5-54  (66)
+ 89 3sd2_A                           5.3 3.4E+03   0.022   15.8   3.3   43   72-122    18-60  (86)
+ 90 2k5n_A                           5.3   3E+03   0.019   15.0   3.4   47   74-128     6-56  (74)
+ 91 6svl_N 1-123                     5.2 4.2E+03   0.027   16.7   9.0   78   31-128     9-86  (123)
+ 92 2eed_A                           5.2 3.2E+03   0.021   15.4   6.4   81    9-94      5-101 (101)
+ 93 6jwj_C 1-19                      5.2 1.2E+03  0.0081   13.0   0.8   14   95-109     6-19  (19)
+ 94 6k73_D 1-326                     5.1 2.3E+03   0.015   21.0   2.9   87   16-123    94-207 (326)
+ 95 2m68_A                           5.1 1.8E+03   0.012   17.5   2.0   27   22-48    102-141 (142)
+ 96 1tqz_A                           5.1 3.5E+03   0.023   17.2   3.5   88    3-113    22-114 (133)
+ 97 1i5f_A                           5.1 2.8E+03   0.018   14.5   3.4   43   74-124     5-53  (66)
+ 98 2hc5_A                           5.0 4.1E+03   0.027   16.4   4.6   30   71-104    54-83  (117)
+ 99 6zj3_SO 1-135                    5.0 4.1E+03   0.027   16.5   3.9   52   70-129    12-103 (135)
+100 2i5l_X                           5.0 2.8E+03   0.019   14.5   3.5   43   74-124     5-53  (67)
+
+No 1
+>3v0r_A
+Probab=32.59  E-value=4e+02  Score=21.98  Aligned_cols=107  Identities=14%  Similarity=0.135  Sum_probs=53.5  Template_Neff=5.600
+
+Q ss_pred             CCCCCCcccccCCCceEEECCceecCCCCCeEEEEEEEeCCCC--CCcEEEEEEecCCCcccccCCCcccc---CEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccccC--CCCeeCCCcCCC
+Q T1078             3 APTPADKSMMAAVPEWTITNLKRVCNAGNTSCTWTFGVDTHLA--TATSCTYVVKANANASQASGGPVTCG---PYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQ--AGKVVSPNQSYA  125 (138)
+Q Consensus         3 apa~~~~~~~~~~~~WTi~~~~R~C~~~~~~C~y~F~I~~~~~--~~~~C~~~v~g~~~A~~~sf~~~~Cg---~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~--~g~~v~p~~~~~  125 (138)
+                      ||+|   ...+..+.|+|.+|.-.-..+...=..+|.|...++  ....|.-.....     ....-..|+   .|.-+. ....    .+   |.|...-....-+.|..+....  .|+.-.-|..-.
+T Consensus         1 ~~~~---~~~~~~e~i~Isdf~~rk~~g~~i~svsF~i~~~~~g~~~~~Csa~~~~~-----~~~~~y~Cg~~s~ysF~~-~~~~----~~---L~l~h~v~~~~~~~G~~~vp~yC~agG~G~~d~vC~  114 (130)
+T 3v0r_A            1 ASCP---VTTEGDYVWKISEFYGRKPEGTYYNSLGFNIKATNGGTLDFTCSAQADKL-----EDHKWYSCGENSFMDFSF-DSDR----SG---LLLKQKVSDDITYVATATLPNYCRAGGNGPKDFVCQ  114 (130)
+T ss_dssp             CCSS---SCCCCTTEEEEEEEEEEETTSSSCSEEEEEEEESSSCCCEEEEEEECSSC-----CTTCCEESSSSCSCEEEE-EGGG----TE---EEEEEECSSSCEEEEEEECCEEEEECSSSTTCEEEE
+T ss_pred             CCCC---ccCCCCeEEEEEEEEEEECCCCEEEEEEEEEEECCCCcceEEECCCCCCC-----CCCCeEECCCCCCcEEEE-ECCC----CE---EEEEEECCCCcceEeeEEECCcccCCCCCCCCCcee
+Confidence            2332   233667889999987755555467789999999763  347888753211     122456785   344333 1221    23   3333222233356666555432  111100010000
+
+
+No 2
+>2d7n_A
+Probab=30.62  E-value=5.3e+02  Score=19.34  Aligned_cols=87  Identities=7%  Similarity=0.028  Sum_probs=37.3  Template_Neff=7.600
+
+Q ss_pred             cCCCceEEECCceecCCCCCeEEEEEEEeCCCCCCcEEEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEEEEEEECCC-CEEEEEe
+Q T1078            13 AAVPEWTITNLKRVCNAGNTSCTWTFGVDTHLATATSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSK-KLIVWPA  106 (138)
+Q Consensus        13 ~~~~~WTi~~~~R~C~~~~~~C~y~F~I~~~~~~~~~C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~-~~~A~fg  106 (138)
+                      .....-+|.=   .....  .=.+.-.|....+....|.+...... .-..+|.+...+.|.|+.-|+++.=++.-|.+.. .+... ...||-|
+T Consensus         6 ~~~~pf~~~~---~~~ag--~g~l~v~v~~P~g~~~~~~v~d~~dg-ty~v~y~P~~~G~h~i~V~~~g~~I~gSPf~v~V-~~~~~~~v~a~g~   93 (93)
+T 2d7n_A            6 SGLRPFNLVI---PFAVQ--KGELTGEVRMPSGKTARPNITDNKDG-TITVRYAPTEKGLHQMGIKYDGNHIPGSPLQFYV-DAINSRHSGPSSG   93 (93)
+T ss_dssp             CCBCCEEEEE---CCCCS--SSCEEEEEECTTSCEECCEEEECSSS-CEEEEECCSSCEEEEEEEEESSSCCTTCSEEEEE-CBCCSCCCCCCCC
+T ss_pred             CCCEEEEEEE---eCCCC--CcEEEEEEEcCCCCEEEEEEEECCCC-EEEEEEEECCCEeEEEEEEECCEECcCCCEEEEE-EECCCCEEEEEEC
+Confidence            0000011110   00011  01122233333333345665554444 4455566677789999999998755556676543 32211 1111100
+
+
+No 3
+>6g8y_A 1-92
+Probab=27.72  E-value=1.6e+02  Score=22.41  Aligned_cols=34  Identities=18%  Similarity=0.178  Sum_probs=21.9  Template_Neff=6.100
+
+Q ss_pred             CcccCCCcEEEEEEEECCCCEEEEEec----cccccCC
+Q T1078            81 GQFGPNNGFTTFAVTDFSKKLIVWPAY----TDVQVQA  114 (138)
+Q Consensus        81 ~~fg~~~gF~v~tVvd~~~~~~A~fgy----~d~~l~~  114 (138)
+                      ..-++..||-||.|.....+...||-|    ++..|..
+T Consensus         8 ~~~~~~~G~hVLrV~~~~aGLepfFDfIVgin~~~l~~   45 (92)
+T 6g8y_A            8 EVLFQGPGLRIVWVDEMQFQLQSFFDYIVGFNDDPVPV   45 (92)
+T ss_dssp             HHHTSSSBCCCEECCTTTTTCCCCCEEEEEETTEECCE
+T ss_pred             EECCCCceEEEEEEcCChhCCccceEEEEEECCEEecC
+Confidence            001355799999999988899999877    2222210
+
+
+No 4
+>4aud_A
+Probab=20.43  E-value=7.2e+02  Score=20.39  Aligned_cols=102  Identities=13%  Similarity=0.148  Sum_probs=50.3  Template_Neff=5.700
+
+Q ss_pred             ccCCCceEEECCceecCCCCCeEEEEEEEeCCCC--CCcEEEEEEecCCCcccccCCCccccC-EEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccccC--CCCeeCCCcCC
+Q T1078            12 MAAVPEWTITNLKRVCNAGNTSCTWTFGVDTHLA--TATSCTYVVKANANASQASGGPVTCGP-YTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQ--AGKVVSPNQSY  124 (138)
+Q Consensus        12 ~~~~~~WTi~~~~R~C~~~~~~C~y~F~I~~~~~--~~~~C~~~v~g~~~A~~~sf~~~~Cg~-~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~--~g~~v~p~~~~  124 (138)
+                      .+..+.|+|.+|.-.-..+...=..+|.|...++  ....|.-.....     ....-..|++ =..++.++..   ..+   |.|...-....-+.|..+....  .|+.-.-|..-
+T Consensus         1 ~~~~e~~~Is~f~~rk~~g~~i~svsF~i~~~n~g~~~~~Csa~~~~~-----~~~~~y~Cg~~s~y~F~~~~~---~~~---L~l~h~v~~~~~~~G~~~vp~yC~agG~G~~d~vC  107 (123)
+T 4aud_A            1 TEGDYVWKISEFYGRKPEGTYYNSLGFNIKATNGGTLDFTCSAQADKM-----EDHKWYSCGENSFMNFSFGSD---RSG---LLLKQKVSDDITYVATATLPNYCRAGGNGPKDFVC  107 (123)
+T ss_dssp             CCCTTEEEEEEEEEEETTSSSCSEEEEEEECSSSCCCEEEEEEECSSC-----CSSCCEESSTTCCEEEEEETT---TTE---EEEEEECSSSCEEEEEEECCEEEEECSSSTTCEEE
+T ss_pred             CCCCcEEEEEEEEEEECCCCEEEEEEEEEEECCCCcceEEECCCCCCC-----CCCCeEECCCCCCcEEEEECC---CCE---EEEEEECCCCcceEeEEEECCcccCCCCCCCCCcE
+Confidence            1345689999987655555467889999999763  347888754211     1224567863 1233333331   122   3333322233355565555432  11110001000
+
+
+No 5
+>2uzj_A
+Probab=19.60  E-value=2.8e+02  Score=24.89  Aligned_cols=80  Identities=15%  Similarity=0.219  Sum_probs=25.3  Template_Neff=7.300
+
+Q ss_pred             CCceecCCCCC-eEEEE--EE-------EeCC--CCCCcEEEEEEecCCCcccccCCCccc------cCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccccC
+Q T1078            22 NLKRVCNAGNT-SCTWT--FG-------VDTH--LATATSCTYVVKANANASQASGGPVTC------GPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQ  113 (138)
+Q Consensus        22 ~~~R~C~~~~~-~C~y~--F~-------I~~~--~~~~~~C~~~v~g~~~A~~~sf~~~~C------g~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~  113 (138)
+                      -+.+.-.-+.. .+..+  |.       |..+  .+.+.-|.    |.   .......-.|      +-|+|+|||.+.   .+|+-.+.+.|+...-+  -||...+-.
+T Consensus       146 al~~~fgY~~~~~~~~r~~~~~~~w~~~i~~eL~~grPV~~~----G~---~~~~GHafViDGY~~~~~~HvNwGWgG~---~nGyy~~~~l~p~~~g~--gg~~~~q~~  243 (249)
+T 2uzj_A          146 ALKENFGYNQSVHQINRSDFSKQDWEAQIDKELSQNQPVYYQ----GV---GKVGGHAFVIDGADGRNFYHVNWGWGGV---SDGFFRLDALNPSALGA--GGFNGYQSA  243 (249)
+T ss_dssp             HHHHTTCCCTTCEEEEGGGSCHHHHHHHHHHHHHTTCCEEEE----EE---ETTEEEEEEEEEEESSSCEEEECSSTTT---TCEEEBTTBCCCGGGCC--CCSCEEEEE
+T ss_pred             HHHHHcCCCCCCcccccCcCCHHHHHHHHHHHHhcCCcEEEE----ec---CCCCCEEEEECCCcCCCcEEEecCCCCC---CCCEEEEcccccCCccc--cccchhhhE
+Confidence            00000000000 00000  00       0000  01122221    10   0011111122      358999999975   46777776666533111  022221100
+
+
+No 6
+>4d8b_A
+Probab=19.55  E-value=2.9e+02  Score=24.86  Aligned_cols=63  Identities=14%  Similarity=0.215  Sum_probs=22.7  Template_Neff=7.300
+
+Q ss_pred             EeCC--CCCCcEEEEEEecCCCcccccCCCccc------cCEEEEEEEcCcccCCCcEEEEEEEECCCCEEE--EEecccccc
+Q T1078            40 VDTH--LATATSCTYVVKANANASQASGGPVTC------GPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIV--WPAYTDVQV  112 (138)
+Q Consensus        40 I~~~--~~~~~~C~~~v~g~~~A~~~sf~~~~C------g~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A--~fgy~d~~l  112 (138)
+                      |..+  .+.+.-|.    |..   ......-.|      +-|+|+|||.+.   .+|+-.+.+.++...-+.  --+|...+-
+T Consensus       174 i~~eL~~grPVi~~----G~~---~~~GHafViDGY~~~~~~HvNwGWgG~---~nGyy~~~~l~p~~~g~g~~~~~f~~~q~  246 (254)
+T 4d8b_A          174 IDKELSQNQPVYYQ----GVG---KVGGHAFVIDGADGRNFYHVNWGWGGV---SDGFFRLDALNPSALGTGGGAGGFNGYQS  246 (254)
+T ss_dssp             HHHHHHTTCCEEEE----EEE---TTEEEEEEEEEEESSSCEEEECSSTTT---TCEEECTTCCCCSSCCTTCTTCCCCEEEE
+T ss_pred             HHHHHHCCCCEEEE----ecC---CCCCEEEEECCCcCCCcEEEecCCCCC---CCCEEEEeccccCCCcccCCCCcccccce
+Confidence            0000  01122221    100   011111122      358999999975   467766666654321100  001111000
+
+
+No 7
+>2jtc_A
+Probab=19.26  E-value=2.9e+02  Score=24.83  Aligned_cols=63  Identities=14%  Similarity=0.215  Sum_probs=22.6  Template_Neff=7.200
+
+Q ss_pred             EEeCC--CCCCcEEEEEEecCCCcccccCCCccc------cCEEEEEEEcCcccCCCcEEEEEEEECCCCEEE--EEeccccc
+Q T1078            39 GVDTH--LATATSCTYVVKANANASQASGGPVTC------GPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIV--WPAYTDVQ  111 (138)
+Q Consensus        39 ~I~~~--~~~~~~C~~~v~g~~~A~~~sf~~~~C------g~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A--~fgy~d~~  111 (138)
+                      .|..+  .+.+.-|.    |..   ......-.|      +-|+|+|||.+.   .+|+-.+.+.++...-+.  --+|...+
+T Consensus       173 ~i~~eL~~grPVi~~----G~~---~~~GHafViDGY~~~~~~HvNwGWgG~---~nGyy~~~~l~p~~~g~g~~~~~f~~~q  245 (253)
+T 2jtc_A          173 QIDKELSQNQPVYYQ----GVG---KVGGHAFVIDGADGRNFYHVNWGWGGV---SDGFFRLDALNPSALGTGGGAGGFNGYQ  245 (253)
+T ss_dssp             HHHHHHHTTCCEEEE----EEC---SSCEEEEEEEEEESSSCEEEECSSSSS---SCEECCSSCCSCSSCCCSSCCSCCCSSE
+T ss_pred             HHHHHHHcCCcEEEE----eeC---CCCCEEEEECCCcCCCcEEEecCCCCC---CCCEEEEecccCCCCCccCCCCcccccc
+Confidence            00000  01122221    111   111111222      358999999975   356666665554321100  00111100
+
+
+No 8
+>3bba_A
+Probab=16.72  E-value=3.8e+02  Score=24.01  Aligned_cols=82  Identities=13%  Similarity=0.184  Sum_probs=23.6  Template_Neff=7.400
+
+Q ss_pred             ECCceecCCCCCeEEEE-------E--EEeCC--CCCCcEEEEEEecCCCcccccCCCccc------cCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccc
+Q T1078            21 TNLKRVCNAGNTSCTWT-------F--GVDTH--LATATSCTYVVKANANASQASGGPVTC------GPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQ  111 (138)
+Q Consensus        21 ~~~~R~C~~~~~~C~y~-------F--~I~~~--~~~~~~C~~~v~g~~~A~~~sf~~~~C------g~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~  111 (138)
+                      +.+.+.-.-+...+...       +  .|..+  .+.+.-|.=......  .......-.|      +-|+|+|||.+.   .+|+-.+.+.|....    .+|+...
+T Consensus       140 ~~l~~~fgY~~~~~~~~~~y~~~~~~~~i~~eL~~grPVi~~G~~~~~~--~~~~GHa~ViDGy~~~~~~HvNwGWgG~---~nGyy~~~~~~~~~~----~~y~~~~  238 (246)
+T 3bba_A          140 AGLRTYFGFTDAEYITRANYTDEQWMDIVFSELTKGHPLIYGGVSPGSM--GQDAGHAFVIDGYNKAGLVSVNWGWNGD---VDGYYKIDLLNPGNM----YSFTAEQ  238 (246)
+T ss_dssp             HHHHHHHCCTTCEEEEGGGSCHHHHHHHHHHHHHTTCCEEEEEEECCSS--SCCEEEEEEEEEECTTSCEEEECSSTTT---TCEEECTTTCCGGGT----CCCCEEE
+T ss_pred             HHHHHHcCCCcCcccccCCCCHHHHHHHHHHHHHcCCCEEEEEecCCCC--CCcCCeEEEECCCcCCCCEEEecCCCCC---CCCEEEEeeeccCCC----CcCccCc
+Confidence            00111111111001000       0  00000  012222221100000  0011111222      359999999975   456655555443210    0111100
+
+
+No 9
+>5myx_E mol:protein length:16  Pyroglutamate-Abeta pE3-18
+Probab=14.80  E-value=3.4e+02  Score=13.34  Aligned_cols=11  Identities=27%  Similarity=0.673  Sum_probs=4.4  Template_Neff=1.200
+
+Q ss_pred             cccCCCcEEEE
+Q T1078            82 QFGPNNGFTTF   92 (138)
+Q Consensus        82 ~fg~~~gF~v~   92 (138)
+                      |||.+.||-|-
+T Consensus         1 qf~hdsg~ev~   11 (12)
+T 5myx_E            1 QFRHDSGYEVH   11 (12)
+T ss_dssp             CCCTTCSSCCC
+T ss_pred             CcccCCCcEEe
+Confidence            24444554320
+
+
+No 10
+>5xmz_A mol:protein length:155  Effector protein PevD1
+Probab=14.39  E-value=1.5e+03  Score=18.57  Aligned_cols=101  Identities=14%  Similarity=0.113  Sum_probs=48.8  Template_Neff=6.100
+
+Q ss_pred             cccCCCceEEECCceecCCCCCeEEEEEEEeCCCCCCcEEEEEEecCCCcccccCCCccccC--EEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccccC---CCC-eeCCCc
+Q T1078            11 MMAAVPEWTITNLKRVCNAGNTSCTWTFGVDTHLATATSCTYVVKANANASQASGGPVTCGP--YTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQ---AGK-VVSPNQ  122 (138)
+Q Consensus        11 ~~~~~~~WTi~~~~R~C~~~~~~C~y~F~I~~~~~~~~~C~~~v~g~~~A~~~sf~~~~Cg~--~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~---~g~-~v~p~~  122 (138)
+                      .+...+.++|.+|.-.-..++..=..+|.|...+.....|.- ..    +.-.+- -..|++  |+-+.  +..  ....|. |.|-........+-|..+....   +|. ...=.+
+T Consensus         1 ~~~~~E~v~Isdf~~rk~~~~~i~svsF~i~~~~~~~~~Csa-~~----~~~~~~-~y~Cg~s~ysF~~--~~~--~~~~y~-L~i~h~v~~~~~~~G~~~ip~~C~aGg~~d~vC~q  107 (122)
+T 5xmz_A            1 DPNMYENIDIADFNVRKGEDGTIKYVNFKLSGDDADGLLCEA-QN----PGLPSN-VITCGESKYRFAL--SSG--KQYEFA-LSLYHELGLAVGFYGTGEIFTHCRAGGLGDFICQQ  107 (122)
+T ss_dssp             CCSSEEEEEEEEEEEEECTTSCEEEEEEEEEETTEEEEEEEE-ES----CBTTBC-CEECTTSSEEEEE--EEC--SSSSEE-EEEEECCSSSSCEEEEEEECEEEEEEETTEEEEEE
+T ss_pred             CCCCCEEEEEEEEEEEeCCCCeEEEEEEEEEcCCCCccEeCC-CC----CcCCCC-cEECCCCCcEEEE--ecC--CCceEE-EEEEEECCCCcceEeEEEECCcccCCCCCCceEee
+Confidence            013456799999887666556788999999976434578886 31    111222 568863  33333  211  113444 3333332222244444444322   110 000000
+
+
+No 11
+>1dki_C
+Probab=14.29  E-value=4.6e+02  Score=24.77  Aligned_cols=77  Identities=14%  Similarity=0.160  Sum_probs=23.8  Template_Neff=7.200
+
+Q ss_pred             ECCceecCCCCCe-EEE--EEE-------EeCC--CCCCcEEEEEEecCCCcccccCCCccc------cCEEEEEEEcCcccCCCcEEEEEEEECCC--CEEEEEec
+Q T1078            21 TNLKRVCNAGNTS-CTW--TFG-------VDTH--LATATSCTYVVKANANASQASGGPVTC------GPYTITSSWSGQFGPNNGFTTFAVTDFSK--KLIVWPAY  107 (138)
+Q Consensus        21 ~~~~R~C~~~~~~-C~y--~F~-------I~~~--~~~~~~C~~~v~g~~~A~~~sf~~~~C------g~~~Vs~Gws~~fg~~~gF~v~tVvd~~~--~~~A~fgy  107 (138)
+                      +.+.+...-+... +..  .+.       |..+  .+.|.-|.-..       ......-.|      +-|+++|||.+.   .+|+-.+.+.++..  ...+-.|.
+T Consensus       239 ~~l~~~fGY~~~~~~~~r~~y~~~~~~~~i~~eL~~grPVi~~G~~-------~~~GHafV~DGY~~~~~~HvNwGWgG~---~nGyy~~~~l~p~~~~~q~~i~gi  335 (337)
+T 1dki_C          239 RALKENFGYNQSVHQINRGDFSKQDWEAQIDKELSQNQPVYYQGVG-------KVGGHAFVIDGADGRNFYHVNWGWGGV---SDGFFRLDALNPGFNGYQSAVVGI  335 (337)
+T ss_dssp             HHHHHTTCCCTTCEEEEGGGSCHHHHHHHHHHHHHTTCCEEEEEEE-------TTEEEEEEEEEEESSSCEEEECSSTTT---TCEEECSCCCCCCCCTTCEEEECC
+T ss_pred             HHHHHHcCCCCCCcccccCCCCHHHHHHHHHHHHhcCCcEEEEEec-------CCCCEEEEECCCcCCCcEEEecCCCCC---CCCEEEEeeecCCccchhheEEEe
+Confidence            0001111110000 000  000       0000  01222221110       011111122      369999999975   46777666665310  00000000
+
+
+No 12
+>2dlg_A
+Probab=14.13  E-value=1.3e+03  Score=17.57  Aligned_cols=85  Identities=14%  Similarity=0.101  Sum_probs=39.4  Template_Neff=7.900
+
+Q ss_pred             cccccCCCceEEECCceecCCCCCeEEEEEEEeCCCCCCcEEEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEEEEEEECCCCE
+Q T1078             9 KSMMAAVPEWTITNLKRVCNAGNTSCTWTFGVDTHLATATSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSKKL  101 (138)
+Q Consensus         9 ~~~~~~~~~WTi~~~~R~C~~~~~~C~y~F~I~~~~~~~~~C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~  101 (138)
+                      ..........+|.     +...+ .=.+.-.|....+....|.+...+.. .-..+|.+...+.|.|+.-|+++.=++.-|.+. |.+.....
+T Consensus        12 ~~~vg~~~~f~v~-----~~~ag-~~~l~v~v~~p~g~~~~~~v~~~~~g-~y~v~y~P~~~G~h~i~V~~~g~~I~gSPf~v~-V~~~~~~~   96 (102)
+T 2dlg_A           12 VATVGSICDLNLK-----IPEIN-SSDMSAHVTSPSGRVTEAEIVPMGKN-SHCVRFVPQEMGVHTVSVKYRGQHVTGSPFQFT-VGPLGEGG   96 (102)
+T ss_dssp             SBCSSSCBCCEEE-----CTTSC-GGGCEEEEECTTSCEEECEEEECSSS-EEEEEBCCCTTCEEEEEEESSSSBCSSCSEEEE-BCCCCCCC
+T ss_pred             cccCCCEEEEEEE-----eCCCC-CCEEEEEEEcCCCCEEEEEEEECCCC-EEEEEEEECCCccEEEEEEECCEECcCCCEEEE-EEECCCCC
+Confidence            0000111122332     11110 01122233333334456766655444 455567777778999999999875555667654 22211100
+
+
+No 13
+>2dmc_A
+Probab=13.75  E-value=1.4e+03  Score=17.71  Aligned_cols=88  Identities=11%  Similarity=0.082  Sum_probs=36.2  Template_Neff=8.300
+
+Q ss_pred             CCCCCCcccccCCCceEEECCce-ecCCCCCeEEEEEEEeCCC--------------CCCcEEEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEEEEEEECCC
+Q T1078             3 APTPADKSMMAAVPEWTITNLKR-VCNAGNTSCTWTFGVDTHL--------------ATATSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSK   99 (138)
+Q Consensus         3 apa~~~~~~~~~~~~WTi~~~~R-~C~~~~~~C~y~F~I~~~~--------------~~~~~C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~   99 (138)
+                      -+.+.++-.....+.    ...| .+.. +..|  .|.|+..+              +....|.+...+.. .-.-+|.+...+.|.|+.-|+++.=++.-|.+.. .+...
+T Consensus         6 ~~I~gSPf~~~v~~~----~~~~~~~~v-g~~~--~f~v~~~~ag~~~l~v~v~~p~g~~~~~~v~~~~~g-~y~v~y~P~~~G~h~v~V~~~g~~I~gSPf~v~V-~~~~~  108 (116)
+T 2dmc_A            6 SGIPGSPFTAKITDD----SRRCSQVKL-GSAA--DFLLDISETDLSSLTASIKAPSGRDEPCLLKRLPNN-HIGISFIPREVGEHLVSIKKNGNHVANSPVSIMV-VQSEI  108 (116)
+T ss_dssp             SCCCCCCSSCCCCCC----CCSSCCCCT-TSCE--EEECCCSCCCSTTBCCEEECTTSCBCCEEEEEETTT-EEEEEECCCSCEEEEEECBBSSSBCTTCSEEEEE-CCSSS
+T ss_pred             EEcCCCCEEEEEEeC----CccEecccC-CCEE--EEEEEECcCCCCeEEEEEEcCCCCEEEEEEEECCCC-EEEEEEEECCCcCEEEEEEECCEECcCCCEEEEE-EECCC
+Confidence            011110000000000    0000 1111 1223  34444432              12345666555444 4445666677788888888888755555666532 22100
+
+
+No 14
+>1pvj_A
+Probab=13.73  E-value=4.8e+02  Score=24.66  Aligned_cols=77  Identities=13%  Similarity=0.171  Sum_probs=24.3  Template_Neff=7.200
+
+Q ss_pred             ECCceecCCCCCe-EEE--EEE-------EeCC--CCCCcEEEEEEecCCCcccccCCCccc------cCEEEEEEEcCcccCCCcEEEEEEEECCC--CEEEEEec
+Q T1078            21 TNLKRVCNAGNTS-CTW--TFG-------VDTH--LATATSCTYVVKANANASQASGGPVTC------GPYTITSSWSGQFGPNNGFTTFAVTDFSK--KLIVWPAY  107 (138)
+Q Consensus        21 ~~~~R~C~~~~~~-C~y--~F~-------I~~~--~~~~~~C~~~v~g~~~A~~~sf~~~~C------g~~~Vs~Gws~~fg~~~gF~v~tVvd~~~--~~~A~fgy  107 (138)
+                      ..+.+...-+... +..  .+.       |..+  .+.|.-|.    +.   +......-.|      +-|+++|||.+.   .+|+-.+.+.++..  ...+-.|.
+T Consensus       241 ~~l~~~fgY~~~~~~~~r~~y~~~~~~~~i~~eL~~grPVi~~----G~---~~~~GHafV~DGY~~~~~~HvNwGWgG~---~nGyy~~~~l~p~~~~~q~~i~gi  337 (339)
+T 1pvj_A          241 RALKENFGYNQSVHQINRGDFSKQDWEAQIDKELSQNQPVYYQ----GV---GKVGGHAFVIDGADGRNFYHVNWGWGGV---SDGFFRLDALNPGFNGYQSAVVGI  337 (339)
+T ss_dssp             HHHHHTTCCCTTCEEEEGGGSCHHHHHHHHHHHHHTTCCEEEE----CE---ETTEECCEEEEEECSSSCEEEECSSTTT---TCEEECSCCCCCCCCTTCEEEECC
+T ss_pred             HHHHHHcCCCCCCcccccCCCCHHHHHHHHHHHHhcCCcEEEE----Ee---cCCCCEEEEECCCcCCCcEEEecCCCCC---CCCEEEEeeecCCccchhheEEEe
+Confidence            0001111110000 000  000       0000  01122221    11   0111122223      359999999975   46777766665310  01111110
+
+
+No 15
+>3bb7_A
+Probab=12.98  E-value=5.7e+02  Score=23.89  Aligned_cols=80  Identities=11%  Similarity=0.196  Sum_probs=24.1  Template_Neff=7.400
+
+Q ss_pred             EECCceecCCCCCeEEEEEEEeC--------------C--CCCCcEEEEEEecCCCcccccCCCccc------cCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccccCCCCeeCCC
+Q T1078            20 ITNLKRVCNAGNTSCTWTFGVDT--------------H--LATATSCTYVVKANANASQASGGPVTC------GPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQAGKVVSPN  121 (138)
+Q Consensus        20 i~~~~R~C~~~~~~C~y~F~I~~--------------~--~~~~~~C~~~v~g~~~A~~~sf~~~~C------g~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~~g~~v~p~  121 (138)
+                      ...+.+...-+..  .+   ++.              +  .+.+.-|.    +.    . ....-.|      +-|+++|||.+.   .+|+-.+.+.++..+    .+|....-. --.+.|+
+T Consensus       212 ~~~l~~~fgY~~~--~~---~~~~~y~~~~w~~~i~~eL~~grPV~~~----G~----~-~GHa~V~DGY~~~~~~HvNwGWgG~---~nGyy~~~~~~~~~~----~~~~~~~~~-i~~i~p~  313 (314)
+T 3bb7_A          212 AAGLRTYFGFTDA--EY---ITRANYTDEQWMDIVFSELTKGHPLIYG----GV----D-AGHAFVIDGYNKAGLVSVNWGWNGD---VDGYYKIDLLNPGNM----YSFTAEQDM-VRGVYGK  313 (314)
+T ss_dssp             HHHHHHHSCCTTC--EE---EEGGGSCHHHHHHHHHHHHHTTCCEEEE----EC----C-CCEEEEEEEECTTSCEEEECSSTTT---TCEEECCTTCCCCST----TSSTTCCEE-EECCSCC
+T ss_pred             HHHHHHhcCCCcC--ce---eccCCCCHHHHHHHHHHHHhcCCcEEEE----eC----C-CCeEEEECCCcCCCCEEEecCCCCC---CCCEEEEeeeccCCC----CcccccceE-EEEEEeC
+Confidence            0011111111111  10   110              0  01122211    10    0 1111222      368999999975   457666655553310    011110000 0000000
+
+
+No 16
+>5ivx_P mol:protein length:10  P18-I10
+Probab=12.59  E-value=3.5e+02  Score=12.59  Aligned_cols=10  Identities=40%  Similarity=0.757  Sum_probs=3.1  Template_Neff=1.000
+
+Q ss_pred             ccCCCcEEEE
+Q T1078            83 FGPNNGFTTF   92 (138)
+Q Consensus        83 fg~~~gF~v~   92 (138)
+                      -||+..|.++
+T Consensus         1 rgpgrafvti   10 (10)
+T 5ivx_P            1 RGPGRAFVTI   10 (10)
+T ss_dssp             CCCCCTTCCC
+T ss_pred             CCCceEEEEC
+Confidence            0333333321
+
+
+No 17
+>6b9k_A mol:protein length:10  ARG-GLY-PRO-GLY-ARG-ALA-PHE-VAL-THR-ILE
+Probab=12.59  E-value=3.5e+02  Score=12.59  Aligned_cols=10  Identities=40%  Similarity=0.757  Sum_probs=3.1  Template_Neff=1.000
+
+Q ss_pred             ccCCCcEEEE
+Q T1078            83 FGPNNGFTTF   92 (138)
+Q Consensus        83 fg~~~gF~v~   92 (138)
+                      -||+..|.++
+T Consensus         1 rgpgrafvti   10 (10)
+T 6b9k_A            1 RGPGRAFVTI   10 (10)
+T ss_dssp             CCSCCCCSCC
+T ss_pred             CCCceEEEEC
+Confidence            1333333321
+
+
+No 18
+>5ek5_A 1-118
+Probab=12.31  E-value=6.9e+02  Score=20.54  Aligned_cols=99  Identities=14%  Similarity=0.042  Sum_probs=31.5  Template_Neff=4.900
+
+Q ss_pred             CceEEECCceecCCCCCeEEEEEEEeCCCC-C---CcEEEEEEecCCCc-------ccccCCCccccCEEEEEEEcCcccCCC--cEEEEEEEECCCCEEEEEeccccccCCCCeeCCCcCCC
+Q T1078            16 PEWTITNLKRVCNAGNTSCTWTFGVDTHLA-T---ATSCTYVVKANANA-------SQASGGPVTCGPYTITSSWSGQFGPNN--GFTTFAVTDFSKKLIVWPAYTDVQVQAGKVVSPNQSYA  125 (138)
+Q Consensus        16 ~~WTi~~~~R~C~~~~~~C~y~F~I~~~~~-~---~~~C~~~v~g~~~A-------~~~sf~~~~Cg~~~Vs~Gws~~fg~~~--gF~v~tVvd~~~~~~A~fgy~d~~l~~g~~v~p~~~~~  125 (138)
+                      ..-+|+|..-.=. ....|.|.|.|+.+.. .   .-.-++..+-..+.       .-.+|+...-..+.-..-  +.+=...  -+.|+..+-..+|..        ++-....+.|+---+
+T Consensus         2 ~~i~i~~t~t~~~-~~g~Cs~~F~ld~g~~~e~~~nL~vtl~lkdk~G~~~~e~tl~v~pFG~ssa~r~~~~fl--E~~C~~~~~~~~V~~Ata~~nGk~--------dlLk~~~~~p~~f~p  113 (118)
+T 5ek5_A            2 RYISIRNTDTIWL-PGNICAYQFRLDNGGNDEGFGPLTITLQLKDKYGQTLVTRKMETEAFGDSNATRTTDAFL--ETECVENVATTEIIKATEESNGHR--------VSLPLSVFDPQDYHP  113 (118)
+T ss_dssp             CCEEEEEEEEEEE-TTTEEEEEEEEECTTCSCCBCCEEEEEEEECTTSCEEEEEEEECCCBSSSTTSSEEEEEE--EEECCTTCCEEEEEEEEEEETTEE--------EECCGGGEEECCSCC
+T ss_pred             eEEEEEECCCEEc-CCCeEEEEEEECCCCCCCceeEEEEEEEEEeCCCCEEEEEEEEEcCCCCCcccccccccc--CCccccCCCEEEEEEEEEEECCEE--------EECCccccCccccEE
+Confidence            0112333222222 2468999999999862 2   33333333321110       111222222222211111  1111011  133333332222211        111122222221000
+
+
+No 19
+>5myo_E mol:protein length:10  Amyloid beta A4 protein
+Probab=12.24  E-value=2.5e+02  Score=13.08  Aligned_cols=10  Identities=30%  Similarity=0.743  Sum_probs=4.0  Template_Neff=1.100
+
+Q ss_pred             cccCCCcEEE
+Q T1078            82 QFGPNNGFTT   91 (138)
+Q Consensus        82 ~fg~~~gF~v   91 (138)
+                      |||.+.||-|
+T Consensus         1 qf~hdsg~ev   10 (10)
+T 5myo_E            1 QFRHDSGYEV   10 (10)
+T ss_dssp             CCCTTTTCCC
+T ss_pred             CcccCCCccC
+Confidence            2444444421
+
+
+No 20
+>5wmm_B mol:protein length:87  MbtH homologue
+Probab=10.66  E-value=8e+02  Score=17.99  Aligned_cols=40  Identities=18%  Similarity=0.426  Sum_probs=22.0  Template_Neff=4.700
+
+Q ss_pred             CcccCCCcEEEEEEEECCCCEEEEEeccccccCCCCee-CCCc
+Q T1078            81 GQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQAGKVV-SPNQ  122 (138)
+Q Consensus        81 ~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~~g~~v-~p~~  122 (138)
+                      ..|- +..-.-++|+|.+++.-+|+.+.++-.. ...| +|..
+T Consensus         3 npfd-d~~~~~~VlvN~e~QySlWP~~~~vP~G-W~~v~~~~~   43 (64)
+T 5wmm_B            3 NPFD-DEDGEFYVLVNDEEQHSLWPTFGDVPDG-WRIVFGPAG   43 (64)
+T ss_dssp             CGGG-CSSSCEEEEECTTCCEEEEETTSCCCTT-CEEEEEEEC
+T ss_pred             CCcc-CCCCeEEEEEECCCCcccCCCCCcCCCC-CeeCCCCCC
+Confidence            0011 1233446688999999999999877542 2222 1100
+
+
+No 21
+>6ixx_I 1-97
+Probab=10.64  E-value=1.7e+03  Score=16.89  Aligned_cols=84  Identities=14%  Similarity=0.247  Sum_probs=38.1  Template_Neff=7.700
+
+Q ss_pred             CCCCCCCCcccccCCCceEEECCceecCCCCCeEEEEEEEeCCCCCCcEEEEEEecCCCcccccCCCccc-cCE--EEEEEEcCcccCCCcEEEEEEEECCCCEEEEEecccccc-----CCCCeeC
+Q T1078             1 MAAPTPADKSMMAAVPEWTITNLKRVCNAGNTSCTWTFGVDTHLATATSCTYVVKANANASQASGGPVTC-GPY--TITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQV-----QAGKVVS  119 (138)
+Q Consensus         1 ~aapa~~~~~~~~~~~~WTi~~~~R~C~~~~~~C~y~F~I~~~~~~~~~C~~~v~g~~~A~~~sf~~~~C-g~~--~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l-----~~g~~v~  119 (138)
+                      |-.|     +...-.+.|+|..-.    .                ....|.++....+ +   --....| ..+  .--.+|+-.     +-. |.+.|.+...+++|.=.....     .+|..+.
+T Consensus         2 l~lp-----~~~~laG~W~l~~~~----~----------------~~~~C~v~L~~~~-~---l~~~~~C~~~~l~~~v~~W~~~-----~~g-i~L~d~~G~~v~~f~~~~~g~~~g~~~~g~~~~   93 (97)
+T 6ixx_I            2 LMLL-----SPAQVAGSWTFYVQG----A----------------EQDACTVTLKKDR-T---FSAQVSCLQAWLGRTPTTWSPT-----PDG-LLLIGKDGSQSLFLELREAGRYEGSVEGSKTLV   93 (97)
+T ss_dssp             CCCC-----CHHHHCEEEEEEETT----C----------------TTSCEEEEECTTS-C---BCGGGGGGHHHHSSCCCEEEEE-----TTE-EEEECTTSSCEEEEEEEETTEEEEEETTTEEEE
+T ss_pred             eECC-----ChhHcCccEEEEeCC----C----------------CCCEEEEEECCCc-c---ccCCcccchhhccCCccceEEe-----CCE-EEEEeCCCCEEEEEEeCCCceEEEEEcCCcEEE
+Confidence            0011     122445677777321    1                1233444443322 1   1244667 344  233445543     112 788998888899987444321     1222110
+
+
+No 22
+>5u89_B mol:protein length:83  MbtH domain protein
+Probab=10.58  E-value=8.1e+02  Score=17.99  Aligned_cols=39  Identities=18%  Similarity=0.281  Sum_probs=22.4  Template_Neff=4.700
+
+Q ss_pred             cccCCCcEEEEEEEECCCCEEEEEeccccccCCCCee-CCCc
+Q T1078            82 QFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQAGKVV-SPNQ  122 (138)
+Q Consensus        82 ~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~~g~~v-~p~~  122 (138)
+                      .|- +..-.-++|+|.+++.-+|+.|.++-.. ...| +|..
+T Consensus         3 pfd-d~~~~~~VlvN~e~QySlWP~~~~vP~G-W~~v~~~~~   42 (64)
+T 5u89_B            3 PFE-NKEGTYLVLINDEGQYSLWPASIAIPPG-WNIAFAENT   42 (64)
+T ss_dssp             TTT-CSSSEEEEEECTTSCEEEEETTSCCCTT-CEEEEEEEE
+T ss_pred             CCc-CCCCEEEEEEECCCCcccCCCCCcCCCC-CeeCCCCCC
+Confidence            011 1234556789999999999999877542 2222 1100
+
+
+No 23
+>5jx4_A mol:protein length:66  Cold shock protein CspB
+Probab=10.40  E-value=1.4e+03  Score=15.55  Aligned_cols=45  Identities=18%  Similarity=0.284  Sum_probs=21.8  Template_Neff=8.600
+
+Q ss_pred             EEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccc----cCCCCeeCCCcCCCC
+Q T1078            74 TITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQ----VQAGKVVSPNQSYAP  126 (138)
+Q Consensus        74 ~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~----l~~g~~v~p~~~~~~  126 (138)
+                      +| --|+..    .||..++..|   +..+||-+++..    |..|..|.=+.....
+T Consensus         6 ~V-~~~~~~----~g~GfI~~~~---~~dvffh~s~~~~~~~l~~G~~V~F~~~~~~   54 (65)
+T 5jx4_A            6 KV-KWFNNE----KGYGFIEVEG---GSDVFVHFTAIQGFKTLEEGQEVSFEIVQGN   54 (65)
+T ss_dssp             EE-EEEETT----TTEEEEECTT---SCCEEEEGGGBCSSSCCCTTCEEEEEEEEET
+T ss_pred             EE-EEEECC----CCEEEEEECC---CcEEEEEEHHhCCcCCCCCCCEEEEEEEECC
+Confidence            11 124433    5777776654   788999998764    223333311110000
+
+
+No 24
+>2eeb_A
+Probab=10.25  E-value=1.8e+03  Score=16.82  Aligned_cols=90  Identities=14%  Similarity=0.126  Sum_probs=38.0  Template_Neff=8.400
+
+Q ss_pred             CCCCCCcccccCCCceEEECCce-ecCCCCCeEEEEEEEeCCC-------------CCCcEEEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEEEEEEECCCC
+Q T1078             3 APTPADKSMMAAVPEWTITNLKR-VCNAGNTSCTWTFGVDTHL-------------ATATSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSKK  100 (138)
+Q Consensus         3 apa~~~~~~~~~~~~WTi~~~~R-~C~~~~~~C~y~F~I~~~~-------------~~~~~C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~  100 (138)
+                      .|-.   ....+...-++.++.. .... +..+  .|.|+..+             +....|.+...+.. .-...|.....+.|.|+.-|+++.=++.-|.+. |.+..+.
+T Consensus         2 SPf~---~~~~d~~~~~~~G~~~~~~~v-g~~~--~F~v~~~~~~g~l~v~v~~p~g~~~~~~v~~~~~g-~y~v~y~P~~~G~~~i~V~~~g~~I~gSPf~v~-V~~~~~~  105 (106)
+T 2eeb_A            2 SSGS---SGSDDARRLTVMSLQESGLKV-NQPA--SFAIRLNGAKGKIDAKVHSPSGAVEECHVSELEPD-KYAVRFIPHENGVHTIDVKFNGSHVVGSPFKVR-VGEPGQA  105 (106)
+T ss_dssp             CSSC---CCSCCCSSEEEESCCSSCBCT-TSCE--EEEEEESSCCSCCEEEEECTTSCEEECEEEECCSS-EEEEEECCCCSSEEEEEEESSSSBCTTCSEEEE-BCCSCCC
+T ss_pred             CCcc---CCCCCCCEEEEEeCCCCCCCc-CCEE--EEEEEECCCCeEEEEEEEcCCCCEEEEEEEECCCC-EEEEEEEeCCCccEEEEEEECCEEccCCCEEEE-EEecCCC
+Confidence            0100   0112223344444321 1111 1223  33333322             22244555443333 344455566668899999998875555666653 2221100
+
+
+No 25
+>2dmb_A
+Probab=10.10  E-value=2e+03  Score=17.26  Aligned_cols=97  Identities=15%  Similarity=0.129  Sum_probs=37.2  Template_Neff=8.100
+
+Q ss_pred             CCCCCCCcccccCCCceEEEC--CceecCCCCCeEEEEEEEeCCCC--CCcE------------EEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEec
+Q T1078             2 AAPTPADKSMMAAVPEWTITN--LKRVCNAGNTSCTWTFGVDTHLA--TATS------------CTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAY  107 (138)
+Q Consensus         2 aapa~~~~~~~~~~~~WTi~~--~~R~C~~~~~~C~y~F~I~~~~~--~~~~------------C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy  107 (138)
+                      .+.+    ........=++.+  +.+....   .-...|.|+..+.  ....            |.+...... .-...|.....+.|.|+.-|+++.=++.-|.+...-........ -.|
+T Consensus         2 ~~~v----~~~~d~~k~~~~G~Gl~~~~~~---g~~~~F~V~~~~ag~~~l~v~v~~p~g~~~~~~v~d~~dG-~y~v~y~p~~~G~y~i~V~~~g~~I~gSPF~v~v~~~~~~~~~~-~~~  114 (124)
+T 2dmb_A            2 SSGS----SGTGDASKCLATGPGIASTVKT---GEEVGFVVDAKTAGKGKVTCTVLTPDGTEAEADVIENEDG-TYDIFYTAAKPGTYVIYVRFGGVDIPNSPFTVMATDGEVTAVEE-APV  114 (124)
+T ss_dssp             CCCS----CCCCCSTTCEEESGGGSSEEES---SSEEEEEEECSSSCSCCEEEEEECTTSCBCCCEEEECTTS-CEEEEEECSSCEEEEEEEEESSCBCTTCSEEEEEECCSCCCCCC-CCC
+T ss_pred             CCCc----CCCCCccEEEEEcCCCCCCccC---CCEEEEEEEEEECCCCeEEEEEEeCCCCEEEEEEEECCCC-EEEEEEEcCCCEeEEEEEEECCEEccCCCEEEEEEECCCCcccc-ccc
+Confidence            0000    0001111112221  2211111   1234666666541  1222            222222222 22333444455789999999987666666776543322111111 000
+
+
+No 26
+>4il7_A
+Probab=9.96  E-value=1.3e+03  Score=17.50  Aligned_cols=49  Identities=27%  Similarity=0.276  Sum_probs=18.5  Template_Neff=1.000
+
+Q ss_pred             CEEEEEEEcCc-----ccCCCcEEEEEEEECCCCEEEEEecccc------ccCCCCeeCC
+Q T1078            72 PYTITSSWSGQ-----FGPNNGFTTFAVTDFSKKLIVWPAYTDV------QVQAGKVVSP  120 (138)
+Q Consensus        72 ~~~Vs~Gws~~-----fg~~~gF~v~tVvd~~~~~~A~fgy~d~------~l~~g~~v~p  120 (138)
+                      +|-+-+|+-..     -=|.+|+.++++.|...+.+.-.-..-.      +|+.|..--|
+T Consensus         2 nyliysgfgtslpqtytipangyliisitntstgnigqitltigsttmtfnlqtgenkip   61 (85)
+T 4il7_A            2 NYLIYSGFGTSLPQTYTIPANGYLIISITNTSTGNIGQITLTIGSTTMTFNLQTGENKIP   61 (85)
+T ss_dssp             EEEEEEEEEEECSSCEECCSSEEEEEEEECSSCSEEEEEEEEETTEEEEEEEESEEEEEE
+T ss_pred             cEEEEEeecCCCCeEEEEcCCCEEEEEEEeCCCCcEEEEEEEEeeeEEEEEEcCCCcCcE
+Confidence            01111111000     0145789999999988877642211100      0111100000
+
+
+No 27
+>2e9i_A
+Probab=9.87  E-value=1.9e+03  Score=16.92  Aligned_cols=85  Identities=15%  Similarity=0.098  Sum_probs=36.1  Template_Neff=7.800
+
+Q ss_pred             ccccCCCceEEE--CCceecCCCCCeEEEEEEEeCCC--------------CCCcEEEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEEEEEEECCCC
+Q T1078            10 SMMAAVPEWTIT--NLKRVCNAGNTSCTWTFGVDTHL--------------ATATSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSKK  100 (138)
+Q Consensus        10 ~~~~~~~~WTi~--~~~R~C~~~~~~C~y~F~I~~~~--------------~~~~~C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~  100 (138)
+                      +.....+.|+..  .+.+..-  +..|.  |.|+..+              +....|.+...... .-..+|.+...+.|.|+.-|+++.=++.-|.+. |.+...+
+T Consensus         5 ~~~~~~e~i~~~~~~l~~~~v--g~~~~--f~v~~~~ag~~~l~v~V~~p~g~~~~~~v~d~~dg-~y~v~y~P~~~G~h~i~V~~~g~~I~gSPf~v~-V~~~~~~  105 (106)
+T 2e9i_A            5 SSGRVKESITRTSRAPSVATV--GSICD--LNLKIPEINSSDMSAHVTSPSGRVTEAEIVPMGKN-SHCVRFVPQEMGVHTVSVKYRGQHVTGSPFQFT-VGPLGEG  105 (106)
+T ss_dssp             SSCCCCSCCCCCCCCSSCEES--SSCEE--EEECCCSCCTTTEEEEEECTTSCBCCCEEEECCSS-CEEEEECCCCSSCEEEEEEESSCBCTTCSEEEC-EECCCCC
+T ss_pred             CCCcEEEEEEeccCCcceeeC--CCEEE--EEEEECCCCCCEEEEEEEcCCCCEEEEEEEECCCC-EEEEEEEECCCeeEEEEEEECCEEccCCCEEEE-EEecCCC
+Confidence            000111222221  1211111  12333  3333332              22334555444333 344456666668899999999875455556653 3322111
+
+
+No 28
+>5ja1_B mol:protein length:74  Enterobactin biosynthesis protein YbdZ
+Probab=9.58  E-value=9.1e+02  Score=17.87  Aligned_cols=41  Identities=15%  Similarity=0.329  Sum_probs=22.3  Template_Neff=4.600
+
+Q ss_pred             cCcccCCCcEEEEEEEECCCCEEEEEeccccccCCCCee-CCCc
+Q T1078            80 SGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQAGKVV-SPNQ  122 (138)
+Q Consensus        80 s~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~~g~~v-~p~~  122 (138)
+                      ...|- +..-.-++|+|.+++.-+|+.+.++-.. ...| +|..
+T Consensus         2 ~npfd-d~~~~f~VlvN~e~QySlWP~~~~vP~G-W~~v~~~~~   43 (66)
+T 5ja1_B            2 SNPFD-DPQGAFYILRNAQGQFSLWPQQCVLPAG-WDIVCQPQS   43 (66)
+T ss_dssp             CSGGG-CTTCCEEEEECTTSCEEEEETTSCCCTT-CEEEEEEEC
+T ss_pred             CCCcc-CCCCEEEEEEECCCCcccCCCCCCCCCC-CccCCCCCC
+Confidence            00111 1233456788999999999999877542 2222 1100
+
+
+No 29
+>2dj4_A
+Probab=9.46  E-value=1.9e+03  Score=16.61  Aligned_cols=90  Identities=18%  Similarity=0.167  Sum_probs=35.4  Template_Neff=8.700
+
+Q ss_pred             CCCCCCcccccCCCceEEEC--CceecCCCCCeEEEEEEEeCCCCCCcEEEEEEecCCC-------------cccccCCCccccCEEEEEEEcCcccCCCcEEEEEEEECCC
+Q T1078             3 APTPADKSMMAAVPEWTITN--LKRVCNAGNTSCTWTFGVDTHLATATSCTYVVKANAN-------------ASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSK   99 (138)
+Q Consensus         3 apa~~~~~~~~~~~~WTi~~--~~R~C~~~~~~C~y~F~I~~~~~~~~~C~~~v~g~~~-------------A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~   99 (138)
+                      .|=.   ........-++.+  +...+... ..+  .|.|+........-...+.+..+             .-...|....++.|.|+.-|+++.=++.-|.+. |.....
+T Consensus         2 sPf~---~~~~d~~~~~~~G~Gl~~~~~~g-~~~--~F~V~~~~ag~~~l~v~v~~p~g~~~~~~v~d~~dg~y~v~y~p~~~G~y~i~V~~~g~~I~gSPf~v~-v~~~~d  106 (108)
+T 2dj4_A            2 SSGS---SGVVDPSKVKIAGPGLGSGVRAR-VLQ--SFTVDSSKAGLAPLEVRVLGPRGLVEPVNVVDNGDGTHTVTYTPSQEGPYMVSVKYADEEIPRSPFKVK-VLPTYD  106 (108)
+T ss_dssp             CCCC---CCCCCTTSCEEESTTTSSCCBTT-SCE--EEEEECTTTCSCCEEEEEECSSSCEECCCCEECSSSEEEEEECCSSCEEEEEEEEESSSBCTTCSEEEE-EBCSSC
+T ss_pred             CCCC---CCCcCCCEEEEEcCCCCCCCcCC-CcE--EEEEEEEeCCCCeEEEEEEcCCCCEEEEEEEECCCCEEEEEEEcCCCEeEEEEEEECCEEcCCCCEEEE-EEecCC
+Confidence            0100   0111222333332  22112211 122  67777764211222222222110             222334445557888888888765555556654 221100
+
+
+No 30
+>6yw5_KK 1-124
+Probab=9.28  E-value=2.1e+03  Score=17.74  Aligned_cols=46  Identities=15%  Similarity=0.200  Sum_probs=12.5  Template_Neff=6.500
+
+Q ss_pred             CEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEE------------------------------------eccccccC-CCCeeCCCcCCCCC
+Q T1078            72 PYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWP------------------------------------AYTDVQVQ-AGKVVSPNQSYAPA  127 (138)
+Q Consensus        72 ~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~f------------------------------------gy~d~~l~-~g~~v~p~~~~~~~  127 (138)
+                      --.|...+|..        .++|+|...+.++|.                                    |....++. .|  .+|.......
+T Consensus         5 i~~I~at~NNT--------iit~Td~~G~~i~~~S~G~~gfkg~~k~t~~aA~~~a~~~~~~~~~~~~~~gi~~v~V~vkG--~G~GR~~air   87 (124)
+T 6yw5_KK           5 HFHIYSHKHNT--------HITVTKPNRDALISLSCGNLGFKKSNRKHYDSAYQLGAYVVDKMHQMNLHNKIKKMEVVLRG--FGPGREAVIK   87 (124)
+T ss_pred             EEEEEEEeCCE--------EEEEEcCCCCEEEEECCCCeeeCCCCCCCHHHHHHHHHHHHHHHHHHHHHcCCCEEEEEEEC--CCccHHHHHH
+Confidence            01122233322        455555544444332                                    22222221 11  0000000000
+
+
+No 31
+>5myx_F mol:protein length:16  Pyroglutamate-Abeta pE3-18
+Probab=8.78  E-value=6.9e+02  Score=13.31  Aligned_cols=11  Identities=27%  Similarity=0.673  Sum_probs=3.0  Template_Neff=1.100
+
+Q ss_pred             cccCCCcEEEE
+Q T1078            82 QFGPNNGFTTF   92 (138)
+Q Consensus        82 ~fg~~~gF~v~   92 (138)
+                      |||.+.||-|-
+T Consensus         1 qf~hdsg~ev~   11 (16)
+T 5myx_F            1 QFRHDSGYEVH   11 (16)
+T ss_dssp             CCCGGGSSCCS
+T ss_pred             CcccCCCcEEE
+Confidence            13333333210
+
+
+No 32
+>3cnk_A
+Probab=8.76  E-value=1.9e+03  Score=15.95  Aligned_cols=77  Identities=13%  Similarity=0.182  Sum_probs=32.1  Template_Neff=8.800
+
+Q ss_pred             cccCCCceEEECCceecCCCCCeEEEEEEEeCCCCCCcEEEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEEEEE
+Q T1078            11 MMAAVPEWTITNLKRVCNAGNTSCTWTFGVDTHLATATSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAV   94 (138)
+Q Consensus        11 ~~~~~~~WTi~~~~R~C~~~~~~C~y~F~I~~~~~~~~~C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tV   94 (138)
+                      ........+|.     +.+... =...-.|....+....+.+...... .-..++....++.|.|+.-|+++.=++.-|.+...
+T Consensus        13 ~~g~~~~F~I~-----~~~ag~-~~l~v~i~~p~~~~~~~~v~d~~dg-~y~v~y~p~~~G~y~i~V~~~g~~I~gSPf~v~v~   89 (89)
+T 3cnk_A           13 YVGQKSSFTVD-----CSKAGN-NMLLVGVHGPRTPCEEILVKHVGSR-LYSVSYLLKDKGEYTLVVKWGHEHIPGSPYRVVVP   89 (89)
+T ss_dssp             BTTBCEEEEEE-----CTTSCS-CCEEEEEECSSSCCSEEEEEEEETT-EEEEEEECCSCEEEEEEEEETTEECTTCSEEEEEC
+T ss_pred             cCCCCeEEEEE-----EEECCC-CeEEEEEEeCCCCeEEEEEEECCCC-EEEEEEEeCCCEEEEEEEEECCEEccCCCEEEEEC
+Confidence            00001111111     111100 0112223322222234555444433 34445556667888888888877555555655321
+
+
+No 33
+>7jil_p 1-117
+Probab=8.75  E-value=2.4e+03  Score=17.33  Aligned_cols=47  Identities=17%  Similarity=0.312  Sum_probs=21.9  Template_Neff=6.200
+
+Q ss_pred             CCccccCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccccCCCCeeCC
+Q T1078            66 GPVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQAGKVVSP  120 (138)
+Q Consensus        66 ~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~~g~~v~p  120 (138)
+                      ....-+--.|...+|..        .++|+|...+.++|..=-.....+.....|
+T Consensus         3 ~~~~~g~~~I~at~NNT--------iit~Td~~G~~i~~~S~G~~gfkg~kk~t~   49 (117)
+T 7jil_p            3 IVESTGEAHISSTFNNI--------IISLTNKKGEVIAWSSAGKMGFRGSKKNTP   49 (117)
+T ss_dssp             CCCSCEEEEEEECSSCE--------EEEEEETTSCEEEEEETTTTTCCSTTSSSH
+T ss_pred             EEEEeEEEEEEEEeCCE--------EEEEEeCCCCEEEEECCCCeeeCCCCCChH
+Confidence            00111234566666654        889999988888775321111111000000
+
+
+No 34
+>6o7k_q 1-117
+Probab=8.73  E-value=2.2e+03  Score=17.55  Aligned_cols=40  Identities=18%  Similarity=0.341  Sum_probs=22.4  Template_Neff=6.300
+
+Q ss_pred             CccccCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEe-----ccccccCC
+Q T1078            67 PVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPA-----YTDVQVQA  114 (138)
+Q Consensus        67 ~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fg-----y~d~~l~~  114 (138)
+                      ...-+--+|...+|..        .++|+|...+.++|..     |....-..
+T Consensus         3 ~~~~gi~hI~at~NNT--------iitvTd~~G~~~~~~S~G~~gfkg~~k~t   47 (117)
+T 6o7k_q            3 QVSDGVAHIHASFNNT--------IVTITDRQGNALGWATAGGSGFRGSRKST   47 (117)
+T ss_dssp             CCSBCCEEEEEETTEE--------EEEEECTTSCEEEEEEHHHHSCCSGGGGS
+T ss_pred             ccccEEEEEEEecCCE--------EEEEEcCCCCEEEEECCCCeeeCCCCcCh
+Confidence            0111234566666654        8999999888888853     33221100
+
+
+No 35
+>6v39_k 1-117
+Probab=8.71  E-value=2.3e+03  Score=17.43  Aligned_cols=39  Identities=18%  Similarity=0.378  Sum_probs=21.1  Template_Neff=6.300
+
+Q ss_pred             CccccCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEe-----ccccccC
+Q T1078            67 PVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPA-----YTDVQVQ  113 (138)
+Q Consensus        67 ~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fg-----y~d~~l~  113 (138)
+                      ...-+--+|...+|..        .++|+|...+.++|..     |....-.
+T Consensus         3 ~~~~gi~hI~as~NNT--------iit~Td~~G~~~~~~S~G~~gfKg~~k~   46 (117)
+T 6v39_k            3 TVSEGVAHIHASFNNT--------IVTITDRQGNALAWATSGGQGFRGSRKS   46 (117)
+T ss_dssp             CCCCCEEEEEECSSCE--------EEEEECSSCCEEEEEEHHHHTCCSGGGG
+T ss_pred             EeeeEEEEEEEEcCCE--------EEEEEeCCCCEEEEECCCCeeeCCCCcC
+Confidence            0011223455666654        8999999888888853     3221100
+
+
+No 36
+>6s13_k 1-114
+Probab=8.42  E-value=2.3e+03  Score=17.33  Aligned_cols=50  Identities=14%  Similarity=0.269  Sum_probs=18.7  Template_Neff=6.400
+
+Q ss_pred             ccccCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccccCCCCeeCCCcCCCCCC
+Q T1078            68 VTCGPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQAGKVVSPNQSYAPAN  128 (138)
+Q Consensus        68 ~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~~g~~v~p~~~~~~~~  128 (138)
+                      ..-+--+|...+|..        .++|+|...+.++|-.=-.....+   ......|+...
+T Consensus         2 ~~~gi~hI~at~NNT--------iit~Td~~G~~i~~~S~G~~gfkg---~~k~t~~Aa~~   51 (114)
+T 6s13_k            2 IENGVAHIRSTFNNT--------IVTITDEFGNALSWSSAGALGFKG---SKKSTPFAAQM   51 (114)
+T ss_dssp             CSCCEEEEECCSSCC--------EEEEECSSSCCCBCCCTTTSSCCS---SSCCSGGGSSS
+T ss_pred             cccEEEEEEEecCCE--------EEEEEcCCCCEEEEECCCCeeeCC---CCCChHHHHHH
+Confidence            000123345555544        788999877766553211100000   00111111100
+
+
+No 37
+>5jx4_B mol:protein length:66  Cold shock protein CspB
+Probab=8.40  E-value=1.7e+03  Score=15.18  Aligned_cols=46  Identities=17%  Similarity=0.231  Sum_probs=21.8  Template_Neff=8.600
+
+Q ss_pred             EEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccc----cCCCCeeCCCcCCCC
+Q T1078            74 TITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQ----VQAGKVVSPNQSYAP  126 (138)
+Q Consensus        74 ~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~----l~~g~~v~p~~~~~~  126 (138)
+                      -.---|+..    .||..+...|   +..+||-+++..    |..|..|.=+.....
+T Consensus         6 G~V~~~~~~----~g~GfI~~~~---~~~vffh~s~~~~~~~l~~G~~V~F~~~~~~   55 (66)
+T 5jx4_B            6 GKVKWFNNE----KGYGFIEVEG---GSDVFVHFTAIQGFKTLEEGQEVSFEIVQGN   55 (66)
+T ss_dssp             EEEEEEETT----TTEEEEECTT---SCCEEEEGGGBCSSSCCCTTCEEEEEEEEET
+T ss_pred             EEEEEEECC----CCEEEEEECC---CCEEEEEeHHhCCcCCCCCCCEEEEEEEECC
+Confidence            011124433    5777776654   788999988865    223333311110000
+
+
+No 38
+>5c0c_C mol:protein length:10  Marker peptide
+Probab=8.39  E-value=5.7e+02  Score=11.97  Aligned_cols=10  Identities=40%  Similarity=0.860  Sum_probs=3.0  Template_Neff=1.000
+
+Q ss_pred             CcccCCCcEEEE
+Q T1078            81 GQFGPNNGFTTF   92 (138)
+Q Consensus        81 ~~fg~~~gF~v~   92 (138)
+                      .||||+  ++|.
+T Consensus         1 rqfgpd--wiva   10 (10)
+T 5c0c_C            1 RQFGPD--WIVA   10 (10)
+T ss_dssp             CCCCSC--CCCC
+T ss_pred             CccCCc--eEEC
+Confidence            135542  2110
+
+
+No 39
+>5c0c_H mol:protein length:10  Marker peptide
+Probab=8.39  E-value=5.7e+02  Score=11.97  Aligned_cols=10  Identities=40%  Similarity=0.860  Sum_probs=3.0  Template_Neff=1.000
+
+Q ss_pred             CcccCCCcEEEE
+Q T1078            81 GQFGPNNGFTTF   92 (138)
+Q Consensus        81 ~~fg~~~gF~v~   92 (138)
+                      .||||+  ++|.
+T Consensus         1 rqfgpd--wiva   10 (10)
+T 5c0c_H            1 RQFGPD--WIVA   10 (10)
+T ss_dssp             CCCCSC--CCCC
+T ss_pred             CccCCc--eEEC
+Confidence            135542  2110
+
+
+No 40
+>5c0j_C mol:protein length:10  Marker peptide
+Probab=8.39  E-value=5.7e+02  Score=11.97  Aligned_cols=9  Identities=44%  Similarity=1.040  Sum_probs=3.0  Template_Neff=1.000
+
+Q ss_pred             CcccCCCcEEE
+Q T1078            81 GQFGPNNGFTT   91 (138)
+Q Consensus        81 ~~fg~~~gF~v   91 (138)
+                      .||||+  ++|
+T Consensus         1 rqfgpd--wiv    9 (10)
+T 5c0j_C            1 RQFGPD--WIV    9 (10)
+T ss_dssp             CCCCSC--CCC
+T ss_pred             CccCCc--eEE
+Confidence            135542  211
+
+
+No 41
+>3rgh_A
+Probab=8.26  E-value=2.1e+03  Score=16.10  Aligned_cols=79  Identities=19%  Similarity=0.150  Sum_probs=33.8  Template_Neff=8.700
+
+Q ss_pred             cCCCceEEE--CCceecCCCCCeEEEEEEEeCCC--------------CCCcEEEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEEEEEEEC
+Q T1078            13 AAVPEWTIT--NLKRVCNAGNTSCTWTFGVDTHL--------------ATATSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAVTDF   97 (138)
+Q Consensus        13 ~~~~~WTi~--~~~R~C~~~~~~C~y~F~I~~~~--------------~~~~~C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~   97 (138)
+                      .....-++.  ++.+....    -.-.|.|+..+              +....+.+...+.. .-...|....++.|.|+.-|+++.=++.-|.+. |.+.
+T Consensus         4 ~d~~~~~~~G~Gl~~~~~g----~~~~F~v~~~~ag~~~l~v~i~~p~~~~~~~~v~d~~dg-~y~v~y~p~~~G~y~i~V~~~g~~I~gSPf~v~-v~~~   98 (98)
+T 3rgh_A            4 FDASKVKCSGPGLERATAG----EVGQFQVDCSSAGSAELTIEICSEAGLPAEVYIQDHGDG-THTITYIPLCPGAYTVTIKYGGQPVPNFPSKLQ-VEPA   98 (98)
+T ss_dssp             CCGGGCEEESGGGTEEETT----SCEEEEEECTTSCSCCEEEEEECTTSCBCEEEEEECSSS-EEEEEEECCSSEEEEEEEEETTEECTTCSEEEE-EECC
+T ss_pred             cCCcEEEEECCCcccCcCC----CCEEEEEEEEECCCCeEEEEEEeCCCCEEEEEEEECCCC-EEEEEEEcCCCEeEEEEEEECCEEccCCCEEEE-EEeC
+Confidence            000011111  11111111    11344444432              22234444443333 333445556678888888888775555566654 2210
+
+
+No 42
+>2e9j_A
+Probab=8.24  E-value=2.3e+03  Score=16.53  Aligned_cols=92  Identities=14%  Similarity=0.112  Sum_probs=39.5  Template_Neff=8.800
+
+Q ss_pred             CCCCCC-----cccccCCCceEEEC--Cce-ecCCCCCeEEEEEEEeCCCC--------------CCcEEEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEEEEEEECCC
+Q T1078             3 APTPAD-----KSMMAAVPEWTITN--LKR-VCNAGNTSCTWTFGVDTHLA--------------TATSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSK   99 (138)
+Q Consensus         3 apa~~~-----~~~~~~~~~WTi~~--~~R-~C~~~~~~C~y~F~I~~~~~--------------~~~~C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~   99 (138)
+                      .+.+.+     .........-++.+  +.. .+... ..+  .|.|+..+.              ....|.+...... .-...|....++.|.|+.-|+++.=++.-|.+. |.+...
+T Consensus         4 ~~i~gSPf~~~V~~~~d~~~~~~~G~Gl~~~~~~~g-~~~--~F~I~~~~ag~~~l~v~v~~p~g~~~~~~v~d~~dg-~y~v~y~p~~~G~y~i~V~~~g~~I~gSPf~v~-v~~~~~  117 (119)
+T 2e9j_A            4 GSSGRSPFKVKVLPTYDASKVTASGPGLSSYGVPAS-LPV--DFAIDARDAGEGLLAVQITDQEGKPKRAIVHDNKDG-TYAVTYIPDKTGRYMIGVTYGGDDIPLSPYRIR-ATQTGD  117 (119)
+T ss_dssp             CCCCCCSSCCCCCCSCCGGGEEEESGGGCSSCEETT-SCE--EEEEEESSCCCCCEECCEECTTCCCCCEEEEECCSS-EEEEEECCCSCSEEEECCEESSCBCTTCSEEEE-EECCCC
+T ss_pred             eECCCCCEEEEEeeCCCCCEEEEEcCCEecCCCccC-CeE--EEEEEEEECCCCeEEEEEEcCCCCEEEEEEEECCCC-EEEEEEEcCCCEeEEEEEEECCEEccCCCEEEE-EEeCCC
+Confidence            011110     00112223344442  220 11111 122  666665431              1234444433333 344456666678888888888775555567654 332110
+
+
+No 43
+>7kwg_k 1-118
+Probab=8.23  E-value=2.3e+03  Score=17.45  Aligned_cols=40  Identities=15%  Similarity=0.317  Sum_probs=21.0  Template_Neff=6.300
+
+Q ss_pred             CCccccCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEe-----ccccccC
+Q T1078            66 GPVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPA-----YTDVQVQ  113 (138)
+Q Consensus        66 ~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fg-----y~d~~l~  113 (138)
+                      ....-+--.|...+|..        .++|+|...+.++|..     |....-.
+T Consensus         5 ~~~~~gi~~I~at~NNT--------iit~Td~~G~~i~~~S~G~~gfkg~~k~   49 (118)
+T 7kwg_k            5 KNIENGVAHIRSTFNNT--------IVTITDEFGNALSWSSAGALGFKGSKKS   49 (118)
+T ss_dssp             CCCSEEEEEEEECSSCE--------EEEEECTTSCEEEEECSSSSSCCGGGSS
+T ss_pred             CceeeEEEEEEEecCCE--------EEEEEcCCCCEEEEECCCCeeeCCCCcC
+Confidence            00111234456666654        8999999888887752     2221110
+
+
+No 44
+>6w6p_k 1-117
+Probab=8.10  E-value=2.4e+03  Score=17.30  Aligned_cols=39  Identities=15%  Similarity=0.385  Sum_probs=20.2  Template_Neff=6.400
+
+Q ss_pred             CccccCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEe-----ccccccC
+Q T1078            67 PVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPA-----YTDVQVQ  113 (138)
+Q Consensus        67 ~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fg-----y~d~~l~  113 (138)
+                      ...-+--+|...+|..        .++|+|...+.++|..     |....-.
+T Consensus         3 ~~~~gi~~I~at~NNT--------iit~Td~~G~~i~~~S~G~~gfkg~~k~   46 (117)
+T 6w6p_k            3 NIESGVAHIHSTFNNT--------IVMITDTHGNALAWSSAGSLGFKGSKKS   46 (117)
+T ss_dssp             TCCBCEEEEECCSSCC--------EEEEECSSSCEEEEEEGGGGTCCGGGGG
+T ss_pred             ceeeEEEEEEEecCCE--------EEEEEcCCCCEEEEECCCCeeeCCCCCC
+Confidence            0011223455555554        8899999888887743     3222110
+
+
+No 45
+>2pst_X
+Probab=7.99  E-value=8e+02  Score=17.78  Aligned_cols=34  Identities=12%  Similarity=0.368  Sum_probs=20.4  Template_Neff=4.900
+
+Q ss_pred             cEEEEEEEECCCCEEEEEeccccccCCCCeeC-CCc
+Q T1078            88 GFTTFAVTDFSKKLIVWPAYTDVQVQAGKVVS-PNQ  122 (138)
+Q Consensus        88 gF~v~tVvd~~~~~~A~fgy~d~~l~~g~~v~-p~~  122 (138)
+                      +-.-+.|+|.+++.-+||.+.+.-.. ..+|. +..
+T Consensus         2 ~~~f~VlvN~e~QySLWP~~~~vP~G-W~~v~~~~~   36 (61)
+T 2pst_X            2 DIQFQVVVNHEEQYSIWPEYKEIPQG-WRAAGKSGL   36 (61)
+T ss_dssp             CSCEEEEEETTCCEEEEETTSCCCTT-EEEEEEEEC
+T ss_pred             CceEEEEEECCCCcccCCCCCCCCCC-CeeCCCCCC
+Confidence            11235688999999999999887442 22222 000
+
+
+No 46
+>6spc_k 1-115
+Probab=7.99  E-value=2.4e+03  Score=17.22  Aligned_cols=45  Identities=18%  Similarity=0.321  Sum_probs=19.5  Template_Neff=6.300
+
+Q ss_pred             ccccCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccccCCCCeeCC
+Q T1078            68 VTCGPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQAGKVVSP  120 (138)
+Q Consensus        68 ~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~~g~~v~p  120 (138)
+                      ..-+--+|...+|..        .++|+|...+.++|-.=-.....+.....|
+T Consensus         3 ~~~gi~hI~at~NNT--------iit~Td~~G~~~~~~S~G~~gfkg~~k~t~   47 (115)
+T 6spc_k            3 VVDGIAHIHASFNNT--------IVTITDRQGNALSWATSGGSGFRGSRKSTP   47 (115)
+T ss_dssp             EEEEEEEEECCSSCC--------EEEEECTTCCEEEEEESSTTTCCSSSCCSH
+T ss_pred             eEEEEEEEEEEcCCE--------EEEEEcCCCCEEEEeCCCCeeECCCCcCHH
+Confidence            000122344455544        889999988888875311110000000000
+
+
+No 47
+>6xyw_Bj 1-123
+Probab=7.66  E-value=2.5e+03  Score=17.26  Aligned_cols=45  Identities=16%  Similarity=0.060  Sum_probs=12.9  Template_Neff=6.600
+
+Q ss_pred             cCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEE---------------------------------EeccccccC-CCCee-CCCcC
+Q T1078            71 GPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVW---------------------------------PAYTDVQVQ-AGKVV-SPNQS  123 (138)
+Q Consensus        71 g~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~---------------------------------fgy~d~~l~-~g~~v-~p~~~  123 (138)
+                      +--+|...+|..        +++|+|...+.++|                                 .|+...++. .|--- ++...
+T Consensus         4 ~i~~I~~t~NNT--------iitlTd~~G~~i~~~S~G~~~gfkg~~k~t~~Aa~~~a~~~~~~~~~~gi~~v~v~vkG~G~~G~r~~   83 (123)
+T 6xyw_Bj           4 DIIHIKMLRNNT--------FVTVTDSKGNVKCKATSGSLPDLKGGRKMTNYTADATAENIGRRAKAMGLKSVVVKVNGFTHFGKKKK   83 (123)
+T ss_pred             CEEEEEEecCCE--------EEEEEcCCCCEEEEECCCCcCCcCCCCCChHHHHHHHHHHHHHHHHHcCCCEEEEEEEeCCCCCcHHH
+Confidence            001122233322        44555544444444                                 233333222 11000 00000
+
+
+No 48
+>2d7p_A
+Probab=7.62  E-value=2.4e+03  Score=16.41  Aligned_cols=91  Identities=18%  Similarity=0.147  Sum_probs=34.5  Template_Neff=8.200
+
+Q ss_pred             CCCCCCcccccCCCceEEECCce-ecCCCCCeEEEEEEEeCCC-------------CCCcEEEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEEEEEEECCCCE
+Q T1078             3 APTPADKSMMAAVPEWTITNLKR-VCNAGNTSCTWTFGVDTHL-------------ATATSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSKKL  101 (138)
+Q Consensus         3 apa~~~~~~~~~~~~WTi~~~~R-~C~~~~~~C~y~F~I~~~~-------------~~~~~C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~  101 (138)
+                      .|-.   ....+...-++.++.. .+.. +..  -.|.|+..+             +....|.+...... .-...|.+..-+.|.|+.-|+++.=++.-|.+. |.+.....
+T Consensus         2 SPf~---~~~~d~~~~~~~G~~~~~~~v-g~~--~~F~V~~~~~~g~l~v~v~~p~g~~~~~~v~~~~~g-~y~v~y~P~~~G~y~i~V~~~g~~I~gSPF~v~-V~~~~~~~  106 (112)
+T 2d7p_A            2 SSGS---SGSDDARRLTVTSLQETGLKV-NQP--ASFAVQLNGARGVIDARVHTPSGAVEECYVSELDSD-KHTIRFIPHENGVHSIDVKFNGAHIPGSPFKIR-VGEQSQAG  106 (112)
+T ss_dssp             CSSC---CCSCGGGGCEECSSCSBCCCT-TCC--EEEEEECTTCCSCEEEEEECSSSCBCCCEECSCBTT-EEEEEECCSSCEEEEEEEEESSCBCTTCSEEEE-ECCCCCCC
+T ss_pred             CCcc---CCCCCCCEEEEEcCCCCCccc-CCE--EEEEEEeCCCCcEEEEEEEcCCCCEEEEEEEECCCC-EEEEEEEECCCccEEEEEEECCEECcCCCEEEE-EEECCCCC
+Confidence            0100   0001112222333211 1111 112  234444433             12233333322222 223334445557888999998875555667654 33221100
+
+
+No 49
+>6uqd_A 1-247
+Probab=7.54  E-value=1.1e+03  Score=21.72  Aligned_cols=77  Identities=16%  Similarity=0.201  Sum_probs=25.1  Template_Neff=6.600
+
+Q ss_pred             CCceecCCCCCeEEEEE-----------EEeCC--CCCCcEEEEEEecCCCcccccCCCccc------cCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccccC
+Q T1078            22 NLKRVCNAGNTSCTWTF-----------GVDTH--LATATSCTYVVKANANASQASGGPVTC------GPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQ  113 (138)
+Q Consensus        22 ~~~R~C~~~~~~C~y~F-----------~I~~~--~~~~~~C~~~v~g~~~A~~~sf~~~~C------g~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~  113 (138)
+                      -+.+.-.-+. ...+..           .|..+  .+.+.-|.  -...     .......|      +-|+++|||.+.   .+|+-.+.+.++...    -+|+..+-.
+T Consensus       146 aL~~~FgY~~-~~~~~~r~~y~~~~w~~~i~~eL~~grPVi~~--G~~~-----~~GHa~V~DGY~~~~~~h~N~GWgg~---~nGyy~l~~l~p~~~----~~f~~~q~~  241 (247)
+T 6uqd_A          146 ALKENFGYNQ-SVHQINRSDFSKQDWEAQIDKELSQNQPVYYQ--GVGK-----VGGHAFVIDGADGRNFYHVNWGWGGV---SDGFFRLDALNPSAL----GGFNGYQSA  241 (247)
+T ss_dssp             HHHHTTCCCT-TCEEEEGGGSCHHHHHHHHHHHHHTTCCEEEE--EEET-----TEEEEEEEEEEESSSCEEEECSSTTT---TCEEECTTCCCCTTT----CCCCEEEEE
+T ss_pred             HHHHhcCcCC-CCcccccCCCCHHHHHHHHHHHHHCCCcEEEE--EeCC-----CCcEEEEEEecCCCCeEEEecCCCCC---CCceEEEccccCCCC----CccchhheE
+Confidence            0000000000 011000           01000  01122221  1110     11111222      358999999975   356666666665331    022222110
+
+
+No 50
+>5ddh_C mol:protein length:12  12-mer peptide F12K
+Probab=7.53  E-value=6.9e+02  Score=12.30  Aligned_cols=11  Identities=36%  Similarity=0.981  Sum_probs=5.1  Template_Neff=1.000
+
+Q ss_pred             cccCCCceEEE
+Q T1078            11 MMAAVPEWTIT   21 (138)
+Q Consensus        11 ~~~~~~~WTi~   21 (138)
+                      ...-.++||+.
+T Consensus         2 vlelepewtvk   12 (12)
+T 5ddh_C            2 VLELEPEWTVK   12 (12)
+T ss_dssp             CCCCCTTCSCC
+T ss_pred             EEEcCCceeEC
+Confidence            11234578753
+
+
+No 51
+>3c6a_A
+Probab=7.39  E-value=2.3e+03  Score=18.24  Aligned_cols=50  Identities=6%  Similarity=0.019  Sum_probs=25.1  Template_Neff=8.800
+
+Q ss_pred             ccCCCccccCEEEEEEEcCcccCCCcEEEEEEEECCCC-EEEEEeccccccC
+Q T1078            63 ASGGPVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSKK-LIVWPAYTDVQVQ  113 (138)
+Q Consensus        63 ~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~-~~A~fgy~d~~l~  113 (138)
+                      .-|.. +=..+.+-.|||-..|.++++++++|.+.... ...--.+....+.
+T Consensus        24 ~~~~~-~~~~~~~~~g~D~A~g~~~D~sai~V~~~~g~~~~vv~~~~~~~~~   74 (198)
+T 3c6a_A           24 YQFEK-PKEGRKYVATLDCSEGRGQDYHALQIIDITEFPYKQVAVYHSNTTS   74 (198)
+T ss_dssp             EESSC-CCTTCCEEEEEECCCSSSSCCEEEEEEECSSSSEEEEEEEEESCCC
+T ss_pred             EEEeC-CCCCCEEEEEEEcCCCCCCCeEEEEEEECCCCCcEEEEEEECCCCC
+Confidence            00111 11256777888877666788999999975321 2222222221010
+
+
+No 52
+>2ee9_A
+Probab=7.34  E-value=2.5e+03  Score=16.20  Aligned_cols=81  Identities=11%  Similarity=0.053  Sum_probs=36.1  Template_Neff=7.300
+
+Q ss_pred             cccCCCceEEECCceecCCCCCeEEEEEEEeCCCCCCcEEEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEEEEEEECCCC
+Q T1078            11 MMAAVPEWTITNLKRVCNAGNTSCTWTFGVDTHLATATSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSKK  100 (138)
+Q Consensus        11 ~~~~~~~WTi~~~~R~C~~~~~~C~y~F~I~~~~~~~~~C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~  100 (138)
+                      .....-..+|.     +....  =.+.-.|....+....|.+...... .-...|.+...+.|.|+.-|+++.=++.-|.+. |.+...+
+T Consensus        14 ~~~~p~~f~i~-----~~ag~--g~l~v~V~~P~g~~~~~~v~d~~dG-ty~v~y~P~~~G~h~i~V~~~g~~I~gSPf~v~-V~~~~~~   94 (95)
+T 2ee9_A           14 LGFKPFDLVIP-----FAVRK--GEITGEVHMPSGKTATPEIVDNKDG-TVTVRYAPTEVGLHEMHIKYMGSHIPESPLQFY-VNYPNSG   94 (95)
+T ss_dssp             CCSCCCEEECS-----SCCCT--TSEEEEEECTTSCEECCEEEECSSS-CEEEECCCCSSEEEEEEEEESSCBCTTCSEEEE-ECCTTCC
+T ss_pred             cCcEeEEEEEE-----eCCCC--cEEEEEEEcCCCCEEEEEEEECCCC-EEEEEEEeCCCccEEEEEEECCEEccCCCEEEE-EEeCCCC
+Confidence            00000011111     11111  1112223333233345666554444 445566677778999999999875555556553 3222111
+
+
+No 53
+>5c0b_C mol:protein length:10  Marker peptide
+Probab=7.32  E-value=6.7e+02  Score=11.75  Aligned_cols=10  Identities=60%  Similarity=1.119  Sum_probs=3.5  Template_Neff=1.000
+
+Q ss_pred             CcccCCCcEEEE
+Q T1078            81 GQFGPNNGFTTF   92 (138)
+Q Consensus        81 ~~fg~~~gF~v~   92 (138)
+                      .||||  +|-++
+T Consensus         1 rqfgp--dfpti   10 (10)
+T 5c0b_C            1 RQFGP--DFPTI   10 (10)
+T ss_dssp             CCCCS--CCCCC
+T ss_pred             CccCc--CCCcC
+Confidence            24554  33211
+
+
+No 54
+>5c0b_H mol:protein length:10  Marker peptide
+Probab=7.32  E-value=6.7e+02  Score=11.75  Aligned_cols=10  Identities=60%  Similarity=1.119  Sum_probs=3.5  Template_Neff=1.000
+
+Q ss_pred             CcccCCCcEEEE
+Q T1078            81 GQFGPNNGFTTF   92 (138)
+Q Consensus        81 ~~fg~~~gF~v~   92 (138)
+                      .||||  +|-++
+T Consensus         1 rqfgp--dfpti   10 (10)
+T 5c0b_H            1 RQFGP--DFPTI   10 (10)
+T ss_dssp             CCCCS--CCCCC
+T ss_pred             CccCc--CCCcC
+Confidence            24554  33211
+
+
+No 55
+>5c0i_C mol:protein length:10  Marker peptide
+Probab=7.32  E-value=6.7e+02  Score=11.75  Aligned_cols=10  Identities=60%  Similarity=1.119  Sum_probs=3.5  Template_Neff=1.000
+
+Q ss_pred             CcccCCCcEEEE
+Q T1078            81 GQFGPNNGFTTF   92 (138)
+Q Consensus        81 ~~fg~~~gF~v~   92 (138)
+                      .||||  +|-++
+T Consensus         1 rqfgp--dfpti   10 (10)
+T 5c0i_C            1 RQFGP--DFPTI   10 (10)
+T ss_dssp             CCCCS--CCCCC
+T ss_pred             CccCc--CCCcC
+Confidence            14554  33211
+
+
+No 56
+>6ea3_A 1-70
+Probab=7.29  E-value=1.3e+03  Score=17.32  Aligned_cols=39  Identities=13%  Similarity=0.273  Sum_probs=21.1  Template_Neff=5.000
+
+Q ss_pred             cccCCCcEEEEEEEECCCCEEEEEeccccccCCCCeeCCCc
+Q T1078            82 QFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQAGKVVSPNQ  122 (138)
+Q Consensus        82 ~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~~g~~v~p~~  122 (138)
+                      -|-. ..-.-++|+|.+++.-+|+.+.+.-.. ..+|....
+T Consensus         3 Pfdd-~~~~f~VlvN~e~QySlWP~~~~vP~G-W~~v~~~g   41 (70)
+T 6ea3_A            3 PFDD-DEGVFLVLVNDEDQYSLWPEFAEVPQG-WRTVFGPT   41 (70)
+T ss_dssp             GGGC-TTSCEEEEEETTCCEEEEETTSCCCTT-EEEEEEEE
+T ss_pred             CCcC-CCCEEEEEEECCCCcccCCCCCCCCCC-CEECCCCC
+Confidence            0111 223446688999999999999876432 22221000
+
+
+No 57
+>1dki_A
+Probab=7.04  E-value=8.7e+02  Score=22.74  Aligned_cols=74  Identities=15%  Similarity=0.187  Sum_probs=21.8  Template_Neff=7.200
+
+Q ss_pred             ECCceecCCCCC-eEEE--EEE-------EeCC--CCCCcEEEEEEecCCCcccccCCCccc------cCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEecc
+Q T1078            21 TNLKRVCNAGNT-SCTW--TFG-------VDTH--LATATSCTYVVKANANASQASGGPVTC------GPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYT  108 (138)
+Q Consensus        21 ~~~~R~C~~~~~-~C~y--~F~-------I~~~--~~~~~~C~~~v~g~~~A~~~sf~~~~C------g~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~  108 (138)
+                      +.+.+.-.-+.. .+..  .+.       |..+  .+.|.-|.=..       ......--|      +-|+++|||.+.   .+|+-.+.+.+    ..+-.|..
+T Consensus       211 ~~l~~~fgY~~~~~~~~r~~y~~~~~~~~i~~eL~~grPVi~~G~~-------~~~GHafV~DGy~~~~~~HvNwGWgG~---~nGyy~~~~l~----q~~~~gi~  302 (303)
+T 1dki_A          211 RALKENFGYNQSVHQINRGDFSKQDWEAQIDKELSQNQPVYYQGVG-------KVGGHAFVIDGADGRNFYHVNWGWGGV---SDGFFRLDALY----QSAVVGIK  302 (303)
+T ss_dssp             HHHHHTTCCCTTCEEEEGGGSCHHHHHHHHHHHHHTTCCEEEEEEE-------TTEEEEEEEEEECSSSEEEEECSSTTT---TCEEEESCCCC----CEEEECCC
+T ss_pred             HHHHHHcCCCCCCceeecCCCCHHHHHHHHHHHHhcCCcEEEEEec-------CCCCEEEEECCCcCCCCEEEecCCCcC---CCCEEEECCCC----hhcEEEEe
+Confidence            000000000000 0000  000       0000  01222221110       001111122      358999999975   46765554431    11111110
+
+
+No 58
+>2myy_A
+Probab=7.02  E-value=1.4e+03  Score=17.70  Aligned_cols=40  Identities=20%  Similarity=0.403  Sum_probs=22.9  Template_Neff=4.700
+
+Q ss_pred             CcccCCCcEEEEEEEECCCCEEEEEeccccccCCCCeeC-CCc
+Q T1078            81 GQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQAGKVVS-PNQ  122 (138)
+Q Consensus        81 ~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~~g~~v~-p~~  122 (138)
+                      ..|- +.+-.-++|+|.+++.-+|+.+.++-. +..+|. +..
+T Consensus        11 npfd-d~~~~f~VlvN~E~QySLWP~~~~vPa-GW~~v~~~g~   51 (80)
+T 2myy_A           11 NPFD-DEDGMFFVLINDEEQHSLWPTFADVPA-GWRVVFGEAS   51 (80)
+T ss_dssp             CCSS-CTTSEEEEEEETTTEEEEEETTSCCCT-TCEEEEEEEE
+T ss_pred             CCCc-CCCceEEEEEECCCCcccCCCCCCCCC-CceeCCCCCC
+Confidence            0011 123455678999999999999987644 233332 100
+
+
+No 59
+>3k41_A
+Probab=6.88  E-value=1.4e+03  Score=18.15  Aligned_cols=24  Identities=25%  Similarity=0.315  Sum_probs=9.4  Template_Neff=9.100
+
+Q ss_pred             CCceecCCCCCeEEEEEEEeCCCC
+Q T1078            22 NLKRVCNAGNTSCTWTFGVDTHLA   45 (138)
+Q Consensus        22 ~~~R~C~~~~~~C~y~F~I~~~~~   45 (138)
+                      ...-.|..+...|.|.|.+.+...
+T Consensus       120 ~~~~~~~~e~~~C~Y~f~w~T~~A  143 (145)
+T 3k41_A          120 NPVSEERGMVQDCFYLFEMDSSLA  143 (145)
+T ss_dssp             EEEEEECCSSSCCEEEEEEEEGGG
+T ss_pred             eEEEEcCCCCCCEEEEEEECcCCC
+Confidence            000112122345777776665311
+
+
+No 60
+>3v8o_A
+Probab=6.79  E-value=3.3e+03  Score=17.17  Aligned_cols=80  Identities=18%  Similarity=0.126  Sum_probs=31.0  Template_Neff=9.000
+
+Q ss_pred             ccCCCceEEEC--Cce-ecCCCCCeEEEEEEEeCCCCCC--------------cEEEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEEEEEE
+Q T1078            12 MAAVPEWTITN--LKR-VCNAGNTSCTWTFGVDTHLATA--------------TSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAVT   95 (138)
+Q Consensus        12 ~~~~~~WTi~~--~~R-~C~~~~~~C~y~F~I~~~~~~~--------------~~C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVv   95 (138)
+                      ......=++.+  +.+ .+...   -.-.|.|+..+...              ..|.+...+.. .-..+|.....+.|.|+.-|+++.=++.-|.+....
+T Consensus        97 ~~d~~~~~~~G~gl~~~~~~~g---~~~~F~V~~~dag~~~l~v~v~~p~g~~~~~~v~~~~~g-~y~v~y~p~~~G~y~i~V~~~g~~I~gSPF~v~V~~  193 (193)
+T 3v8o_A           97 DCFPDKVKAFGPGLEPTGCIVD---KPAEFTIDARAAGKGDLKLYAQDADGCPIDIKVIPNGDG-TFRCSYVPTKPIKHTIIISWGGVNVPKSPFRVNVGE  193 (193)
+T ss_dssp             TBCGGGCEEESGGGSSSCEETT---SCEEEEEECTTSBSCCEEEEEEETTSCBCCCEEEECSSS-EEEEEECCCSSSEEEEEEEETTEECTTCSEEEEEEC
+T ss_pred             CCCCCEEEEECCCcccCCceeC---CeEEEEEEEEECCCCcEEEEEEeCCCCEEEEEEEECCCC-EEEEEEEeCCCcCEEEEEEECCEEcCCCCEEEEEEC
+Confidence            00011111111  111 11111   12356776654211              12222222221 222234444456788888888765555556554310
+
+
+No 61
+>5c07_C mol:protein length:10  Marker peptide
+Probab=6.78  E-value=7.4e+02  Score=11.61  Aligned_cols=9  Identities=56%  Similarity=1.058  Sum_probs=3.1  Template_Neff=1.000
+
+Q ss_pred             CcccCCCcEEE
+Q T1078            81 GQFGPNNGFTT   91 (138)
+Q Consensus        81 ~~fg~~~gF~v   91 (138)
+                      .||||+  |-+
+T Consensus         1 yqfgpd--fpi    9 (10)
+T 5c07_C            1 YQFGPD--FPI    9 (10)
+T ss_dssp             CCCCSC--CCC
+T ss_pred             CccCCC--Ccc
+Confidence            145542  211
+
+
+No 62
+>5c07_H mol:protein length:10  Marker peptide
+Probab=6.78  E-value=7.4e+02  Score=11.61  Aligned_cols=9  Identities=56%  Similarity=1.058  Sum_probs=3.1  Template_Neff=1.000
+
+Q ss_pred             CcccCCCcEEE
+Q T1078            81 GQFGPNNGFTT   91 (138)
+Q Consensus        81 ~~fg~~~gF~v   91 (138)
+                      .||||+  |-+
+T Consensus         1 yqfgpd--fpi    9 (10)
+T 5c07_H            1 YQFGPD--FPI    9 (10)
+T ss_dssp             CCCCSC--CCC
+T ss_pred             CccCCC--Ccc
+Confidence            145542  211
+
+
+No 63
+>5c0e_C mol:protein length:10  Marker peptide
+Probab=6.78  E-value=7.4e+02  Score=11.61  Aligned_cols=9  Identities=56%  Similarity=1.058  Sum_probs=3.1  Template_Neff=1.000
+
+Q ss_pred             CcccCCCcEEE
+Q T1078            81 GQFGPNNGFTT   91 (138)
+Q Consensus        81 ~~fg~~~gF~v   91 (138)
+                      .||||+  |-+
+T Consensus         1 yqfgpd--fpi    9 (10)
+T 5c0e_C            1 YQFGPD--FPI    9 (10)
+T ss_dssp             CCCCSC--CCC
+T ss_pred             CccCCC--Ccc
+Confidence            145542  211
+
+
+No 64
+>1keo_A
+Probab=6.75  E-value=1.4e+03  Score=18.57  Aligned_cols=27  Identities=26%  Similarity=0.454  Sum_probs=9.5  Template_Neff=8.500
+
+Q ss_pred             EEECCceecCCC---------------CCeEEEEEEEeCCCC
+Q T1078            19 TITNLKRVCNAG---------------NTSCTWTFGVDTHLA   45 (138)
+Q Consensus        19 Ti~~~~R~C~~~---------------~~~C~y~F~I~~~~~   45 (138)
+                      +-.-+.-.|+.+               ...|.|.|.+.+...
+T Consensus       109 Rst~I~f~C~~~~~~~~~~~~~~~~~e~~~C~Y~f~w~T~~A  150 (152)
+T 1keo_A          109 RRAVVMISCNRHTLADNFNPVSEERGKVQDCFYLFEMDSSLA  150 (152)
+T ss_dssp             EEEEEEEEECTTCSSEEEEEEEEEETTEEEEEEEEEEEEGGG
+T ss_pred             cEEEEEEEeCCCCcCCcCcEEEecCCCCCCEEEEEEECcCCC
+Confidence            001111223332               135666666554310
+
+
+No 65
+>2n1h_A
+Probab=6.74  E-value=1.4e+03  Score=17.33  Aligned_cols=29  Identities=10%  Similarity=0.395  Sum_probs=13.0  Template_Neff=7.500
+
+Q ss_pred             EEECCceecCCC--------CCeEEEEEEEeCCCCCCcEEE
+Q T1078            19 TITNLKRVCNAG--------NTSCTWTFGVDTHLATATSCT   51 (138)
+Q Consensus        19 Ti~~~~R~C~~~--------~~~C~y~F~I~~~~~~~~~C~   51 (138)
+                      +-..+.-.|...        .++|.|.|.|.+..    .|.
+T Consensus        58 Rst~V~~~C~~~~~i~~v~E~~~C~Y~~~~~Tp~----~C~   94 (94)
+T 2n1h_A           58 RSAIVTVECGVENEIVSVLEAQKCEYLIKMKSPA----ACS   94 (94)
+T ss_dssp             CEEEEEECCCSSCEEEEEEEEETTEEEEEEECGG----GCC
+T ss_pred             EEEEEEEEECCCCCeEEEecCCCEEEEEEEccCC----CCC
+Confidence            001122234442        24688888887642    110
+
+
+No 66
+>1zps_A
+Probab=6.64  E-value=2.4e+03  Score=17.99  Aligned_cols=45  Identities=13%  Similarity=0.145  Sum_probs=26.3  Template_Neff=4.200
+
+Q ss_pred             EEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccccC-----CCCeeCCCcCCC
+Q T1078            76 TSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQ-----AGKVVSPNQSYA  125 (138)
+Q Consensus        76 s~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~-----~g~~v~p~~~~~  125 (138)
+                      ..-|+.     .|.....|.|...+.....+|-+.+.-     .|....=..+-.
+T Consensus         8 ~~~~~~-----~GLipaIvQd~~tg~VLMlaymN~eAl~~Tl~tg~~~y~SRSR~   57 (124)
+T 1zps_A            8 RHNING-----EDLIIAVAQDHETGEVLMVAYMNREALRRTLETGTAHYWSTSRG   57 (124)
+T ss_dssp             CCCSSS-----CCCEEEEEEETTTCCEEEEEEECHHHHHHHHHHSBCEEEETTTT
+T ss_pred             ccEECC-----CCCeEEEEEECCCCcEEEEEcCCHHHHHHHHhhCCEEEEECChh
+Confidence            011332     588888999999999999999887642     222221111100
+
+
+No 67
+>2lvx_A
+Probab=6.58  E-value=1.4e+03  Score=17.26  Aligned_cols=29  Identities=10%  Similarity=0.395  Sum_probs=13.1  Template_Neff=7.500
+
+Q ss_pred             EEECCceecCCC--------CCeEEEEEEEeCCCCCCcEEE
+Q T1078            19 TITNLKRVCNAG--------NTSCTWTFGVDTHLATATSCT   51 (138)
+Q Consensus        19 Ti~~~~R~C~~~--------~~~C~y~F~I~~~~~~~~~C~   51 (138)
+                      +-..+.-.|...        .++|.|.|.|.+..    .|.
+T Consensus        58 Rst~V~~~C~~~~~i~~v~E~~~C~Y~~~~~Tp~----~C~   94 (94)
+T 2lvx_A           58 RSAIVTVECGVENEIVSVLEAQKCEYLIKMKSPA----ACS   94 (94)
+T ss_dssp             CEEEEEEEECSSCEEEEEEESSSSEEEEEEEEGG----GCC
+T ss_pred             EEEEEEEEECCCCCeEEEecCCCEEEEEEEccCC----CCC
+Confidence            001123345442        35788888877532    110
+
+
+No 68
+>2v5n_A
+Probab=6.49  E-value=1.7e+03  Score=19.81  Aligned_cols=86  Identities=16%  Similarity=0.197  Sum_probs=25.8  Template_Neff=9.200
+
+Q ss_pred             ECCceecCC-------------CCCeEEEEEEEeCCCC--CCcEEEEEEecCC----C-ccc-ccCC-------CccccCE-----------EEEEEEcCcccCCCcEEEEEEE------ECCCCEEEEEeccccc
+Q T1078            21 TNLKRVCNA-------------GNTSCTWTFGVDTHLA--TATSCTYVVKANA----N-ASQ-ASGG-------PVTCGPY-----------TITSSWSGQFGPNNGFTTFAVT------DFSKKLIVWPAYTDVQ  111 (138)
+Q Consensus        21 ~~~~R~C~~-------------~~~~C~y~F~I~~~~~--~~~~C~~~v~g~~----~-A~~-~sf~-------~~~Cg~~-----------~Vs~Gws~~fg~~~gF~v~tVv------d~~~~~~A~fgy~d~~  111 (138)
+                      ..+.-.|+.             +...|.|.|.+.+...  ....|.+...+..    . ... ..|.       -..|++.           .--+.+...    .....|-..      +..+..+.+. |.+.+
+T Consensus        93 t~i~f~C~~~~~~~~~~~~v~~e~~~C~y~f~~~T~~aC~~~~~C~~~~~~~~yDLs~L~~~~~~~~~~~~~f~invC~~~~~~~~~~C~~~~~vc~~~~~----~~~~~lG~~~~~~~~~~~~~~l~~~-y~~g~  223 (271)
+T 2v5n_A           93 SVISFVCRPEAGPTNRPMLISLDKQTCTLFFSWHTPLACEQATECSVRNGSSIVDLSPLIHRTGGYEAYNPDFYINICQPLNPMHAVPCPAGAAVCKVPID----GPPIDIGRVAGPPILNPIANEIYLN-FESST  223 (271)
+T ss_dssp             EEEEEEECCSCCSCCSCEEEEEETTTTEEEEEEEEGGGCCSCCCCEEEETTEEEECGGGSCSSSCBCCCCCEEEECSSSCCCCBTTBCCCTTCSEEEECSS----SCCEECCEECSSCEEETTTTEEEEE-EEEEE
+T ss_pred             EEEEEEECCCCCCCCceEEEEeCCCCEEEEEEeCCcccCCCCCcCeEcCCCcEEccHHHhccCCCcEEcCCeEEEEEecCCCCCCCCCCCCCCcccEecCC----CCceeccccCCCCeEECCCCEEEEE-eCCCC
+Confidence            001111222             1257999999998752  4577988753210    0 000 0110       1122110           000001100    000000000      1001111111 11100
+
+
+No 69
+>2khr_A
+Probab=6.41  E-value=1.5e+03  Score=17.14  Aligned_cols=41  Identities=17%  Similarity=0.392  Sum_probs=22.6  Template_Neff=4.800
+
+Q ss_pred             CcccCCCcEEEEEEEECCCCEEEEEeccccccCCCCeeC-CCcC
+Q T1078            81 GQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQAGKVVS-PNQS  123 (138)
+Q Consensus        81 ~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~~g~~v~-p~~~  123 (138)
+                      ..|-. .+-.-++|+|.+++.-+|+.+.++-.. ..+|. |...
+T Consensus         7 npfd~-~~~~f~VlvN~e~QySLWP~~~~vP~G-W~~v~~~~~r   48 (74)
+T 2khr_A            7 NPFDD-DNGAFFVLVNDEDQHSLWPVFADIPAG-WRVVHGEASR   48 (74)
+T ss_dssp             CCCSC-CCSCEEEEEETTCSCEEEETTSCCCSS-EEEEECSCCH
+T ss_pred             CCccC-CCceEEEEEECCCCcccCCCCCCCCCC-ceeCCCCCCH
+Confidence            00111 233446688999999999999886542 23332 1100
+
+
+No 70
+>3hlu_A
+Probab=6.15  E-value=1.6e+03  Score=16.01  Aligned_cols=33  Identities=3%  Similarity=-0.066  Sum_probs=16.9  Template_Neff=7.700
+
+Q ss_pred             cCCCccccCEEEEEEEcCcccCCCcEEEEEEEECCCC
+Q T1078            64 SGGPVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSKK  100 (138)
+Q Consensus        64 sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~  100 (138)
+                      .-.+..+.-|...+||++.    ....+++|+.+.+-
+T Consensus        22 ~~~~~gvT~~~~~GgY~~~----~~~vl~~v~~r~e~   54 (73)
+T 3hlu_A           22 QELDLGVTMLQAVGAYKNN----ETEVIMCVMRKATL   54 (73)
+T ss_dssp             HHSCCCCEEEECEESSSSS----CCEEEEEEECHHHH
+T ss_pred             HHCCCCEEEEEeEEEEEcC----CcEEEEEEECHHHH
+Confidence            0011112246677788866    56777777753210
+
+
+No 71
+>3aih_A
+Probab=6.15  E-value=1.5e+03  Score=17.46  Aligned_cols=27  Identities=22%  Similarity=0.672  Sum_probs=11.8  Template_Neff=8.100
+
+Q ss_pred             ECCceecCCC-------------CCeEEEEEEEeCCCCCCcEEE
+Q T1078            21 TNLKRVCNAG-------------NTSCTWTFGVDTHLATATSCT   51 (138)
+Q Consensus        21 ~~~~R~C~~~-------------~~~C~y~F~I~~~~~~~~~C~   51 (138)
+                      ..+.-.|..+             ..+|.|.|.|.+..    .|.
+T Consensus        71 t~V~~~C~~~~~~~~~~i~~v~E~~~C~Y~~~v~Tp~----~C~  110 (110)
+T 3aih_A           71 AEVRFLCDEGAGISGDYIDRVDEPLSCSYVLTIRTPR----LCP  110 (110)
+T ss_dssp             EEEEEEECTTCCSSCCEEEEEEEEETTEEEEEEEEGG----GCC
+T ss_pred             EEEEEEECCCCCCCcceEEEEeCCCCEEEEEEECccC----CCC
+Confidence            0112234443             24688888777532    110
+
+
+No 72
+>6svk_B 1-136
+Probab=6.11  E-value=3.8e+03  Score=17.22  Aligned_cols=86  Identities=9%  Similarity=0.151  Sum_probs=33.7  Template_Neff=4.300
+
+Q ss_pred             CCeEEEEEEEeCCCCCCcEEEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEE----------------eccccccCCCC-eeCCCcCCCCCCC
+Q T1078            31 NTSCTWTFGVDTHLATATSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWP----------------AYTDVQVQAGK-VVSPNQSYAPANL  129 (138)
+Q Consensus        31 ~~~C~y~F~I~~~~~~~~~C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~f----------------gy~d~~l~~g~-~v~p~~~~~~~~~  129 (138)
+                      ..--..+|.++........|.|+-...+ .+        =..|.++.+-++.    .+--+.+|-.+......||                +|.+....... +-=+...|.....
+T Consensus        12 PgG~~~s~~~~~~~~~~~~C~FtYaaqG-GT--------nE~W~m~i~~s~d----~~~~~C~V~Rp~g~SYL~F~~Fk~~l~Ga~i~~a~ays~~~~~~~~dvpL~~eEy~v~~~  114 (136)
+T 6svk_B           12 PGGVVHSFSHNVGPGDKYTCMFTYASQG-GT--------NEQWQMSLGTSED----HQHFTCTIWRPQGKSYLYFTQFKAEVRGAEIEYAMAYSKAAFERESDVPLKTEEFEVTKT  114 (136)
+T ss_dssp             CSSCCEEEEEEESSTTSEEEEEEEEEEC-SS--------CEEEEEEEEECTT----SSEEEEEEECTTSCCCCEEEEEEEECTTSEEEEEEEEEECCBTTBCCEECCGGGEEECSS
+T ss_pred             CCCEEEEEEEEECCCCCcEEEEEEECCC-CC--------CccEEEEEEECCC----CCEEEEEEEcCCCCEEEEEeecEEEECCCcEEEEEEEccccccCCCCCCCCCcEEEECCC
+Confidence            0011223444332234677888765433 11        1258888876654    3344455555434444443                33332222111 1111111111000
+
+
+No 73
+>6svk_A 1-135
+Probab=5.99  E-value=3.9e+03  Score=17.16  Aligned_cols=84  Identities=12%  Similarity=0.162  Sum_probs=32.9  Template_Neff=4.300
+
+Q ss_pred             eEEEEEEEeCCC-----------CCCcEEEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEE----------------eccccccCCCC-eeCCCcCCCCCCC
+Q T1078            33 SCTWTFGVDTHL-----------ATATSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWP----------------AYTDVQVQAGK-VVSPNQSYAPANL  129 (138)
+Q Consensus        33 ~C~y~F~I~~~~-----------~~~~~C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~f----------------gy~d~~l~~g~-~v~p~~~~~~~~~  129 (138)
+                      .-+-.|.|..++           .....|.|+-...+ .+        =..|.++.+-++.    .+--+.+|-.+......||                +|.+....... +-=+...|.....
+T Consensus         2 ~~~~~F~VkPgG~~~s~~~~~~~~~~~~C~FtYaaqG-GT--------nE~W~m~i~~s~d----~~~~~C~V~Rp~g~SYL~F~~Fk~~l~Ga~i~~a~ays~~~~~~~~dvpL~~eEy~v~~~  113 (135)
+T 6svk_A            2 PTTVAFDVRPGGVVHSFSHNVGPGDKYTCMFTYASQG-GT--------NEQWQMSLGTSED----HQHFTCTIWRPQGKSYLYFTQFKAEVRGAEIEYAMAYSKAAFERESDVPLKTEEFEVTKT  113 (135)
+T ss_dssp             CSEEEEEECCSSCCEEEEEEESGGGCEEEEEEEEEEC-SS--------CEEEEEEEEECTT----SSEEEEEEECTTSCCCCEEEEEEEECTTCEEEEEEEEEECCBTTBCCEECCGGGEEECSS
+T ss_pred             CEEEEEEEeCCCEEEEEEEEECCCCCcEEEEEEECCC-CC--------CccEEEEEEECCC----CCEEEEEEEcCCCCEEEEEeecEEEECCCcEEEEEEEccccccCCCCCCCCCcEEEECCC
+Confidence            012234443332           23567888765333 11        1258888876654    3344445554434443443                33332222111 1111111111000
+
+
+No 74
+>4mgx_A
+Probab=5.97  E-value=3.6e+03  Score=16.73  Aligned_cols=76  Identities=18%  Similarity=0.161  Sum_probs=25.9  Template_Neff=9.100
+
+Q ss_pred             ccCCCceEEEC--Cce-ecCCCCCeEEEEEEEeCCCC--CC------------cEEEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEE
+Q T1078            12 MAAVPEWTITN--LKR-VCNAGNTSCTWTFGVDTHLA--TA------------TSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTT   91 (138)
+Q Consensus        12 ~~~~~~WTi~~--~~R-~C~~~~~~C~y~F~I~~~~~--~~------------~~C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v   91 (138)
+                      ......=++.+  +.+ .+...   -.-.|.|+..+.  ..            ..|.+...+.. --...|.....+.|.|+.-|+++.=++.-|.+
+T Consensus        89 ~~d~s~v~~~G~gl~~~~~~~g---~~~~F~V~~~dag~~~l~v~v~~p~g~~~~~~v~~~~~g-~y~v~y~p~~~G~y~i~V~~~g~~I~gSPf~v  181 (181)
+T 4mgx_A           89 DCFPDKVKAFGPGLEPTGCIVD---KPAEFTIDARAAGKGDLKLYAQDADGCPIDIKVIPNGDG-TFRCSYVPTKPIKHTIIISWGGVNVPKSPFRV  181 (181)
+T ss_dssp             TBCGGGCEEESGGGSSCCCCSS---CCEEEEEECGGGBSCCEEEEEEESSSCBCCCEEEECSSS-EEEEEECCCSSSCEEEEEEETTEECTTCSEEC
+T ss_pred             CcCccEEEEECCCcccCCceeC---CcEEEEEEEEECCCCcEEEEEEeCCCCEEEEEEEECCCC-EEEEEEEeCCCcCEEEEEEECCEEcCCCCEEC
+Confidence            00111111211  111 12111   123566666431  11            12222222211 22223344444667777777665322222321
+
+
+No 75
+>2lpd_A
+Probab=5.93  E-value=1.6e+03  Score=17.98  Aligned_cols=40  Identities=18%  Similarity=0.204  Sum_probs=22.4  Template_Neff=4.200
+
+Q ss_pred             CcccCCCcEEEEEEEECCCCEEEEEeccccccCCCCeeC-CCc
+Q T1078            81 GQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQAGKVVS-PNQ  122 (138)
+Q Consensus        81 ~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~~g~~v~-p~~  122 (138)
+                      .-|-. .+-.-++|+|.+++.-+||.+.++-. +..+|. |..
+T Consensus        18 nPFdd-~~~~f~VLvN~E~QYSLWP~~~~vPa-GW~~v~~~gs   58 (95)
+T 2lpd_A           18 GPGSM-DDELYFVVRNNEGQYSVWMDGRSLPA-GWETVGEPAT   58 (95)
+T ss_dssp             CSCSS-CCCCEEEEECSSCSCEEEETTSCCCT-TCEEEEEEEC
+T ss_pred             CCccC-CCceEEEEEECCCCcccCCCCCCCCC-CceeCCCCCC
+Confidence            00111 23345668899999999999987654 233332 100
+
+
+No 76
+>2n6g_A
+Probab=5.91  E-value=1.7e+03  Score=17.24  Aligned_cols=40  Identities=23%  Similarity=0.444  Sum_probs=21.9  Template_Neff=4.700
+
+Q ss_pred             CcccCCCcEEEEEEEECCCCEEEEEeccccccCCCCeeC-CCc
+Q T1078            81 GQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQAGKVVS-PNQ  122 (138)
+Q Consensus        81 ~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~~g~~v~-p~~  122 (138)
+                      ..|-. .+-.-++|+|.+++.-+|+.+.++-.. ..+|. +..
+T Consensus         8 npfdd-~~~~f~VlvN~E~QySLWP~~~~vPaG-W~~v~~~g~   48 (80)
+T 2n6g_A            8 NPFDD-DNGSFFVLVNDEEQHSLWPAFADVPAG-WRVVHGEAD   48 (80)
+T ss_dssp             CCSSC-SSCCCCEEEETTSCEECCCTTSCCCTT-EEEEECCCC
+T ss_pred             CCccC-CCceEEEEEECCCCcccCCCCCCCCCC-ceeCCCCCC
+Confidence            00111 223345688999999999999876542 23332 110
+
+
+No 77
+>2dib_A
+Probab=5.86  E-value=3.2e+03  Score=16.01  Aligned_cols=90  Identities=17%  Similarity=0.144  Sum_probs=36.2  Template_Neff=8.800
+
+Q ss_pred             CCCCCC-----cccccCCCceEEEC--Cce-ecCCCCCeEEEEEEEeCCC-----------------CCCcEEEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEEEEEEEC
+Q T1078             3 APTPAD-----KSMMAAVPEWTITN--LKR-VCNAGNTSCTWTFGVDTHL-----------------ATATSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAVTDF   97 (138)
+Q Consensus         3 apa~~~-----~~~~~~~~~WTi~~--~~R-~C~~~~~~C~y~F~I~~~~-----------------~~~~~C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~   97 (138)
+                      .+.+.+     .........-++.+  +.+ .+.   ..-.-.|.|+..+                 +....|.+...... .-...|....++.|.|+.-|+++.=++.-|.+. |...
+T Consensus         4 ~~i~gSPf~v~V~~~~d~~~~~~~G~Gl~~~~~~---vg~~~~F~V~~~~~~g~g~~~~~v~v~~p~g~~~~~~v~d~~dg-~y~v~y~p~~~G~~~i~V~~~g~~I~gSPf~v~-V~~~  118 (128)
+T 2dib_A            4 GSSGHFPARVKVEPAVDTSRIKVFGPGIEGKDVF---REATTDFTVDSRPLTQVGGDHIKAHIANPSGASTECFVTDNADG-TYQVEYTPFEKGLHVVEVTYDDVPIPNSPFKVA-VTEG  118 (128)
+T ss_dssp             CCCSCCCCCCCCCCSCCCCSCEEESHHHHTSSCC---TTCCEEEEEECSSSCSSCCSCCCEECCCSSSCCCCCEEEECSSS-EEEEEECCSSCSEEEEEEBSSSCBCTTCSEEEE-CCCC
+T ss_pred             cCcCCCCEEEEEecCCCCCEEEEEcCCEecCCce---eCCCEEEEEEECcCCCCCCCEEEEEEEeCCCCEEEEEEEECCCC-EEEEEEEcCCCcCEEEEEEECCEEccCCCEEEE-EEeC
+Confidence            000000     00011222233332  111 011   1123455665542                 11234555443333 334445555667788888887765555556654 2110
+
+
+No 78
+>6jsx_A 1-73
+Probab=5.85  E-value=2.8e+03  Score=15.32  Aligned_cols=32  Identities=16%  Similarity=0.098  Sum_probs=19.7  Template_Neff=6.600
+
+Q ss_pred             cCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEE--Ee
+Q T1078            71 GPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVW--PA  106 (138)
+Q Consensus        71 g~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~--fg  106 (138)
+                      .+..+....+..    .+-.++.|+|...+..+-  |+
+T Consensus        21 ~~~~l~F~~de~----t~~~vV~VvD~~TgeVIrqiP~   54 (73)
+T 6jsx_A           21 IGTDINFSYNDT----IKGLVVSVKDANGDKVIREIPS   54 (73)
+T ss_dssp             HTCCCEEEEETT----TTEEEEEEECTTSCEEEEEEEH
+T ss_pred             cCCEEEEEEECC----CCEEEEEEEECCCCeEeecCCH
+Confidence            123345566665    688999999988776431  00
+
+
+No 79
+>5lxh_E mol:protein length:10  Cysteine protease ATG4B
+Probab=5.79  E-value=1.2e+03  Score=11.00  Aligned_cols=10  Identities=10%  Similarity=0.464  Sum_probs=2.2  Template_Neff=1.000
+
+Q ss_pred             CCCcEEEEEE
+Q T1078            85 PNNGFTTFAV   94 (138)
+Q Consensus        85 ~~~gF~v~tV   94 (138)
+                      .+.+|-++++
+T Consensus         1 ededfeilsl   10 (10)
+T 5lxh_E            1 EDEDFEILSL   10 (10)
+T ss_dssp             CBTTBCCCCC
+T ss_pred             CCccceEeeC
+Confidence            0123322211
+
+
+No 80
+>5lxh_F mol:protein length:10  Cysteine protease ATG4B
+Probab=5.79  E-value=1.2e+03  Score=11.00  Aligned_cols=10  Identities=10%  Similarity=0.464  Sum_probs=2.2  Template_Neff=1.000
+
+Q ss_pred             CCCcEEEEEE
+Q T1078            85 PNNGFTTFAV   94 (138)
+Q Consensus        85 ~~~gF~v~tV   94 (138)
+                      .+.+|-++++
+T Consensus         1 ededfeilsl   10 (10)
+T 5lxh_F            1 EDEDFEILSL   10 (10)
+T ss_dssp             CBTTBCCCCC
+T ss_pred             CCccceEeeC
+Confidence            0123322211
+
+
+No 81
+>5lxh_G mol:protein length:10  Cysteine protease ATG4B
+Probab=5.79  E-value=1.2e+03  Score=11.00  Aligned_cols=10  Identities=10%  Similarity=0.464  Sum_probs=2.2  Template_Neff=1.000
+
+Q ss_pred             CCCcEEEEEE
+Q T1078            85 PNNGFTTFAV   94 (138)
+Q Consensus        85 ~~~gF~v~tV   94 (138)
+                      .+.+|-++++
+T Consensus         1 ededfeilsl   10 (10)
+T 5lxh_G            1 EDEDFEILSL   10 (10)
+T ss_dssp             CBTTBCCCCC
+T ss_pred             CCccceEeeC
+Confidence            0123322211
+
+
+No 82
+>5lxi_C mol:protein length:10  Cysteine protease ATG4B
+Probab=5.79  E-value=1.2e+03  Score=11.00  Aligned_cols=10  Identities=10%  Similarity=0.464  Sum_probs=2.2  Template_Neff=1.000
+
+Q ss_pred             CCCcEEEEEE
+Q T1078            85 PNNGFTTFAV   94 (138)
+Q Consensus        85 ~~~gF~v~tV   94 (138)
+                      .+.+|-++++
+T Consensus         1 ededfeilsl   10 (10)
+T 5lxi_C            1 EDEDFEILSL   10 (10)
+T ss_dssp             CCSCCCCCCC
+T ss_pred             CCccceEeeC
+Confidence            0123322211
+
+
+No 83
+>6rw4_I 1-137
+Probab=5.72  E-value=3.5e+03  Score=16.97  Aligned_cols=48  Identities=10%  Similarity=0.095  Sum_probs=25.4  Template_Neff=6.200
+
+Q ss_pred             CCCcccccCCCccc---cCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEe-----ccccccC
+Q T1078            57 NANASQASGGPVTC---GPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPA-----YTDVQVQ  113 (138)
+Q Consensus        57 ~~~A~~~sf~~~~C---g~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fg-----y~d~~l~  113 (138)
+                      .. .....|.+.+-   +--+|...+|..        .++|+|...+.++|..     |....-.
+T Consensus        11 ~~-~~~~~~~g~~~~~~~i~hI~at~NNT--------iitlTd~~G~~i~~~S~G~~gfkg~~K~   66 (137)
+T 6rw4_I           11 GE-ESSLRWAGKKFEEIPIAHIKASHNNT--------QIQVVSASNEPLAFASCGTEGFRNAKKG   66 (137)
+T ss_dssp             SS-CCCCCBTTBCTTTSCEEEEEECSSCE--------EEEEECTTCCEEEEEETGGGTCCGGGTT
+T ss_pred             Cc-cccceECCEEeccceEEEEEEecCCE--------EEEEEcCCCCEEEEECCCceeeCCCCCC
+Confidence            00 22223333333   345677777765        8999999888887753     2221110
+
+
+No 84
+>2rl8_A 1-148
+Probab=5.55  E-value=1.8e+03  Score=18.16  Aligned_cols=26  Identities=27%  Similarity=0.478  Sum_probs=9.2  Template_Neff=8.000
+
+Q ss_pred             EECCceecCC---------------CCCeEEEEEEEeCCCC
+Q T1078            20 ITNLKRVCNA---------------GNTSCTWTFGVDTHLA   45 (138)
+Q Consensus        20 i~~~~R~C~~---------------~~~~C~y~F~I~~~~~   45 (138)
+                      -..+.-.|+.               +...|.|.|.+.+...
+T Consensus       106 st~I~f~C~~~~~~~~~~~~~~~~~e~~~C~Y~f~~~T~~A  146 (148)
+T 2rl8_A          106 RAVVMISCNRHTLADNFNPVSEERGKVQDCFYLFEMDSSLA  146 (148)
+T ss_dssp             CEEEEEEECTTCSSEEEEEEEEECCSSSCCEEEEEEEEGGG
+T ss_pred             EEEEEEEeCCCCcCCcCeEEEEecCCCCCEEEEEEECccCC
+Confidence            0011112222               2245666666554310
+
+
+No 85
+>2i5m_X
+Probab=5.46  E-value=2.6e+03  Score=14.62  Aligned_cols=44  Identities=16%  Similarity=0.246  Sum_probs=21.7  Template_Neff=7.800
+
+Q ss_pred             EEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccccC------CCCeeCCCcCCC
+Q T1078            74 TITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQ------AGKVVSPNQSYA  125 (138)
+Q Consensus        74 ~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~------~g~~v~p~~~~~  125 (138)
+                      +|. -|+..    .||..++..|   +..+||-+++..-.      .|..|.-+....
+T Consensus         5 ~Vk-~f~~~----kGfGFI~~~~---g~dvF~H~s~i~~~~~~~l~~G~~V~f~~~~~   54 (66)
+T 2i5m_X            5 KVK-WFNSE----KGFGFIEVEG---QDDVFVHFSAIQGEGFKTLEEGQKVRFEIVEG   54 (66)
+T ss_dssp             EEE-EEETT----TTEEEEECTT---SCCEEEEGGGBCSSSSCCCCTTCEEEEEEEEE
+T ss_pred             EEE-EEECC----CCEEEEEECC---CcEEEEEEhhhCcCCCCcCCCCCEEEEEEEEC
+Confidence            111 24443    5777777754   67889988886432      222221110000
+
+
+No 86
+>2d7m_A
+Probab=5.44  E-value=3.3e+03  Score=15.68  Aligned_cols=85  Identities=18%  Similarity=0.153  Sum_probs=37.2  Template_Neff=8.600
+
+Q ss_pred             ccccCCCceEEEC--Cce-ecCCCCCeEEEEEEEeCCC--------------CCCcEEEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEEEEEEECCC
+Q T1078            10 SMMAAVPEWTITN--LKR-VCNAGNTSCTWTFGVDTHL--------------ATATSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSK   99 (138)
+Q Consensus        10 ~~~~~~~~WTi~~--~~R-~C~~~~~~C~y~F~I~~~~--------------~~~~~C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~   99 (138)
+                      ........-++.+  +.. .+... ..+  .|.|+..+              +....+.+...... .-...|....++.|.|+.-|+++.=++.-|.+. |.....
+T Consensus         6 ~~~~d~~~~~~~G~Gl~~~~~~~g-~~~--~F~V~~~~ag~~~l~v~v~~p~g~~~~~~v~d~~dg-~y~v~y~p~~~G~y~i~V~~~g~~I~gSPf~v~-v~~~~d  107 (115)
+T 2d7m_A            6 SGAHDASKVRASGPGLNASGIPAS-LPV--EFTIDARDAGEGLLTVQILDPEGKPKKANIRDNGDG-TYTVSYLPDMSGRYTITIKYGGDEIPYSPFRIH-ALPTGD  107 (115)
+T ss_dssp             CCSCCGGGEEEESSTTCSSCEESS-SCE--EEEEEESSSCSSCEEEEEECTTSCBCCEEEEECSSS-CEEEEECCCSCEEEEEEEEESSCBCTTCSEEEE-EECCSS
+T ss_pred             CCCCCCCEEEEECCCeecCCcccC-CeE--EEEEEEEECCCCeEEEEEEcCCCCEEEEEEEECCCC-EEEEEEEcCCCEEEEEEEEECCEEccCCCEEEE-EEECCC
+Confidence            0001111222221  110 11111 111  45555433              12233444433333 334456666678899999999876566667765 332110
+
+
+No 87
+>1hza_A
+Probab=5.38  E-value=2.7e+03  Score=14.63  Aligned_cols=44  Identities=18%  Similarity=0.258  Sum_probs=21.8  Template_Neff=7.800
+
+Q ss_pred             EEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccccC------CCCeeCCCcCCC
+Q T1078            74 TITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQ------AGKVVSPNQSYA  125 (138)
+Q Consensus        74 ~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~------~g~~v~p~~~~~  125 (138)
+                      +|. -|+..    .||..++..|   +..+||-+++..-.      .|..|.-+....
+T Consensus         5 ~Vk-~f~~~----kGfGFI~~~~---g~dvF~H~s~i~~~~~~~l~~G~~V~f~~~~~   54 (67)
+T 1hza_A            5 KVK-WFNNE----KGYGFIEVEG---GSDVFVHFTAIQGEGFKTLEEGQEVSFEIVQG   54 (67)
+T ss_dssp             EEE-EEETT----TTEEEEECTT---SCCEEEEGGGBCSSSCSCCCTTCEEEEEEEEE
+T ss_pred             EEE-EEECC----CCEEEEEECC---CcEEEEEEhhhCccCCCcCCCCCEEEEEEEEC
+Confidence            111 24444    5787777754   77889998886532      222221110000
+
+
+No 88
+>1hzc_A
+Probab=5.35  E-value=2.7e+03  Score=14.58  Aligned_cols=44  Identities=18%  Similarity=0.274  Sum_probs=21.8  Template_Neff=7.800
+
+Q ss_pred             EEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccccC------CCCeeCCCcCCC
+Q T1078            74 TITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQ------AGKVVSPNQSYA  125 (138)
+Q Consensus        74 ~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~------~g~~v~p~~~~~  125 (138)
+                      +|. -|+..    .||..++..|   +..+||-+++..-.      .|..|.-+....
+T Consensus         5 ~Vk-~f~~~----kGfGFI~~~~---g~dvF~H~s~i~~~~~~~l~~G~~V~f~~~~~   54 (66)
+T 1hzc_A            5 KVK-WFNNE----KGYGFIEVEG---GSDVFVHFTAIQGEGFKTLEEGQAVSFEIVQG   54 (66)
+T ss_dssp             EEE-EEETT----TTEEEEECTT---SCCEEEEGGGBCSSSCCCCCTTCEEEEEEEEE
+T ss_pred             EEE-EEECC----CCEEEEEECC---CcEEEEEEhhhCccCCCcCCCCCEEEEEEEEC
+Confidence            121 24444    5777777754   67889998886532      222221110000
+
+
+No 89
+>3sd2_A
+Probab=5.33  E-value=3.4e+03  Score=15.84  Aligned_cols=43  Identities=14%  Similarity=0.165  Sum_probs=21.3  Template_Neff=5.200
+
+Q ss_pred             CEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccccCCCCeeCCCc
+Q T1078            72 PYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQAGKVVSPNQ  122 (138)
+Q Consensus        72 ~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~~g~~v~p~~  122 (138)
+                      +=.++......    -+-.+++|+|...|..+|.-=-.    +...+.=+-
+T Consensus        18 nnvl~I~F~~~----~~~vtItI~n~~TGe~VYs~~~~----~~~~i~IdL   60 (86)
+T 3sd2_A           18 SNILNVSFGRA----KDYAIITVTNKATGEIVHSKTYH----NTSIVMIDM   60 (86)
+T ss_dssp             TTEEEEEESSC----CSCEEEEEEETTTCCEEEEEEES----SCSEEEEEC
+T ss_pred             CCEEEEEECCC----CCCEEEEEEECcCCeEEEEeccC----CCEEEEEEe
+Confidence            11233333333    57789999998788888753221    111110000
+
+
+No 90
+>2k5n_A
+Probab=5.26  E-value=3e+03  Score=15.02  Aligned_cols=47  Identities=15%  Similarity=0.196  Sum_probs=23.0  Template_Neff=7.100
+
+Q ss_pred             EEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccc----cCCCCeeCCCcCCCCCC
+Q T1078            74 TITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQ----VQAGKVVSPNQSYAPAN  128 (138)
+Q Consensus        74 ~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~----l~~g~~v~p~~~~~~~~  128 (138)
+                      +| --|+..    .||.-++..|   +..+||-+++..    |..|..|.-+.......
+T Consensus         6 ~V-~~~~~~----kGfGFI~~~d---g~dvFfH~s~i~~~~~l~~G~~V~F~~~~~~kG   56 (74)
+T 2k5n_A            6 TI-TTWFKD----KGFGFIKDEN---GDNRYFHVIKVANPDLIKKDAAVTFEPTTNNKG   56 (74)
+T ss_dssp             EE-EEEETT----TTEEEEEESS---SCEEEEEGGGBSSGGGCCTTCEEEEEEEECSSS
+T ss_pred             EE-EEEECC----CCEEEEEECC---CcEEEEEEHHHCCCCCCCCCCEEEEEEEECCCC
+Confidence            12 135544    5788777765   467799888753    33444442211111000
+
+
+No 91
+>6svl_N 1-123
+Probab=5.23  E-value=4.2e+03  Score=16.71  Aligned_cols=78  Identities=13%  Similarity=0.201  Sum_probs=32.2  Template_Neff=4.200
+
+Q ss_pred             CCeEEEEEEEeCCCCCCcEEEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccccCCCCeeCCCcCCCCCC
+Q T1078            31 NTSCTWTFGVDTHLATATSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQAGKVVSPNQSYAPAN  128 (138)
+Q Consensus        31 ~~~C~y~F~I~~~~~~~~~C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~~g~~v~p~~~~~~~~  128 (138)
+                      ..--..+|.++..+.....|.|+-...+ .+        =..|.++.+-++.    .+--+.+|-. . ...+||=-=..+|. |..+.    |+...
+T Consensus         9 PGG~~~s~s~~~~~~~~~~C~FtYa~qG-GT--------nE~W~m~l~~s~d----~~~~tC~v~R-p-~SYL~F~~Fk~~l~-Ga~i~----~a~ay   86 (123)
+T 6svl_N            9 PGGVVHSFSHNVGPGDKYTCMFTYASQG-GT--------NEQWQMSLGTSED----HQHFTCTIWR-P-KSYLYFTQFKAEVR-GAEIE----YAMAY   86 (123)
+T ss_dssp             CSSCCEEEEEEESGGGCEEEEEEEEEEC-SS--------CEEEEEEEEECTT----SCEEEEEEEC-C-CCCCEEEEEEEEEE-SSEEE----EEEEE
+T ss_pred             CCCEEEEEEEEeCCCCCcEEEEEEEcCC-CC--------CccEEEEEEECCC----CCEEEEEeeC-C-CEEEEEeeCEEEEC-CCeEE----EEECC
+Confidence            0111234444433234677888765443 11        1369999888764    3344444443 3 33333322222222 11111    10000
+
+
+No 92
+>2eed_A
+Probab=5.21  E-value=3.2e+03  Score=15.36  Aligned_cols=81  Identities=16%  Similarity=0.151  Sum_probs=32.9  Template_Neff=8.400
+
+Q ss_pred             cccccCCCceEEE--CCceecCCCCCeEEEEEEEeCCCC--------------CCcEEEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEEEEE
+Q T1078             9 KSMMAAVPEWTIT--NLKRVCNAGNTSCTWTFGVDTHLA--------------TATSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAV   94 (138)
+Q Consensus         9 ~~~~~~~~~WTi~--~~~R~C~~~~~~C~y~F~I~~~~~--------------~~~~C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tV   94 (138)
+                      .........-++.  ++.+.. .   --.-.|.|+..+.              ....+.+...+.. .-..++....++.|.|+.-|+++.=++.-|.+...
+T Consensus         5 ~~~~~d~~~~~~~G~GL~~~~-~---g~~~~F~I~~~~ag~~~l~v~i~~p~~~~~~~~v~d~~dG-~y~v~Y~p~~~G~y~i~V~~~g~~I~gSPf~v~V~  101 (101)
+T 2eed_A            5 SSGSSDASKVTSKGAGLSKAF-V---GQKSSFLVDCSKAGSNMLLIGVHGPTTPCEEVSMKHVGNQ-QYNVTYVVKERGDYVLAVKWGEEHIPGSPFHVTVP  101 (101)
+T ss_dssp             CCCCCCTTTCEEEEHHHHBCC-T---TSCEEEEEECTTTCSCCEEECCCCSSCCCSEEEEEEEETT-EEEEEEECSSCEEEEECEEESSSBCTTCSEEEEEC
+T ss_pred             CCCCCCCCEEEEECCcccccc-C---CCcEEEEEEEEECCCCeEEEEEEcCCCCeEEEEEEECCCC-EEEEEEEeCCCEeEEEEEEECCEEccCCCEEEEEC
+Confidence            0011111112221  111111 0   1123455554431              1133444433333 33444555556778888888776555555655321
+
+
+No 93
+>6jwj_C 1-19
+Probab=5.17  E-value=1.2e+03  Score=13.01  Aligned_cols=14  Identities=7%  Similarity=0.199  Sum_probs=3.8  Template_Neff=3.800
+
+Q ss_pred             EECCCCEEEEEeccc
+Q T1078            95 TDFSKKLIVWPAYTD  109 (138)
+Q Consensus        95 vd~~~~~~A~fgy~d  109 (138)
+                      .+...+ ..||||.-
+T Consensus         6 L~Lp~g-~LFFGf~i   19 (19)
+T 6jwj_C            6 LDLPEG-QLFFGFPM   19 (19)
+T ss_dssp             CCCCTT-CCCCCCCC
+T ss_pred             EEcCcc-cEEEeeEC
+Confidence            000111 33455430
+
+
+No 94
+>6k73_D 1-326
+Probab=5.15  E-value=2.3e+03  Score=21.04  Aligned_cols=87  Identities=15%  Similarity=0.105  Sum_probs=27.5  Template_Neff=5.000
+
+Q ss_pred             CceEEECCc------eec-------------CC-CCCeEEEEEEEeCCCCCCcEEEEEEecCCCcccccCCCcc-ccCEEEEEEEcCcccC------CCcEEEEEEEECCCCEEEEEeccccccCCCCeeCCCcC
+Q T1078            16 PEWTITNLK------RVC-------------NA-GNTSCTWTFGVDTHLATATSCTYVVKANANASQASGGPVT-CGPYTITSSWSGQFGP------NNGFTTFAVTDFSKKLIVWPAYTDVQVQAGKVVSPNQS  123 (138)
+Q Consensus        16 ~~WTi~~~~------R~C-------------~~-~~~~C~y~F~I~~~~~~~~~C~~~v~g~~~A~~~sf~~~~-Cg~~~Vs~Gws~~fg~------~~gF~v~tVvd~~~~~~A~fgy~d~~l~~g~~v~p~~~  123 (138)
+                      ..-+|.+..      +.|             .. ....-.+.+.|...+-                    ...+ -|.|+-..--+-...+      =.--++|.|+|+.+..|-||.|...-+.+..-- |...
+T Consensus        94 ~~L~l~g~~~~~~~~~~c~~~~~~~~~~~~C~~~~~~g~~~~l~Ip~~EL--------------------~kLp~gGiW~A~LkL~l~~~~~~~~a~~~a~I~l~VTD~~niqIYfP~F~~aP~V~LnLr-p~~~  207 (326)
+T 6k73_D           94 RELQIKGYKQFLFKNANCPSKLALNSSHFQCNREQASGATLSLYIPAGEL--------------------NKLPFGGVWNAVLKLNVKRRYDTTYGTYTINITVNLTDKGNIQIWLPQFKSNARVDLNLR-PTGG  207 (326)
+T ss_dssp             EEEEEEEEEEEEBTTBCCCCCBCTTCCCCCSSSCCCSEEEEEEEECTTGG--------------------GTSSSCSEEEEEEEEEEEETTSCEEEEEEEEEEEEECCTTCEEEECTTCSSCCCCCCCCE-EETT
+T ss_pred             EEEEEEEEEEeecCCCCCcCCCcCCCCCCccCCCCcCCCEEEEEECHHHH--------------------hcCCCCCcEEEEEEEEEEEcCCCCeEEEEEEEEEEEEECCCcEEEeCCCCCCcEEEEEEE-ECCC
+Confidence            001111111      111             10 0011222222222210                    0000 0223322221111000      012357999999877887788874322221111 1100
+
+
+No 95
+>2m68_A
+Probab=5.12  E-value=1.8e+03  Score=17.51  Aligned_cols=27  Identities=30%  Similarity=0.466  Sum_probs=11.2  Template_Neff=9.000
+
+Q ss_pred             CCceecCC-------------CCCeEEEEEEEeCCCCCCc
+Q T1078            22 NLKRVCNA-------------GNTSCTWTFGVDTHLATAT   48 (138)
+Q Consensus        22 ~~~R~C~~-------------~~~~C~y~F~I~~~~~~~~   48 (138)
+                      -+.-.|+.             +...|.|.|.+.+...-+.
+T Consensus       102 ~I~f~C~~~~~~~~~p~~v~~e~~~C~y~f~~~T~~AC~~  141 (142)
+T 2m68_A          102 VISFVCRPEAGPTNRPMLISLDKQTCTLFFSWHTPLACEL  141 (142)
+T ss_dssp             EEEEEECTTCSTTCSEEEEEEETTTTEEEEEEEEGGGCCC
+T ss_pred             EEEEEECCCCCCCCceEEEEecCCCEEEEEEECCCCCCCC
+Confidence            00011221             1246888888876431110
+
+
+No 96
+>1tqz_A
+Probab=5.08  E-value=3.5e+03  Score=17.19  Aligned_cols=88  Identities=5%  Similarity=-0.042  Sum_probs=36.2  Template_Neff=5.000
+
+Q ss_pred             CCCCCCcccccCCCceEEECCceecC----CCCCeEEEEEEEeCCCCCC-cEEEEEEecCCCcccccCCCccccCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccccC
+Q T1078             3 APTPADKSMMAAVPEWTITNLKRVCN----AGNTSCTWTFGVDTHLATA-TSCTYVVKANANASQASGGPVTCGPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQ  113 (138)
+Q Consensus         3 apa~~~~~~~~~~~~WTi~~~~R~C~----~~~~~C~y~F~I~~~~~~~-~~C~~~v~g~~~A~~~sf~~~~Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~  113 (138)
+                      -|. ...+......+|++.+..-++.    ..+..|...+.=.. .+.. -.|-+...  +     ...-++|        =|.     ..|-+|.|+|. .++.||.|---.+-.
+T Consensus        22 IPP-~~s~~G~rA~~W~~~~piwtGrLrvv~~g~~~~I~Led~~-tgeLFA~~p~~~~--~-----~~~Ve~v--------~DS-----SRyFvlrv~d~-~gr~A~iGiGF~eR~  114 (133)
+T 1tqz_A           22 IPP-RASNRGYRASDWKLDQPDWTGRLRITSKGKIAYIKLEDKV-SGELFAQAPVEQY--P-----GIAVETV--------TDS-----SRYFVIRIQDG-TGRSAFIGIGFTDRG  114 (133)
+T ss_dssp             CCS-CCSSSSCCHHHHCCSSSCEEEEEEEECCSSSEEEEEECSS-CCSSCEEEEECSS--C-----CCCEEEC--------TTC-----CSCEEEEEEET-TTEEEEEEEECSCHH
+T ss_pred             eCC-CCCCCCcchhHCCCCCceEEEEEEEEEcCCEEEEEEEECC-CCEEEEEeccCCC--C-----CceEEEe--------cCC-----CcEEEEEEEeC-CCCEEEEEEeeCCCC
+Confidence            010 0012223456677654332221    12245666653221 1221 23443211  0     0011111        111     36889999997 799999764222100
+
+
+No 97
+>1i5f_A
+Probab=5.07  E-value=2.8e+03  Score=14.46  Aligned_cols=43  Identities=19%  Similarity=0.261  Sum_probs=21.5  Template_Neff=7.900
+
+Q ss_pred             EEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccccC------CCCeeCCCcCC
+Q T1078            74 TITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQ------AGKVVSPNQSY  124 (138)
+Q Consensus        74 ~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~------~g~~v~p~~~~  124 (138)
+                      +|. -|+..    .||..++..|   +..+||-+++..-.      .|..|.-+...
+T Consensus         5 ~Vk-~f~~~----kGfGFI~~~~---g~dvF~H~s~i~~~~~~~l~~G~~V~f~~~~   53 (66)
+T 1i5f_A            5 KVK-WFNNE----KGYGFIEVEG---GSDVFVHFTAIQGEGFKTLEEGQEVSFEIVQ   53 (66)
+T ss_dssp             EEE-EEETT----TTEEEEECTT---SCCEEEEGGGBCSSSSCCCCTTCEEEEEEEE
+T ss_pred             EEE-EEECC----CCEEEEEECC---CcEEEEEEhhhcccCCCcCCCCCEEEEEEEE
+Confidence            111 24443    5777777654   67889998886532      22222110000
+
+
+No 98
+>2hc5_A
+Probab=5.04  E-value=4.1e+03  Score=16.40  Aligned_cols=30  Identities=7%  Similarity=-0.052  Sum_probs=21.9  Template_Neff=5.100
+
+Q ss_pred             cCEEEEEEEcCcccCCCcEEEEEEEECCCCEEEE
+Q T1078            71 GPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIVW  104 (138)
+Q Consensus        71 g~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~  104 (138)
+                      ....+...+++.    .|-.++.|+|.+.+..+=
+T Consensus        54 ~~~~L~F~ide~----t~r~vVkViD~eTgEVIR   83 (117)
+T 2hc5_A           54 SQVHLKFELHDK----LNEYYVKVIEDSTNEVIR   83 (117)
+T ss_dssp             SSCCEEEEEEEE----TTEEEEEEEETTTTEEEE
+T ss_pred             cCCEEEEEEECC----CCEEEEEEEECCCCeEee
+Confidence            145677777776    688999999998876430
+
+
+No 99
+>6zj3_SO 1-135
+Probab=5.04  E-value=4.1e+03  Score=16.51  Aligned_cols=52  Identities=23%  Similarity=0.239  Sum_probs=12.0  Template_Neff=6.300
+
+Q ss_pred             ccCEEEEEEEcCcccCCCcEEEEEEEECCCCEEE---------------------------------EEeccccccCC-C------CeeCCCcCCCCCCC
+Q T1078            70 CGPYTITSSWSGQFGPNNGFTTFAVTDFSKKLIV---------------------------------WPAYTDVQVQA-G------KVVSPNQSYAPANL  129 (138)
+Q Consensus        70 Cg~~~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A---------------------------------~fgy~d~~l~~-g------~~v~p~~~~~~~~~  129 (138)
+                      -+--+|...+|..        +++|+|...+..+                                 -.|+...++.- |      ...+|.........
+T Consensus        12 ~gi~~I~~t~NNT--------iitlTd~~G~~~~~~ssG~~gfk~~rkk~t~~Aa~~~a~~~~~~~~~~gi~~v~V~vrG~Gg~~~kg~G~GR~aairal  103 (135)
+T 6zj3_SO          12 FGVCHIYASFNDT--------FVHVTDISGRETISRVTGGMKVKADRDESSPYAAMLAAQDVAERCKECGITALHIKMRATGGTRSKQPGPGAQSALRAL  103 (135)
+T ss_pred             eeEEEEEEecCCE--------EEEEEcCCCCEEEEECCCeeEECCCCCCChHHHHHHHHHHHHHHHHHcCCCEEEEEEEeeCCCCCCCCCccHHHHHHHH
+Confidence            0111222233322        3344443322222                                 23333333220 0      00111110000000
+
+
+No 100
+>2i5l_X
+Probab=5.04  E-value=2.8e+03  Score=14.51  Aligned_cols=43  Identities=19%  Similarity=0.281  Sum_probs=21.7  Template_Neff=7.800
+
+Q ss_pred             EEEEEEcCcccCCCcEEEEEEEECCCCEEEEEeccccccC------CCCeeCCCcCC
+Q T1078            74 TITSSWSGQFGPNNGFTTFAVTDFSKKLIVWPAYTDVQVQ------AGKVVSPNQSY  124 (138)
+Q Consensus        74 ~Vs~Gws~~fg~~~gF~v~tVvd~~~~~~A~fgy~d~~l~------~g~~v~p~~~~  124 (138)
+                      +|. -|+..    .||..++..|   +..+||-+++..-.      .|..|.=+...
+T Consensus         5 ~Vk-~f~~~----kGfGFI~~~~---g~dvF~H~s~i~~~~~~~l~~G~~V~f~~~~   53 (67)
+T 2i5l_X            5 KVK-WFNSE----KGFGFIEVEG---QDDVFVHFSAIQGEGFKTLEEGQAVSFEIVE   53 (67)
+T ss_dssp             EEE-EECTT----TSEEEEECSS---SCCEEEEGGGBCSSSSCCCCTTCEEEEEEEE
+T ss_pred             EEE-EEECC----CCEEEEEECC---CcEEEEEEhhhCccCCCcCCCCCEEEEEEEE
+Confidence            111 24444    6788777765   67889988886532      22222110000
+
+
