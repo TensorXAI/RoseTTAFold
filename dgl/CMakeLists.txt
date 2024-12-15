@@ -20,7 +20,8 @@ dgl_option(BUILD_TYPE "Type of the build: dev, dogfood or release" "dev")
 message(STATUS "Build for ${BUILD_TYPE}")
 
 dgl_option(USE_CUDA "Build with CUDA" OFF)
-dgl_option(TORCH_PYTHON_INTERPS "Python interpreter for building sub-components" python3)
+# dgl_option(TORCH_PYTHON_INTERPS "Python interpreter for building sub-components" python3)
+dgl_option(TORCH_PYTHON_INTERPS "Python interpreter for building sub-components" python)
 
 # Conda build related options.
 dgl_option(EXTERNAL_DLPACK_PATH "Path to external dlpack" OFF)
@@ -455,6 +456,21 @@ if(BUILD_CPP_TEST)
   include_directories("third_party/libxsmm/include")
   include_directories("third_party/pcg/include")
   file(GLOB_RECURSE TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/tests/cpp/*.cc)
+  # Conditionally skip the specific test that requires OpenMP
+  if(NOT USE_OPENMP)
+    set(SKIP_TEST_FILE "${PROJECT_SOURCE_DIR}/tests/cpp/test_spmat_coo.cc")
+    message(STATUS "Checking if ${SKIP_TEST_FILE} exists in TEST_SRC_FILES")
+      
+    # Check if the test file exists in the list
+    list(FIND TEST_SRC_FILES ${SKIP_TEST_FILE} file_index)
+    if(file_index GREATER_EQUAL 0)
+      message(STATUS "Skipping test_spmat_coo.cc due to USE_OPENMP being OFF")
+      list(REMOVE_ITEM TEST_SRC_FILES ${SKIP_TEST_FILE})
+    else()
+      message(STATUS "test_spmat_coo.cc not found in TEST_SRC_FILES")
+    endif()
+  endif()
+  
   add_executable(runUnitTests ${TEST_SRC_FILES})
   target_link_libraries(runUnitTests gtest gtest_main)
   target_link_libraries(runUnitTests dgl)
