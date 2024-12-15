@@ -19,12 +19,34 @@
 # -implement fix the input checking code in change_parameterizations
 # -detect singularities and handle them correctly, so that the output is always acceptable
 
+import cython
 import numpy as np
 cimport numpy as np
 import lie_learn.spaces.rn as Rn
+from libc.stdlib cimport malloc, free
+from cython cimport boundscheck, wraparound
+from cpython cimport PyCapsule_GetPointer, PyCapsule_Import
 
 FLOAT_TYPE = np.float64
 ctypedef np.float64_t FLOAT_TYPE_t
+
+cdef extern from "Accelerate/Accelerate.h":
+    void dgetrf_(const int* m, const int* n, double* a, const int* lda, int* ipiv, int* info)  # LU decomposition
+    void dgetrs_(const char* trans, const int* n, const int* nrhs, const double* a, const int* lda, const int* ipiv, double* b, const int* ldb, int* info) 
+
+    # Declare the CBLAS_ORDER and CBLAS_TRANSPOSE enums
+    ctypedef enum CBLAS_ORDER:
+        CblasRowMajor = 101 
+        CblasColMajor = 102
+
+    ctypedef enum CBLAS_TRANSPOSE:
+        CblasNoTrans = 111
+        CblasTrans = 112
+        CblasConjTrans=113
+        AtlasConj=114
+
+# Constants for LAPACK
+cdef char NoTranspose = 'N'
 
 parameterizations = ('MAT', 'Q', 'EV',
                      'EA123', 'EA132', 'EA213', 'EA231', 'EA312', 'EA321',  # Type-I Euler angles AKA Tait-Bryan angles
@@ -123,19 +145,19 @@ def change_coordinates(g, p_from, p_to, units='rad', perform_checks=False):
                 if (g[1] <= 0) or (g[1] >= np.pi):  # confirm second angle within range
                     raise ValueError('Second input Euler angle(s) outside 0 to 180 degree range')
                 elif (np.abs(g[1]) < 2) or np.abs((g[1]) > (np.pi - 0.035)):  # check for np.singularity 88 deg
-                    if perform_checks:
-                        print('Warning: Input Euler angle rotation(s) near a singularity. ' +
-                              'Second angle near 0 or 180 degrees.')
+                    # if perform_checks:
+                    print('Warning: Input Euler angle rotation(s) near a singularity. ' +
+                            'Second angle near 0 or 180 degrees.')
 
             else:  # Type 1 rotation (all rotations about each of three axes)
                 if np.abs(g[1]) >= np.pi / 2:  # confirm second angle within range
                     raise ValueError('Second input Euler angle(s) outside -90 to 90 degree range')
                 elif np.abs(g[1]) > (np.pi / 2 - 0.035):  # check for np.singularity
-                    if perform_checks:
-                        print('Warning: Input Euler angle(s) rotation near a singularity. ' +
-                              'Second angle near -90 or 90 degrees.')
+                    # if perform_checks:
+                    print('Warning: Input Euler angle(s) rotation near a singularity. ' +
+                            'Second angle near -90 or 90 degrees.')
 
-        if p_from == 'MAT':
+        elif p_from == 'MAT':
             if g.shape != (3, 3):
                 raise ValueError('Matrix is not 3x3. It is:' + str(g.shape))
 
@@ -145,7 +167,7 @@ def change_coordinates(g, p_from, p_to, units='rad', perform_checks=False):
             if not np.isclose(np.abs(np.linalg.det(g) - 1), 0.0):
                 raise ValueError('g_in not a proper rotation')
 
-        if p_from == 'EV':  # Euler Vector Input Type
+        elif p_from == 'EV':  # Euler Vector Input Type
             if g.shape[0] != 4:  # or INPUT.shape[2]!=1:   # check dimensions
                 raise ValueError('Input euler vector and rotation data matrix is not Nx4')
 
@@ -161,7 +183,7 @@ def change_coordinates(g, p_from, p_to, units='rad', perform_checks=False):
             if mu < 0 or mu > 2 * np.pi:  # check if rotation about euler vector is between 0 and 360
                 print('Warning: Input euler rotation angle(s) not between 0 and 360 degrees')
 
-        if p_from == 'Q':
+        elif p_from == 'Q':
             if g.shape[0] != 4:
                 raise ValueError('Input quaternion matrix is not 4xN')
 
@@ -421,6 +443,12 @@ def change_coordinates(g, p_from, p_to, units='rad', perform_checks=False):
 
     return output
 
+def fib(int n):
+    cdef int i, a, b
+    a,b = 1,1
+    for i in range(n):
+        a,b = a+b,a
+    return a
 
 cdef rotation_matrix_to_quaternion(np.ndarray[FLOAT_TYPE_t, ndim=3] g_in):
     """
@@ -464,6 +492,63 @@ cdef rotation_matrix_to_quaternion(np.ndarray[FLOAT_TYPE_t, ndim=3] g_in):
 
     return q
 
+@cython.boundscheck(False)
+@cython.wraparound(False)
+@cython.cdivision(True)
+def solve_system_cython_accelerate(np.ndarray[np.double_t, ndim=2] A, np.ndarray[np.double_t, ndim=1] b):
+    cdef:
+        int n = A.shape[0]
+        int* ipiv = <int*> malloc(n * sizeof(int))  # Pivot indices
+        int info  # To capture the info from LAPACK routines
+        int nrhs = 1  # Number of right-hand sides
+
+    # Ensure A is contiguous and of type double
+    # A = np.ascontiguousarray(A, dtype=np.float64)
+    # b = np.ascontiguousarray(b, dtype=np.float64)
+
+    # Perform LU decomposition
+    dgetrf_(&n, &n, <double*> A.data, &n, ipiv, &info)
+
+    if info != 0:
+        free(ipiv)  # Free allocated memory before raising an error
+        raise ValueError("LU decomposition failed.")
+
+    # Solve the system using the LU factors
+    dgetrs_(&NoTranspose, &n, &nrhs, <double*> A.data, &n, ipiv, <double*> b.data, & n, &info)
+
+    if info != 0:
+        raise ValueError("LU solve failed.")
+
+    # Free allocated memory
+    free(ipiv)
+
+    # Return the modified A (LU factors) and the solution b
+    return A, b
+
+# Function to multiply two matrices using Accelerate
+"""
+def matrix_multiply(np.ndarray[np.float64_t, ndim=2] A, np.ndarray[np.float64_t, ndim=2] B):
+    cdef int m = A.shape[0]  # Number of rows in A
+    cdef int n = B.shape[1]  # Number of columns in B
+    cdef int k = A.shape[1]  # Number of columns in A (and rows in B)
+    
+    cdef np.ndarray[np.float64_t, ndim=2] C = np.empty((m, n), dtype=np.float64)  # Result matrix
+
+    # Initialize result matrix to zero
+    memset(<void*>C.data, 0, m * n * sizeof(double))
+
+    # Call the CBLAS function for matrix multiplication
+    cblas_dgemm(101,  # Transpose A (CblasNoTrans)
+                 111,  # Transpose B (CblasNoTrans)
+                 m, n, k,
+                 1.0,  # Alpha
+                 A.data, A.shape[1],  # Pointer to A and leading dimension
+                 B.data, B.shape[1],  # Pointer to B and leading dimension
+                 0.0,  # Beta
+                 C.data, C.shape[1])  # Pointer to C and leading dimension
+
+    return C
+"""
 
 # The following was found in licence.txt for spincalc.m,
 # from on which the change_parameterization function in this file is derived:
