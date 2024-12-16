@@ -58,3 +58,55 @@ This work developed a customized RoseTTAFold pipeline optimized for low-cost, AR
   - Build configurations (e.g., `CMakeLists.txt`) were modified with ARM64-specific compiler and linker flags.
   - This ensured compatibility with the ARM64 pipeline without sacrificing functionality or performance.
 
+# References
+
+## PSIPRED
+- **Jones, D. T.** Protein secondary structure prediction based on position-specific scoring matrices. *J. Mol. Biol.* **292**, 195–202 (1999).  
+  [DOI: 10.1006/jmbi.1999.3091](https://doi.org/10.1006/jmbi.1999.3091)
+- **Buchan, D.W.A., Minneci, F., Nugent, T.C.O., Bryson, K., & Jones, D.T.** PSIPRED: A Web-Based Protein Structure Prediction Toolkit. *Bioinformatics* **29**(13), 1710–1711 (2013).  
+  [PSIPRED GitHub Repository](https://github.com/psipred/psipred)
+
+## NCBI BLAST-legacy
+- **Altschul, S. F., Gish, W., Miller, W., Myers, E. W., & Lipman, D. J.** Basic local alignment search tool. *J. Mol. Biol.* **215**, 403–410 (1990).  
+  [DOI: 10.1016/S0022-2836(05)80360-2](https://doi.org/10.1016/S0022-2836(05)80360-2)
+
+## Deep Graph Library (DGL)
+- **Deep Graph Library (DGL):** Framework for Deep Learning on Graphs.  
+  [DGL Website](https://www.dgl.ai)
+- **Avancha, S.** Deep Graph Library Optimizations for Intel® x86 Architecture. *arXiv preprint arXiv:2007.06354* (2020).  
+  [arXiv:2007.06354](https://arxiv.org/abs/2007.06354)
+
+## Lie Learn Library
+- **Lie Learn Library:** Tools for learning Lie group representations.  
+  [Lie Learn GitHub Repository](https://github.com/AMLab-Amsterdam/lie_learn)
+
+## lDDT
+- **Mariani et al.** lDDT: A Local Distance Difference Test for Protein Structure Validation and Quality Assessment. *Bioinformatics* **29**(5), 550–551 (2013).  
+  [DOI: 10.1093/bioinformatics/btt473](https://doi.org/10.1093/bioinformatics/btt473)
+- **OpenStructure:** Computational Structural Biology Framework.  
+  [OpenStructure Documentation](https://openstructure.org/docs/2.9.0/mol/alg/lddt/)
+
+## HH-suite (HHblits, HHfilter, HHsearch)
+- **Remmert, M., Biegert, A., Hauser, A., & Söding, J.** HHblits: Lightning-fast iterative protein sequence searching by HMM-HMM alignment. *Nature Methods* **9**(2), 173–175 (2012).  
+  [DOI: 10.1038/nmeth.1818](https://doi.org/10.1038/nmeth.1818)
+- **Söding, J., Biegert, A., & Lupas, A. N.** The HHpred interactive server for protein homology detection and structure prediction. *Nucleic Acids Research* **33**(Web Server issue), W244–W248 (2005).  
+  [DOI: 10.1093/nar/gki408](https://doi.org/10.1093/nar/gki408)
+- **Söding, J.** Protein homology detection by HMM-HMM comparison. *Bioinformatics* **21**(7), 951–960 (2005).  
+  [DOI: 10.1093/bioinformatics/bti125](https://doi.org/10.1093/bioinformatics/bti125)
+
+## RCSB PDB
+- **RCSB PDB:** Protein Data Bank repository.  
+  [RCSB PDB Website](https://www.rcsb.org/)
+
+## Foundational Works
+- **Chothia, C., & Lesk, A. M.** The relation between the divergence of sequence and structure in proteins. *EMBO J.* **5**(4), 823–826 (1986).  
+  [DOI: 10.1002/j.1460-2075.1986.tb04288.x](https://doi.org/10.1002/j.1460-2075.1986.tb04288.x)
+- **Sali, A., & Blundell, T. L.** Comparative protein modelling by satisfaction of spatial restraints. *J. Mol. Biol.* **234**(3), 779–815 (1993).  
+  [DOI: 10.1006/jmbi.1993.1626](https://doi.org/10.1006/jmbi.1993.1626)
+
+## Modern Advances
+- **Baek, M., et al.** RoseTTAFold: Accurate protein structure prediction with a three-track network. *Science* **373**, 871–876 (2021).  
+  [DOI: 10.1126/science.abj875](https://doi.org/10.1126/science.abj875)
+- **Jumper, J., et al.** AlphaFold 2: Predicting the 3D structure of proteins. *Nature* **596**, 583–589 (2021).  
+  [DOI: 10.1038/s41586-021-03819-2](https://doi.org/10.1038/s41586-021-03819-2)
+
